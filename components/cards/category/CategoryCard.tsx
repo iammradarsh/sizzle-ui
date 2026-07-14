@@ -1,0 +1,39 @@
+"use client";
+
+import { motion } from "motion/react";
+
+import CategoryImage from "./CategoryImage";
+
+interface Props {
+  title: string;
+  image: string;
+}
+
+export default function CategoryCard({ title, image }: Props) {
+  return (
+    <motion.div
+      // whileHover={{
+      //   y: -2,
+      // }}
+      className="
+      overflow-hidden
+      flex
+      h-[80px]
+      w-[190px]
+      cursor-pointer
+      items-center
+      justify-between
+      rounded-[15px]
+      bg-[#1A1A1D]
+      pl-6
+      transition-colors
+      hover:bg-[#28282A]
+      gap-3
+    "
+    >
+      <h3 className="font-neue-black text-2xl text-white">{title}</h3>
+
+      <CategoryImage image={image} title={title} />
+    </motion.div>
+  );
+}
