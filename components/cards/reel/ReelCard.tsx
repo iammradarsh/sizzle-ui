@@ -112,7 +112,7 @@ export default function ReelCard({
     >
       {/* Card */}
       <div
-        className="relative h-[460px] overflow-hidden rounded-[26px] bg-[#1B1B1D]"
+        className="relative h-[460px] overflow-hidden rounded-md bg-[#1B1B1D]"
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
       >
