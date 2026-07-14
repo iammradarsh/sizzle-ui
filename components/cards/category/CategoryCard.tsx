@@ -24,14 +24,14 @@ export default function CategoryCard({ title, image }: Props) {
       items-center
       justify-between
       rounded-[15px]
-      bg-[#1A1A1D]
+      bg-[#19191B]
       pl-6
       transition-colors
       hover:bg-[#28282A]
-      gap-3
+      
     "
     >
-      <h3 className="font-neue-black text-2xl text-white">{title}</h3>
+      <h3 className="font-neue-black text-lg text-white">{title}</h3>
 
       <CategoryImage image={image} title={title} />
     </motion.div>

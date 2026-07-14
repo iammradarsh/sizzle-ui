@@ -11,13 +11,15 @@ interface Props {
 export default function CategoryImage({ image, title }: Props) {
   return (
     <motion.div
-      whileHover={{
-        scale: 1.05,
-      }}
+      whileHover={
+        {
+          // scale: 1.05,
+        }
+      }
       transition={{
         duration: 0.25,
       }}
-      className="relative h-14 w-28 overflow-hidden"
+      className="relative h-14 w-20 overflow-hidden"
     >
       <Image
         src={image}

@@ -28,7 +28,7 @@ export default function CreatorsSection() {
   }, [emblaApi]);
 
   return (
-    <section className="mt-16 px-8">
+    <section className="mt-16 px-8 overflow-hidden">
       <div className="mb-8 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <h2 className="font-neue-semibold text-xl text-white">
@@ -74,7 +74,7 @@ export default function CreatorsSection() {
       </div>
 
       <div className="" ref={emblaRef}>
-        <div className="flex gap-8">
+        <div className="flex gap-2">
           {creators.map((creator) => (
             <CreatorCard key={creator.id} {...creator} />
           ))}
