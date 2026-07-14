@@ -73,7 +73,7 @@ export default function CreatorsSection() {
         </div>
       </div>
 
-      <div className="overflow-hidden" ref={emblaRef}>
+      <div className="" ref={emblaRef}>
         <div className="flex gap-8">
           {creators.map((creator) => (
             <CreatorCard key={creator.id} {...creator} />
