@@ -36,7 +36,7 @@ export default function FeaturedCard({
   time,
 }: FeaturedCardProps) {
   return (
-    <div className="w-[280px] shrink-0">
+    <div className="w-[250px] shrink-0">
       {/* Card */}
       <div className="relative h-[380px] overflow-hidden rounded-md">
         {/* Image */}

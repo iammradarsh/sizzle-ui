@@ -23,7 +23,7 @@ export default function FeaturedHero({ logo, name, bio }: FeaturedHeroProps) {
       />
 
       {/* Name */}
-      <h1 className="font-neue-black text-[86px] leading-[0.9] uppercase text-white">
+      <h1 className="font-neue-black text-[120px] leading-[0.9] uppercase text-white">
         {name.split(" ").map((word) => (
           <span key={word} className="block">
             {word}
@@ -32,7 +32,7 @@ export default function FeaturedHero({ logo, name, bio }: FeaturedHeroProps) {
       </h1>
 
       {/* Bio */}
-      <p className="mt-6 text-[20px] text-white/80">{bio}</p>
+      <p className="mt-6 text-sm text-white/80">{bio}</p>
 
       {/* Buttons */}
       <div className="mt-10 flex items-center gap-4">
@@ -40,13 +40,13 @@ export default function FeaturedHero({ logo, name, bio }: FeaturedHeroProps) {
         <button
           className="
             flex
-            h-14
+            h-12
             items-center
             gap-3
-            rounded-2xl
+            rounded-lg
             bg-white
             px-6
-            text-[16px]
+            text-sm
             font-neue-semibold
             text-black
             transition
@@ -66,11 +66,11 @@ export default function FeaturedHero({ logo, name, bio }: FeaturedHeroProps) {
         <button
           className="
             flex
-            h-14
-            w-14
+            h-12
+            w-12
             items-center
             justify-center
-            rounded-2xl
+            rounded-lg
             bg-white/15
             backdrop-blur-md
             transition
@@ -84,11 +84,11 @@ export default function FeaturedHero({ logo, name, bio }: FeaturedHeroProps) {
         <button
           className="
             flex
-            h-14
-            w-14
+            h-12
+            w-12
             items-center
             justify-center
-            rounded-2xl
+            rounded-lg
             bg-white/15
             backdrop-blur-md
             transition
