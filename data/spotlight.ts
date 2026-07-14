@@ -29,7 +29,7 @@ export const spotlight: Spotlight[] = [
 
     badge: "FAN FAVORITE",
 
-    badgeIcon: "/images/icons/heart.svg",
+    badgeIcon: "/images/icons/double-heart.svg",
 
     name: "MARLOWE\nFOX",
 
