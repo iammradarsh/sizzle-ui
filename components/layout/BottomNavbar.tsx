@@ -53,7 +53,9 @@ export default function BottomNavbar() {
     border
     border-white/5
 
-    bg-[#18181B]/90
+    
+
+    glass-card
 
     px-4
     py-3
