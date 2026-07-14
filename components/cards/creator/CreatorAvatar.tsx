@@ -12,8 +12,8 @@ export default function CreatorAvatar({ image, name }: Props) {
   return (
     <motion.div
       whileHover={{
-        y: -4,
-        scale: 0.95,
+        y: 4,
+        scale: 1.02,
       }}
       transition={{
         duration: 0.25,
