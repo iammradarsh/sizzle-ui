@@ -60,7 +60,6 @@ export default function BottomNavbar() {
     px-4
     py-3
 
-    shadow-2xl
     backdrop-blur-xl
   "
       >
