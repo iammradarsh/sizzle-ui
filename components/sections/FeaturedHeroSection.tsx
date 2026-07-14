@@ -51,7 +51,7 @@ export default function FeaturedHeroSection({ hero }: Props) {
         />
 
         {/* Right */}
-        <div className="w-[760px]">
+        <div className="w-[700px]">
           {/* Header */}
           <div className="mb-8 flex justify-end gap-3 pr-20">
             <button

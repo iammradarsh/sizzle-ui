@@ -8,12 +8,12 @@ export default function PersonalService({
   price,
 }: PersonalServiceProps) {
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center gap-2">
       <span className="font-neue-regular text-[14px] text-[#9D9DA3]">
         {title}
       </span>
 
-      <span className="font-neue-semibold text-[14px] text-white">{price}</span>
+      <span className="font-neue-regular text-[14px] text-white">{price}</span>
     </div>
   );
 }

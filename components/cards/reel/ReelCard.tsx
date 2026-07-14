@@ -213,7 +213,7 @@ export default function ReelCard({
       right-4
       top-4
       rounded-full
-      bg-black/70
+      bg-black/40
       px-3
       py-1
       text-sm
@@ -258,8 +258,8 @@ export default function ReelCard({
         >
           {/* Video Badge */}
           {mediaType === "video" && duration && (
-            <div className="flex h-10 items-center rounded-xl bg-black/70 px-3 backdrop-blur-md">
-              <span className="font-neue-semibold text-sm text-white">
+            <div className="flex h-6 items-center rounded-sm bg-black/40 px-3 backdrop-blur-md">
+              <span className="font-neue-regular text-sm text-white">
                 {duration}
               </span>
             </div>
@@ -267,15 +267,15 @@ export default function ReelCard({
 
           {/* Gallery Badge */}
           {mediaType === "gallery" && (
-            <div className="flex h-10 items-center gap-2 rounded-xl bg-black/70 px-3 backdrop-blur-md">
+            <div className="flex h-8 items-center gap-2 rounded-sm bg-black/40 px-3 backdrop-blur-md">
               <Image
                 src="/images/icons/gallery.svg"
                 alt="Gallery"
-                width={16}
-                height={16}
+                width={12}
+                height={12}
               />
 
-              <span className="font-neue-semibold text-sm text-white">
+              <span className="font-neue-regular text-sm text-white">
                 {imageCount}
               </span>
             </div>
@@ -283,16 +283,16 @@ export default function ReelCard({
 
           {/* Image Badge (Optional) */}
           {mediaType === "image" && duration && (
-            <div className="flex h-10 items-center rounded-xl bg-black/70 px-3 backdrop-blur-md">
-              <span className="font-neue-semibold text-sm text-white">
+            <div className="flex h-8 items-center rounded-sm bg-black/40 px-3 backdrop-blur-md">
+              <span className="font-neue-regular text-sm text-white">
                 {duration}
               </span>
             </div>
           )}
 
           {/* Category */}
-          <div className="flex h-10 items-center rounded-xl bg-black/70 px-3 backdrop-blur-md">
-            <span className="font-neue-semibold text-sm text-white">
+          <div className="flex h-8 items-center rounded-sm bg-black/40 px-3 backdrop-blur-md">
+            <span className="font-neue-regular text-sm text-white">
               {category}
             </span>
           </div>

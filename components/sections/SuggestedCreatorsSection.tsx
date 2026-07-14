@@ -21,8 +21,8 @@ export default function SuggestedCreatorsSection() {
           <Image
             src="/images/avatars/suggested.png"
             alt=""
-            width={54}
-            height={54}
+            width={50}
+            height={50}
             className="rounded-sm"
           />
 

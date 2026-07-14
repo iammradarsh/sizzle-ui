@@ -82,8 +82,8 @@ export default function SuggestedCreatorCard({
         border-[#FF2C78]
         px-2
         py-[2px]
-        text-[11px]
-        font-neue-semibold
+        text-md
+        font-neue-regular
         text-[#FF2C78]
       "
             >
@@ -92,7 +92,9 @@ export default function SuggestedCreatorCard({
           )}
         </div>
 
-        <p className="mt-1 text-sm text-[#8A8A8A]">{description}</p>
+        <p className="mt-1 text-[14px] font-neue-regular text-[#A3A3A3]">
+          {description}
+        </p>
       </div>
 
       <motion.button
@@ -101,13 +103,13 @@ export default function SuggestedCreatorCard({
         className={`
     mt-5
     inline-flex
-    h-12
+    h-10
     w-fit
     items-center
     justify-center
     gap-2
     rounded-md
-    px-6
+    px-4
     font-neue-semibold
     transition-all
     duration-300
