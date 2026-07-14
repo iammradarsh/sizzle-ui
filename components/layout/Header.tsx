@@ -9,7 +9,7 @@ export default function Header() {
       <div className="flex items-center justify-between">
         {/* Left */}
         <div className="flex items-center gap-3">
-          <Button className="h-11 rounded-lg bg-white px-5 text-black hover:bg-white">
+          <Button className="h-11 rounded-lg bg-white px-5 text-black hover:[#DFDCD7]">
             <Image
               src="/images/icons/foryou.svg"
               alt="For You"
