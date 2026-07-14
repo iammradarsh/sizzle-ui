@@ -30,9 +30,18 @@ export default function CreatorsSection() {
   return (
     <section className="mt-16 px-8">
       <div className="mb-8 flex items-center justify-between">
-        <h2 className="font-neue-semibold text-xl text-white">
-          Fresh from your creators
-        </h2>
+        <div className="flex items-center gap-2">
+          <h2 className="font-neue-semibold text-xl text-white">
+            Fresh from your creators
+          </h2>
+
+          <Image
+            src="/images/icons/arrow-right.svg"
+            alt=""
+            width={18}
+            height={18}
+          />
+        </div>
 
         {/* Arrows */}
         <div className="flex items-center gap-2">
