@@ -94,7 +94,7 @@ export default function PersonalCard({
             h-10
             items-center
             justify-center
-            rounded-2xl
+            rounded-sm
             bg-[#1D1D20]
             px-5
 
