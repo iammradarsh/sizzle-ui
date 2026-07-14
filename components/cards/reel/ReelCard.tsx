@@ -108,18 +108,18 @@ export default function ReelCard({
       transition={{
         duration: 0.25,
       }}
-      className="group w-[320px] shrink-0"
+      className="group w-[290px] shrink-0"
     >
       {/* Card */}
       <div
-        className="relative h-[540px] overflow-hidden rounded-[26px] bg-[#1B1B1D]"
+        className="relative h-[460px] overflow-hidden rounded-[26px] bg-[#1B1B1D]"
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
       >
         {/* Image */}
         <motion.div
           animate={{
-            filter: isHovered ? "brightness(1)" : "brightness(.78)",
+            filter: isHovered ? "brightness(0.78)" : "brightness(1)",
           }}
           transition={{
             duration: 1,
@@ -164,7 +164,7 @@ export default function ReelCard({
         )}
 
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+        <div className="absolute inset-0 " />
 
         {/* Hover Overlay */}
         <div
