@@ -116,7 +116,7 @@ export const topTipped: TopTippedReel[] = [
 
     creatorLogo: "/images/logos/dexter.png",
 
-    avatar: "/images/avatars/luca.png",
+    avatar: "/images/avatars/moana.png",
 
     title: "We Surprised Our Biggest Fan With Their Dream Day",
 
@@ -146,7 +146,7 @@ export const topTipped: TopTippedReel[] = [
 
     creatorLogo: "/images/logos/megamind.png",
 
-    avatar: "/images/avatars/yara.png",
+    avatar: "/images/avatars/moana.png",
 
     title: "Raw And Unfiltered: What It Is Really Like Doing This For A Living",
 
