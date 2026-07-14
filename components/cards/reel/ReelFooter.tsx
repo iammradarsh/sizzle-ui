@@ -29,7 +29,7 @@ export default function ReelFooter({
       {/* Rank */}
       {rank && (
         <div className="mb-2">
-          <span className="font-neue-black text-[64px] leading-none text-white">
+          <span className="font-neue-black text-[64px] leading-none gradient-rank-text">
             {rank}
           </span>
         </div>
