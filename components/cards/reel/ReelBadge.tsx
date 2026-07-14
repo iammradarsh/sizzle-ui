@@ -18,7 +18,7 @@ export default function ReelBadge({ badge, locked }: Props) {
       )}
 
       {locked && (
-        <span className="rounded-sm bg-[#F4BB2E] px-3 py-3">
+        <span className="rounded-sm bg-[#F4BB2E] px-2 py-2">
           <Image src={locked} alt="Locked" width={16} height={16} />
         </span>
       )}
