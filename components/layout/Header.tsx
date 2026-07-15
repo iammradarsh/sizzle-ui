@@ -39,7 +39,7 @@ export default function Header() {
             className="h-11 rounded-lg border-0 bg-[#19191B] px-5 text-zinc-300 hover:bg-[#252528]"
           >
             <Image
-              src="/images/icons/crown.svg"
+              src="/images/icons/crown-grey.svg"
               alt="Memberships"
               width={18}
               height={18}
