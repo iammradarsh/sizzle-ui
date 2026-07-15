@@ -18,13 +18,13 @@ export default function CreatorHighlightsSection() {
   return (
     <section className="mt-24 px-8 select-none overflow-hidden">
       {/* Subtitle */}
-      <p className="text-sm text-[#8A8A8A]">Discover more creators</p>
+      {/* <p className="text-sm text-[#8A8A8A]">Discover more creators</p> */}
 
       {/* Header */}
       <div className="mb-8 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <h2 className="font-neue-semibold text-xl text-white">
-            Rising creators you'll love
+            Creator highlights
           </h2>
 
           <Image
@@ -32,6 +32,7 @@ export default function CreatorHighlightsSection() {
             alt=""
             width={18}
             height={18}
+            className="mt-1.5"
           />
         </div>
 

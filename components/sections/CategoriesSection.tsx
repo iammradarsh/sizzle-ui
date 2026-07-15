@@ -40,6 +40,7 @@ export default function CategoriesSection() {
             alt="Arrow right"
             width={18}
             height={18}
+            className="mt-1.5"
           />
         </div>
 

@@ -31,6 +31,7 @@ export default function BookingsSection() {
               alt=""
               width={22}
               height={22}
+              className="mt-1.5"
             />
           </div>
         </div>

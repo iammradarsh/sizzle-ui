@@ -30,8 +30,9 @@ export default function ExploreCreatorsSection() {
           <Image
             src="/images/icons/arrow-right.svg"
             alt=""
-            width={20}
-            height={20}
+            width={18}
+            height={18}
+            className="mt-1.5"
           />
         </div>
       </div>

@@ -28,6 +28,7 @@ export default function FeaturedCreatorsSection() {
             alt=""
             width={18}
             height={18}
+            className="mt-1.5"
           />
         </div>
 

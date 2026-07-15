@@ -28,6 +28,7 @@ export default function LatestCreatorsSection() {
             alt=""
             width={18}
             height={18}
+            className="mt-1.5"
           />
         </div>
 

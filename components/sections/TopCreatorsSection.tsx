@@ -28,8 +28,9 @@ export default function TopCreatorsSection() {
             <Image
               src="/images/icons/arrow-right.svg"
               alt=""
-              width={22}
-              height={22}
+              width={18}
+              height={18}
+              className="mt-1.5"
             />
           </div>
         </div>
