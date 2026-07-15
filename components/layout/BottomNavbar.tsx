@@ -51,20 +51,11 @@ export default function BottomNavbar() {
     flex
     flex-row
     items-center
-
     gap-2
-
     rounded-[34px]
-    border
-    border-white/5
-
-    
-
     glass-card
-
     px-4
     py-3
-
     backdrop-blur-xl
   "
       >
