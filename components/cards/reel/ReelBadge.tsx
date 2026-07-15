@@ -24,7 +24,7 @@ export default function ReelBadge({ badge, locked, isHovered }: Props) {
       className="absolute left-4 top-4 z-20 flex gap-2"
     >
       {badge && (
-        <span className="rounded-sm bg-black font-neue-semibold flex items-center justify-center px-3 py-1 text-sm text-white">
+        <span className="rounded-sm font-neue-semibold flex items-center justify-center px-3 py-1 text-sm text-white bg-gradient-to-l from-pink-600 via-red-600 to-orange-500">
           {badge}
         </span>
       )}
