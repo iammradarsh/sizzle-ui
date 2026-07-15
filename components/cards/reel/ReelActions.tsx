@@ -14,7 +14,7 @@ export default function ReelActions({ likes, comments }: Props) {
       className="
 absolute
 right-4
-top-1/2
+top-75
 hidden
 -translate-y-1/2
 group-hover:flex
@@ -37,10 +37,12 @@ gap-5
 
       <button>
         <Image src="/images/icons/gift.svg" alt="" width={28} height={28} />
+        <p className="mt-1 text-xs">Gift</p>
       </button>
 
       <button>
         <Image src="/images/icons/save.svg" alt="" width={28} height={28} />
+        <p className="mt-1 text-xs">Save</p>
       </button>
 
       <button>

@@ -9,12 +9,18 @@ import ReelCard from "@/components/cards/reel/ReelCard";
 import { topTipped } from "@/data/topTipped";
 import { Button } from "../ui/button";
 import { tippedReels } from "@/data/tippedReels";
+import WheelGesturesPlugin from "embla-carousel-wheel-gestures";
 
 export default function TippedReelsSection() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({
-    align: "start",
-    dragFree: true,
-  });
+  const wheelGestures = WheelGesturesPlugin();
+
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    {
+      align: "start",
+      dragFree: true,
+    },
+    [wheelGestures],
+  );
   const sliderRef = useRef<HTMLDivElement>(null);
 
   function scrollLeft() {
@@ -50,31 +56,56 @@ export default function TippedReelsSection() {
 
         {/* Arrows */}
         <div className="flex items-center gap-2">
-          <Button
-            size="icon"
-            variant="secondary"
+          <button
             onClick={() => emblaApi?.scrollPrev()}
+            className="
+            flex
+            h-8
+            w-8
+            items-center
+            justify-center
+            rounded-sm
+            bg-[#19191B]
+            transition-all
+            duration-200
+            hover:bg-[#3C3C3E]
+            active:scale-95
+          "
           >
             <Image
               src="/images/icons/chevron-left.svg"
               alt="Previous"
               width={14}
               height={14}
+              className="opacity-80 transition-opacity duration-200 group-hover:opacity-100"
             />
-          </Button>
+          </button>
 
-          <Button
-            size="icon"
-            variant="secondary"
+          <button
             onClick={() => emblaApi?.scrollNext()}
+            className="
+            group
+            flex
+            h-8
+            w-8
+            items-center
+            justify-center
+            rounded-sm
+            bg-[#19191B]
+            transition-all
+            duration-200
+            hover:bg-[#3C3C3E]
+            active:scale-95
+          "
           >
             <Image
               src="/images/icons/chevron-right.svg"
               alt="Next"
               width={14}
               height={14}
+              className="opacity-80 transition-opacity duration-200 group-hover:opacity-100"
             />
-          </Button>
+          </button>
         </div>
       </div>
 

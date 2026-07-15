@@ -8,16 +8,22 @@ import FeaturedHero from "@/components/cards/featured/FeaturedHero";
 import FeaturedCard from "@/components/cards/featured/FeaturedCard";
 
 import type { FeaturedHeroData } from "@/data/featuredHeroes";
+import WheelGesturesPlugin from "embla-carousel-wheel-gestures";
 
 interface Props {
   hero: FeaturedHeroData;
 }
 
 export default function FeaturedHeroSection({ hero }: Props) {
-  const [emblaRef, emblaApi] = useEmblaCarousel({
-    align: "start",
-    dragFree: true,
-  });
+  const wheelGestures = WheelGesturesPlugin();
+
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    {
+      align: "start",
+      dragFree: true,
+    },
+    [wheelGestures],
+  );
 
   function scrollPrev() {
     emblaApi?.scrollPrev();

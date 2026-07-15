@@ -46,7 +46,8 @@ export default function ReviewCard({
         rounded-[20px]
         border
         border-white/10
-        bg-[#1E1E20]
+        bg-[#19191B]
+        hover:bg-[#28282A]
         p-5
       "
     >

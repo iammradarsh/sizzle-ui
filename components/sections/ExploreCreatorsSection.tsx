@@ -8,13 +8,26 @@ import CategoryChip from "@/components/cards/category/CategoryChip";
 import CreatorListCard from "@/components/cards/creator/CreatorListCard";
 
 import { creatorCategories, exploreCreators } from "@/data/exploreCreators";
+import WheelGesturesPlugin from "embla-carousel-wheel-gestures";
 
 export default function ExploreCreatorsSection() {
-  const [activeCategory, setActiveCategory] = useState("All");
-  const [emblaRef] = useEmblaCarousel({
-    align: "start",
-    dragFree: true,
-  });
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const wheelGestures = WheelGesturesPlugin();
+
+  const filteredCreators =
+    selectedCategory === "All"
+      ? exploreCreators
+      : exploreCreators.filter(
+          (creator) => creator.category === selectedCategory,
+        );
+
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    {
+      align: "start",
+      dragFree: true,
+    },
+    [wheelGestures],
+  );
 
   return (
     <section className="mt-24 px-8 overflow-hidden">
@@ -44,8 +57,8 @@ export default function ExploreCreatorsSection() {
             <CategoryChip
               key={category}
               label={category}
-              active={activeCategory === category}
-              onClick={() => setActiveCategory(category)}
+              active={selectedCategory === category}
+              onClick={() => setSelectedCategory(category)}
             />
           ))}
         </div>
@@ -53,7 +66,7 @@ export default function ExploreCreatorsSection() {
 
       {/* Creator Grid */}
       <div className="grid grid-cols-3 gap-x-4 gap-y-4">
-        {exploreCreators.map((creator) => (
+        {filteredCreators.map((creator) => (
           <CreatorListCard
             key={creator.id}
             avatar={creator.avatar}

@@ -7,6 +7,8 @@ export interface ExploreCreator {
 
   description: string;
 
+  category: string;
+
   highlight?: boolean;
 }
 
@@ -32,6 +34,7 @@ export const exploreCreators: ExploreCreator[] = [
     avatar: "/images/avatars/baddie.png",
     name: "Baddie Bianca",
     description: "The tall blonde your algorithm keeps showing you",
+    category: "#Cooking",
   },
 
   {
@@ -39,6 +42,7 @@ export const exploreCreators: ExploreCreator[] = [
     avatar: "/images/avatars/yara.png",
     name: "Yara Santos",
     description: "Blue eyes and a personality that hits different",
+    category: "#Music",
   },
 
   {
@@ -46,6 +50,7 @@ export const exploreCreators: ExploreCreator[] = [
     avatar: "/images/avatars/rosa.png",
     name: "Rosa Vidal",
     description: "The nerdy one who turned out to be your favorite",
+    category: "#Lifestyle",
   },
 
   {
@@ -53,6 +58,8 @@ export const exploreCreators: ExploreCreator[] = [
     avatar: "/images/avatars/zara.png",
     name: "Zara Okonkwo",
     description: "Your favorite latina and you haven't even met me yet",
+
+    category: "#Lifestyle",
   },
 
   {
@@ -60,7 +67,8 @@ export const exploreCreators: ExploreCreator[] = [
     avatar: "/images/avatars/cleo.png",
     name: "Cleo Dubois",
     description: "The girl from the gym who finally made an account",
-    highlight: true,
+    // highlight: true,
+    category: "#Lifestyle",
   },
 
   {
@@ -68,6 +76,8 @@ export const exploreCreators: ExploreCreator[] = [
     avatar: "/images/avatars/ines.png",
     name: "Ines Marchetti",
     description: "Curvy girl next door who actually responds",
+
+    category: "#Lifestyle",
   },
 
   {
@@ -75,6 +85,7 @@ export const exploreCreators: ExploreCreator[] = [
     avatar: "/images/avatars/leila.png",
     name: "Leila Castillo",
     description: "The ebony queen your friends are already subscribed to",
+    category: "#Lifestyle",
   },
 
   {
@@ -82,6 +93,7 @@ export const exploreCreators: ExploreCreator[] = [
     avatar: "/images/avatars/mila.png",
     name: "Mila Ferreira",
     description: "Thick thighs, good vibes and an accent you'll love",
+    category: "#Cooking",
   },
 
   {
@@ -89,5 +101,6 @@ export const exploreCreators: ExploreCreator[] = [
     avatar: "/images/avatars/luna.png",
     name: "Luna Perez",
     description: "If you like redheads with attitude you found her",
+    category: "#Cooking",
   },
 ];

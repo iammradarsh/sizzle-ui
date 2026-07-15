@@ -2,6 +2,7 @@
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
+import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
 
 import { Button } from "@/components/ui/button";
 
@@ -11,10 +12,15 @@ import { reels } from "@/data/reels";
 import Image from "next/image";
 
 export default function ReelsSection() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({
-    align: "start",
-    dragFree: true,
-  });
+  const wheelGestures = WheelGesturesPlugin();
+
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    {
+      align: "start",
+      dragFree: true,
+    },
+    [wheelGestures],
+  );
 
   return (
     <section className="mt-20 px-8 overflow-hidden">
@@ -37,31 +43,56 @@ export default function ReelsSection() {
 
         {/* Arrows */}
         <div className="flex items-center gap-2">
-          <Button
-            size="icon"
-            variant="secondary"
+          <button
             onClick={() => emblaApi?.scrollPrev()}
+            className="
+            flex
+            h-8
+            w-8
+            items-center
+            justify-center
+            rounded-sm
+            bg-[#19191B]
+            transition-all
+            duration-200
+            hover:bg-[#3C3C3E]
+            active:scale-95
+          "
           >
             <Image
               src="/images/icons/chevron-left.svg"
               alt="Previous"
               width={14}
               height={14}
+              className="opacity-80 transition-opacity duration-200 group-hover:opacity-100"
             />
-          </Button>
+          </button>
 
-          <Button
-            size="icon"
-            variant="secondary"
+          <button
             onClick={() => emblaApi?.scrollNext()}
+            className="
+            group
+            flex
+            h-8
+            w-8
+            items-center
+            justify-center
+            rounded-sm
+            bg-[#19191B]
+            transition-all
+            duration-200
+            hover:bg-[#3C3C3E]
+            active:scale-95
+          "
           >
             <Image
               src="/images/icons/chevron-right.svg"
               alt="Next"
               width={14}
               height={14}
+              className="opacity-80 transition-opacity duration-200 group-hover:opacity-100"
             />
-          </Button>
+          </button>
         </div>
       </div>
 

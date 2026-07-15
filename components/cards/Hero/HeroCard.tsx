@@ -2,7 +2,12 @@ import Image from "next/image";
 
 export interface HeroCardProps {
   image: string;
-  badge?: string;
+  badge?: {
+    text: string;
+    icon: string;
+    iconWidth: number;
+    iconHeight: number;
+  };
   movieLogo?: string;
   category: string;
   title: string;
@@ -56,7 +61,7 @@ export default function HeroCard({
           className="object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/25 group-hover:bg-black/45 transition-all duration-300" />
+        {/* <div className="absolute inset-0 bg-black/25 group-hover:bg-black/45 transition-all duration-300" /> */}
 
         <div className="absolute inset-[24px] z-10 pointer-events-none">
           <Image
@@ -72,13 +77,47 @@ export default function HeroCard({
           <div>
             <div className="text-[11px] font-semibold uppercase tracking-wide text-white">
               {badge && (
-                <Image
-                  src={badge}
-                  alt="Badge"
-                  width={110}
-                  height={50}
-                  className="mb-5 h-auto w-[110px]"
-                />
+                <div
+                  className="
+      inline-flex
+      rounded-sm
+      bg-[linear-gradient(90deg,#F61D85_0%,#F74F28_55%,#F9A326_100%)]
+      p-[1px]
+    "
+                >
+                  <div
+                    className="
+        flex
+        h-8
+        items-center
+        gap-2
+        rounded-sm
+        bg-black/50 
+        
+        px-3
+      "
+                  >
+                    <Image
+                      src={badge.icon}
+                      alt={badge.text}
+                      width={badge.iconWidth}
+                      height={badge.iconHeight}
+                      className="shrink-0 object-contain"
+                    />
+
+                    <span
+                      className="
+          font-neue-semibold
+          text-[11px]
+          uppercase
+          tracking-wide
+          text-white
+        "
+                    >
+                      {badge.text}
+                    </span>
+                  </div>
+                </div>
               )}
             </div>
           </div>

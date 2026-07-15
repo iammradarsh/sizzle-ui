@@ -100,7 +100,7 @@ export default function Header() {
           <Button
             variant="outline"
             size="icon"
-            className="h-11 w-11 rounded-lg border-[#2B2B2E] bg-black hover:bg-[#1A1A1D]"
+            className="h-11 w-11 rounded-lg border-[#2B2B2E] bg-black hover:bg-[#19191B]"
           >
             <Image
               src="/images/icons/chat.svg"
@@ -114,7 +114,7 @@ export default function Header() {
           <Button
             variant="outline"
             size="icon"
-            className="h-11 w-11 rounded-lg border-[#2B2B2E] bg-black hover:bg-[#1A1A1D]"
+            className="h-11 w-11 rounded-lg border-[#2B2B2E] bg-black hover:bg-[#19191B]"
           >
             <Image
               src="/images/icons/bell.svg"
@@ -127,7 +127,7 @@ export default function Header() {
           {/* Wallet */}
           <Button
             variant="outline"
-            className="h-11 rounded-lg border-[#2B2B2E] bg-black px-4 hover:bg-[#1A1A1D]"
+            className="h-11 rounded-lg border-[#2B2B2E] bg-black px-4 hover:bg-[#19191B]"
           >
             <Image
               src="/images/icons/wallet.svg"

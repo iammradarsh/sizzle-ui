@@ -12,27 +12,32 @@ const navItems = [
   {
     label: "Home",
     href: "/",
-    icon: "/images/icons/home.svg",
+    icon: "/images/icons/home-grey.svg",
+    activeIcon: "/images/icons/home.svg",
   },
   {
     label: "Explore",
     href: "/explore",
-    icon: "/images/icons/explore.svg",
+    icon: "/images/icons/explore-grey.svg",
+    activeIcon: "/images/icons/explore.svg",
   },
   {
     label: "Search",
     href: "/search",
-    icon: "/images/icons/search.svg",
+    icon: "/images/icons/search-grey.svg",
+    activeIcon: "/images/icons/search.svg",
   },
   {
     label: "Leaderboard",
     href: "/leaderboard",
-    icon: "/images/icons/leaderboard.svg",
+    icon: "/images/icons/leaderboard-grey.svg",
+    activeIcon: "/images/icons/leaderboard.svg",
   },
   {
     label: "My Stuff",
     href: "/my-stuff",
-    icon: "/images/icons/my-stuff.svg",
+    icon: "/images/icons/my-stuff-grey.svg",
+    activeIcon: "/images/icons/my-stuff.svg",
   },
 ];
 
@@ -105,12 +110,31 @@ ${active ? "text-white" : "text-zinc-400 hover:text-white"}
                     scale: active ? 1 : 0.95,
                   }}
                 >
-                  <Image
-                    src={item.icon}
-                    alt={item.label}
-                    width={24}
-                    height={24}
-                  />
+                  <div className="relative flex h-6 w-6 items-center justify-center">
+                    <Image
+                      src={active ? item.activeIcon : item.icon}
+                      alt={item.label}
+                      width={24}
+                      height={24}
+                      className="transition-all duration-200 group-hover:hidden"
+                    />
+
+                    {!active && (
+                      <Image
+                        src={item.activeIcon}
+                        alt={item.label}
+                        width={24}
+                        height={24}
+                        className="
+      absolute
+      opacity-0
+      transition-opacity
+      duration-200
+      group-hover:opacity-100
+    "
+                      />
+                    )}
+                  </div>
 
                   <span>{item.label}</span>
                 </motion.div>

@@ -25,7 +25,7 @@ import { featuredHeroes } from "@/data/featuredHeroes";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#000000] text-white pb-10 ">
+    <main className="min-h-screen bg-[#000000] text-white pb-40 ">
       <HeroSection />
       <CreatorsSection />
       <CategoriesSection />

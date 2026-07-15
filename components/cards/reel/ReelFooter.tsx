@@ -55,10 +55,19 @@ export default function ReelFooter({
             {creator}
           </span>
 
-          <span className="text-[#71717A]">•</span>
+          <span className="flex items-center gap-1">
+            <span>
+              <Image
+                src="/images/icons/eye.svg"
+                alt="Views"
+                width={12}
+                height={12}
+              />
+            </span>
 
-          <span className="font-neue-regular text-[14px] text-[#A1A1AA]">
-            {views}
+            <span className="font-neue-regular text-[14px] text-[#A1A1AA]">
+              {views}
+            </span>
           </span>
 
           <span className="text-[#71717A]">•</span>

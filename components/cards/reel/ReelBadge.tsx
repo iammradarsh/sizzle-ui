@@ -1,16 +1,28 @@
 import Image from "next/image";
+import { motion } from "motion/react";
 
 interface Props {
   badge?: string;
 
   locked?: string;
+  isHovered?: boolean;
 }
 
-export default function ReelBadge({ badge, locked }: Props) {
+export default function ReelBadge({ badge, locked, isHovered }: Props) {
   if (!badge && !locked) return null;
 
   return (
-    <div className="absolute left-4 top-4 flex gap-2">
+    <motion.div
+      animate={{
+        opacity: isHovered ? 0 : 1,
+        y: isHovered ? -8 : 0,
+      }}
+      transition={{
+        duration: 0.25,
+        ease: "easeInOut",
+      }}
+      className="absolute left-4 top-4 z-20 flex gap-2"
+    >
       {badge && (
         <span className="rounded-sm bg-[linear-gradient(270deg,_#D9107F_0%,_#EE1E03_29.33%,_#F61785_57.21%,_#FC7C20_100%)] font-neue-semibold flex items-center justify-center px-3 py-1 text-sm text-white">
           {badge}
@@ -18,10 +30,27 @@ export default function ReelBadge({ badge, locked }: Props) {
       )}
 
       {locked && (
-        <span className="rounded-sm bg-[#F4BB2E] px-2 py-2">
-          <Image src={locked} alt="Locked" width={16} height={16} />
-        </span>
+        <div
+          className="
+      flex
+      h-8
+      w-8
+      shrink-0
+      items-center
+      justify-center
+      rounded-[6px]
+      bg-[#F4BB2E]
+    "
+        >
+          <Image
+            src={locked}
+            alt="Locked"
+            width={14}
+            height={14}
+            className="h-[14px] w-[14px] object-contain"
+          />
+        </div>
       )}
-    </div>
+    </motion.div>
   );
 }
