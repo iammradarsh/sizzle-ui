@@ -6,7 +6,7 @@ export const lifestyleReels: Reel[] = [
 
     mediaType: "image",
 
-    images: ["/images/reels/reel1.png"],
+    images: ["/images/lifestyle/reel1.png"],
 
     creatorLogo: "/images/logos/banana-joe.png",
 
@@ -35,11 +35,11 @@ export const lifestyleReels: Reel[] = [
     mediaType: "gallery",
 
     images: [
-      "/images/reels/2/1.png",
-      "/images/reels/2/2.png",
-      "/images/reels/2/3.png",
-      "/images/reels/2/4.png",
-      "/images/reels/2/5.png",
+      "/images/lifestyle/2/1.png",
+      "/images/lifestyle/2/2.png",
+      "/images/lifestyle/2/3.png",
+      "/images/lifestyle/2/4.png",
+      "/images/lifestyle/2/5.png",
     ],
 
     imageCount: 18,
@@ -72,7 +72,7 @@ export const lifestyleReels: Reel[] = [
 
     mediaType: "image",
 
-    images: ["/images/reels/reel3.png"],
+    images: ["/images/lifestyle/reel3.png"],
 
     creatorLogo: "/images/logos/megamind.png",
 
@@ -100,7 +100,7 @@ export const lifestyleReels: Reel[] = [
 
     mediaType: "image",
 
-    images: ["/images/reels/reel4.png"],
+    images: ["/images/lifestyle/reel4.png"],
 
     creatorLogo: "/images/logos/dexter.png",
 
@@ -128,7 +128,7 @@ export const lifestyleReels: Reel[] = [
 
     mediaType: "image",
 
-    images: ["/images/reels/reel5.png"],
+    images: ["/images/lifestyle/reel5.png"],
 
     creatorLogo: "/images/logos/megamind.png",
 

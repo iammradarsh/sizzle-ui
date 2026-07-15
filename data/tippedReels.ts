@@ -27,6 +27,8 @@ export const tippedReels: Reel[] = [
     likes: 758,
 
     comments: 18,
+
+    isPremium: false,
   },
 
   {
@@ -65,6 +67,8 @@ export const tippedReels: Reel[] = [
     likes: 758,
 
     comments: 18,
+
+    isPremium: true,
   },
 
   {

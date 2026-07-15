@@ -62,12 +62,12 @@ export default function PersonalCard({
       {/* Content */}
       <div className="mt-4">
         {/* Name */}
-        <h3 className="font-neue-semibold text-[24px] leading-none text-white">
+        <h3 className="font-neue-regular text-md leading-1 text-white">
           {name}
         </h3>
 
         {/* Stats */}
-        <div className="mt-2">
+        <div className="">
           <PersonalStats
             rating={rating}
             reviews={reviews}
@@ -76,7 +76,7 @@ export default function PersonalCard({
         </div>
 
         {/* Services */}
-        <div className="mt-4 space-y-1">
+        <div className="mt-4 ">
           {services.map((service) => (
             <PersonalService
               key={service.title}

@@ -15,11 +15,11 @@ export default function SpotlightSection() {
   });
 
   return (
-    <section className="mt-24 px-8 select-none">
+    <section className="mt-20 px-8 select-none overflow-hidden">
       {/* Subtitle */}
-      <p className="mb-2 text-sm text-[#8A8A8A]">Sizzle+ Certified</p>
 
-      {/* Header */}
+      <p className="text-zinc-400 text-sm">Sizzle+ Certified</p>
+
       <div className="mb-8 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <h2 className="font-neue-semibold text-xl text-white">
@@ -65,7 +65,7 @@ export default function SpotlightSection() {
       </div>
 
       {/* Carousel */}
-      <div ref={emblaRef} className="overflow-hidden">
+      <div ref={emblaRef} className="">
         <div className="flex gap-6">
           {spotlight.map((creator) => (
             <SpotlightCard

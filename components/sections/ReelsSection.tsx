@@ -18,7 +18,7 @@ export default function ReelsSection() {
 
   return (
     <section className="mt-20 px-8">
-      <p className="mb-2 text-zinc-400 text-sm">Based on your memberships</p>
+      <p className="text-zinc-400 text-sm">Based on your memberships</p>
 
       <div className="mb-8 flex items-center justify-between">
         <div className="flex items-center gap-2">

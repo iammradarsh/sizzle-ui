@@ -74,12 +74,12 @@ export default function SpotlightCard({
             <div
               className="
       flex
-      h-9
+      h-7
       items-center
       gap-2
-      rounded-sm
+      rounded-[8px]
       bg-[#262628]/95
-      px-4
+      px-2
       backdrop-blur-xl
     "
             >
@@ -88,7 +88,7 @@ export default function SpotlightCard({
               <span
                 className="
         text-[11px]
-        font-neue-semibold
+        font-neue-regular
         uppercase
         tracking-[0.06em]
         text-white
@@ -115,7 +115,9 @@ export default function SpotlightCard({
           </h3>
 
           {/* Description */}
-          <p className="mt-3 text-sm text-white/80">{description}</p>
+          <p className="mt-3 text-sm text-white/80 font-neue-regular">
+            {description}
+          </p>
         </div>
       </div>
 

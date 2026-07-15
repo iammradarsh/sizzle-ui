@@ -17,7 +17,7 @@ export default function LifestyleSection() {
 
   return (
     <section className="mt-20 px-8 select-none">
-      <p className="mb-2 text-sm text-[#8A8A8A]">You know what you like</p>
+      <p className="text-sm text-[#8A8A8A]">You know what you like</p>
 
       <div className="mb-8 flex items-center justify-between">
         <div className="flex items-center gap-2">

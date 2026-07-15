@@ -92,4 +92,22 @@ export const spotlight: Spotlight[] = [
 
     description: "Ebony · Athletic · Lifestyle",
   },
+  {
+    id: 5,
+
+    image: "/images/spotlight/4.png",
+
+    frame: "/images/spotlight/frame-green.svg",
+
+    overlayGradient:
+      "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,156,145,.9) 55%, #009C91 100%)",
+
+    badge: "TOP EARNER",
+
+    badgeIcon: "/images/icons/trophy.svg",
+
+    name: "CAMILLE\nDEREN",
+
+    description: "Ebony · Athletic · Lifestyle",
+  },
 ];

@@ -18,7 +18,7 @@ export default function CreatorHighlightsSection() {
   return (
     <section className="mt-24 px-8">
       {/* Subtitle */}
-      <p className="mb-2 text-sm text-[#8A8A8A]">Discover more creators</p>
+      <p className="text-sm text-[#8A8A8A]">Discover more creators</p>
 
       {/* Header */}
       <div className="mb-8 flex items-center justify-between">

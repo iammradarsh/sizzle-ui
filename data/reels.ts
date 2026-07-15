@@ -36,6 +36,8 @@ export interface Reel {
 certifiedLogo?: string;
 
 certifiedFrame?: string;
+
+isPremium?: boolean;
 }
 
 export const reels: Reel[] = [
