@@ -12,7 +12,7 @@ export default function PersonalStats({
   responseTime,
 }: PersonalStatsProps) {
   return (
-    <div className="mt-4 flex items-center justify-between">
+    <div className="mt-4 flex items-center gap-2">
       {/* Rating */}
       <div className="flex items-center gap-2 text-[14px]">
         <Image src="/images/icons/like.svg" alt="Like" width={18} height={18} />

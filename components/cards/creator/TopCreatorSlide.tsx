@@ -36,7 +36,7 @@ export default function TopCreatorSlide({
           select-none
           pointer-events-none
           font-neue-black
-          text-[320px]
+          text-[300px]
           leading-none
           
           gradient-rank-text

@@ -67,7 +67,7 @@ export default function TopCreatorsSection() {
       {/* Carousel */}
       <div className="">
         <div ref={emblaRef} className="overflow-hidden">
-          <div className="flex gap-16">
+          <div className="flex gap-4">
             {topCreators.map((creator) => (
               <TopCreatorSlide
                 key={creator.id}

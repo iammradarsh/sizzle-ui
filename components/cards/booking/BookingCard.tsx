@@ -48,7 +48,7 @@ export default function BookingCard({
           select-none
           pointer-events-none
           font-neue-black
-          text-[320px]
+          text-[300px]
           leading-none
           gradient-rank-text
         "
@@ -69,7 +69,7 @@ export default function BookingCard({
           z-10
           h-[420px]
           overflow-hidden
-          rounded-[28px]
+          rounded-lg
         "
       >
         {/* Image */}
@@ -211,7 +211,7 @@ export default function BookingCard({
               <div className="flex items-center justify-between">
                 <p
                   className="
-        text-md
+        text-sm
         font-neue-semibold
         leading-none
         text-white
@@ -222,7 +222,7 @@ export default function BookingCard({
 
                 <span
                   className="
-        text-md
+        text-sm
         font-neue-semibold
         text-white
       "
@@ -240,7 +240,7 @@ export default function BookingCard({
                   height={12}
                 />
 
-                <span className="text-[13px] text-white/85">{bookedText}</span>
+                <span className="text-[12px] text-white/85">{bookedText}</span>
               </div>
             </div>
           </div>

@@ -162,16 +162,18 @@ export default function HeroCard({
 
         <div className="mt-3 flex items-center gap-2 text-sm text-zinc-400">
           <span>{creator}</span>
-          <span>
-            <Image
-              src="/images/icons/eye.svg"
-              alt="Views"
-              width={12}
-              height={12}
-            />
-          </span>
+          <span className="flex items-center gap-1">
+            <span>
+              <Image
+                src="/images/icons/eye.svg"
+                alt="Views"
+                width={12}
+                height={12}
+              />
+            </span>
 
-          <span>{creatorViews}</span>
+            <span>{creatorViews}</span>
+          </span>
 
           <span>•</span>
 

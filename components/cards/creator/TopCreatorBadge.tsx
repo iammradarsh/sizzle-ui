@@ -15,7 +15,7 @@ export default function TopCreatorBadge({ icon, label }: Props) {
         inline-flex
         items-center
         gap-2
-        rounded-full
+        rounded-sm
         bg-black/65
         px-3
         py-2

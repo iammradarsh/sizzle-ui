@@ -15,7 +15,7 @@ export default function BookingsSection() {
   });
 
   return (
-    <section className="mt-24 px-8">
+    <section className="mt-24 px-8 overflow-hidden">
       {/* Header */}
       <div className="mb-10 flex items-center justify-between">
         <div>
@@ -66,9 +66,9 @@ export default function BookingsSection() {
       </div>
 
       {/* Carousel */}
-      <div className="pl-16">
-        <div ref={emblaRef} className="overflow-hidden">
-          <div className="flex gap-10">
+      <div className="">
+        <div ref={emblaRef} className="">
+          <div className="flex gap-2">
             {bookings.map((item) => (
               <BookingSlide key={item.id} {...item} />
             ))}

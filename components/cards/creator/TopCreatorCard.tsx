@@ -41,7 +41,8 @@ export default function TopCreatorCard({
           z-10
           h-[420px]
           overflow-hidden
-          rounded-[28px]
+          rounded-md
+          select-none
         "
       >
         {/* Image */}
@@ -76,7 +77,7 @@ export default function TopCreatorCard({
           <h3
             className="
               whitespace-pre-line
-              text-[31px]
+              text-[48px]
               font-neue-black
               uppercase
               leading-[0.9]
@@ -86,7 +87,7 @@ export default function TopCreatorCard({
             {name}
           </h3>
 
-          <p className="mt-3 text-[16px] text-white/70">{description}</p>
+          <p className="mt-3 text-sm text-white/70">{description}</p>
         </div>
       </motion.div>
     </>
