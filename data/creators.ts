@@ -56,4 +56,18 @@ export const creators: Creator[] = [
     videos: 55,
     posts: 12,
   },
+  {
+    id: 8,
+    image: "/images/creators/Creator4.png",
+    name: "Wren Castellan",
+    videos: 20,
+    posts: 2,
+  },
+  {
+    id: 9,
+    image: "/images/creators/Creator3.png",
+    name: "Scarlett Voss",
+    videos: 15,
+    posts: 1,
+  },
 ];
