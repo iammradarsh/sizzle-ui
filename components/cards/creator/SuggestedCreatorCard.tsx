@@ -30,7 +30,7 @@ export default function SuggestedCreatorCard({
   return (
     <motion.div
       whileHover={{
-        scale: 0.98,
+        scale: 1.02,
       }}
       transition={{
         duration: 0.25,

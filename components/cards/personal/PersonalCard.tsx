@@ -37,7 +37,7 @@ export default function PersonalCard({
   return (
     <motion.div
       whileHover={{
-        scale: 0.98,
+        scale: 1.02,
       }}
       transition={{
         duration: 0.25,
@@ -48,7 +48,7 @@ export default function PersonalCard({
       <div className="relative h-[190px] w-[190px] overflow-hidden rounded-[48px]">
         <motion.div
           // whileHover={{
-          //   scale: 1.06,
+          //   scale: 1.02,
           // }}
           // transition={{
           //   duration: 0.35,

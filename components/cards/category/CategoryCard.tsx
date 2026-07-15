@@ -28,6 +28,7 @@ export default function CategoryCard({ title, image }: Props) {
       pl-6
       transition-colors
       hover:bg-[#28282A]
+      gap-2
       
     "
     >

@@ -15,7 +15,7 @@ export default function PersonalSection() {
   });
 
   return (
-    <section className="mt-24 px-8 overflow-hidden">
+    <section className="mt-24 px-8 pb-2 overflow-hidden">
       {/* Header */}
       <div className="mb-10 flex items-center justify-between">
         <div className="flex items-center gap-2">

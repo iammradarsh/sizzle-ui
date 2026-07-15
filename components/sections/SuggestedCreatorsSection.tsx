@@ -15,7 +15,7 @@ export default function SuggestedCreatorsSection() {
   });
 
   return (
-    <section className="mt-24 px-8 overflow-hidden">
+    <section className="mt-24 px-8 pb-2 overflow-hidden">
       <div className="mb-10 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <Image

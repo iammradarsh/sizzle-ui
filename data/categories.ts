@@ -35,4 +35,9 @@ export const categories: Category[] = [
     title: "#BEAUTY",
     image: "/images/categories/beauty.png",
   },
+  {
+    id: 7,
+    title: "#BEATS",
+    image: "/images/categories/beats.png",
+  },
 ];

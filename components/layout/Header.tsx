@@ -22,28 +22,42 @@ export default function Header() {
 
           <Button
             variant="secondary"
-            className="h-11 rounded-lg border-0 bg-[#19191B] px-5 text-zinc-300 hover:bg-[#252528]"
+            className="group h-11 rounded-lg border-0 bg-[#19191B] px-5 text-zinc-300 hover:bg-[#252528] hover:text-white"
           >
+            <Image
+              src="/images/icons/following-grey.svg"
+              alt="Following"
+              width={18}
+              height={18}
+              className="mr-2 h-[18px] w-[18px] group-hover:hidden"
+            />
             <Image
               src="/images/icons/following.svg"
               alt="Following"
               width={18}
               height={18}
-              className="mr-2 h-[18px] w-[18px]"
+              className="mr-2 hidden h-[18px] w-[18px] group-hover:block"
             />
             Following
           </Button>
 
           <Button
             variant="secondary"
-            className="h-11 rounded-lg border-0 bg-[#19191B] px-5 text-zinc-300 hover:bg-[#252528]"
+            className="group h-11 rounded-lg border-0 bg-[#19191B] px-5 text-zinc-300 hover:bg-[#252528] hover:text-white"
           >
             <Image
               src="/images/icons/crown-grey.svg"
               alt="Memberships"
               width={18}
               height={18}
-              className="mr-2 h-[18px] w-[18px]"
+              className="mr-2 h-[18px] w-[18px] group-hover:hidden"
+            />
+            <Image
+              src="/images/icons/crown.svg"
+              alt="Memberships"
+              width={18}
+              height={18}
+              className="mr-2 hidden h-[18px] w-[18px] group-hover:block"
             />
             Memberships
           </Button>
