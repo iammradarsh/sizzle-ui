@@ -102,12 +102,12 @@ export default function ReelCard({
     <motion.div
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
-      whileHover={{
-        scale: 0.98,
-      }}
-      transition={{
-        duration: 0.25,
-      }}
+      // whileHover={{
+      //   scale: 0.98,
+      // }}
+      // transition={{
+      //   duration: 0.25,
+      // }}
       className="group w-[306px] shrink-0"
     >
       <div

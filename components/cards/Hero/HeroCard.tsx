@@ -81,7 +81,7 @@ export default function HeroCard({
                   className="
       inline-flex
       rounded-sm
-      bg-[linear-gradient(90deg,#F61D85_0%,#F74F28_55%,#F9A326_100%)]
+       
       p-[1px]
     "
                 >
@@ -91,9 +91,9 @@ export default function HeroCard({
         h-8
         items-center
         gap-2
-        rounded-sm
-        bg-black/50 
-        
+        bg-black/50
+       rounded-sm
+        backdrop-blur-md
         px-3
       "
                   >
