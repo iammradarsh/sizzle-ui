@@ -75,7 +75,11 @@ export default function ReviewCard({
       </div>
 
       {/* Rating */}
-      <div className="mt-5 flex items-center gap-1.5">
+      <div
+        className="mt-5 flex items-center gap-1.5"
+        role="img"
+        aria-label={`Rating: ${rating} out of 5 stars`}
+      >
         {Array.from({ length: 5 }).map((_, index) => (
           <Image
             key={index}
@@ -85,6 +89,7 @@ export default function ReviewCard({
                 : "/images/icons/star-empty.svg"
             }
             alt=""
+            aria-hidden="true"
             width={18}
             height={18}
           />

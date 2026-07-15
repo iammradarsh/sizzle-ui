@@ -50,7 +50,6 @@ export default function TopCreatorCard({
           src={image}
           alt={name}
           fill
-          priority
           className="
             object-cover
             transition-transform

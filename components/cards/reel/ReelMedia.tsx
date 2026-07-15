@@ -8,18 +8,14 @@ interface Props {
   title: string;
 }
 
-export default function ReelMedia({
-  images,
-  currentImage,
-  title,
-}: Props) {
+export default function ReelMedia({ images, currentImage, title }: Props) {
   return (
     <Image
       src={images[currentImage]}
       alt={title}
       fill
-      priority
       sizes="320px"
+      loading="lazy"
       draggable={false}
       className="object-cover select-none"
     />

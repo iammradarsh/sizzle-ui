@@ -68,36 +68,6 @@ export default function ReelCard({
   const [currentImage, setCurrentImage] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
-  const lastIndex = useRef(0);
-
-  const timeout = useRef<NodeJS.Timeout | null>(null);
-
-  function handleMouseMove(e: React.MouseEvent<HTMLDivElement>) {
-    if (mediaType !== "gallery") return;
-
-    const rect = e.currentTarget.getBoundingClientRect();
-
-    const x = e.clientX - rect.left;
-
-    const section = rect.width / images.length;
-
-    const index = Math.min(Math.floor(x / section), images.length - 1);
-
-    if (index === currentImage) return;
-
-    if (timeout.current) clearTimeout(timeout.current);
-
-    timeout.current = setTimeout(() => {
-      setCurrentImage(index);
-    }, 120);
-  }
-
-  function handleMouseLeave() {
-    if (mediaType !== "gallery") return;
-
-    setCurrentImage(0);
-  }
-
   return (
     <motion.div
       onHoverStart={() => setIsHovered(true)}

@@ -1,36 +1,4 @@
-export interface Reel {
-  id: number;
-
-  mediaType: "image" | "gallery" | "video";
-
-  images: string[];
-
-  imageCount?: number;
-
-  creatorLogo: string;
-
-  avatar: string;
-
-  title: string;
-
-  creator: string;
-
-  duration?: string;
-
-  category: string;
-
-  views: string;
-
-  time: string;
-
-  badge?: string;
-
-  locked?: string;
-
-  likes: number;
-
-  comments: number;
-}
+import { Reel } from "./reels";
 
 export const reels: Reel[] = [
   {
@@ -50,7 +18,7 @@ export const reels: Reel[] = [
 
     duration: "HD 4:28",
 
-    category: "#Cooking",
+    category: "#Arcade",
 
     views: "812 views",
 
@@ -84,7 +52,7 @@ export const reels: Reel[] = [
 
     creator: "Leila Castillo",
 
-    category: "#Fitness",
+    category: "#Adventure",
 
     views: "812 views",
 
@@ -116,7 +84,7 @@ export const reels: Reel[] = [
 
     duration: "4K 6:03",
 
-    category: "#Fitness",
+    category: "#Story",
 
     views: "812 views",
 
@@ -144,7 +112,7 @@ export const reels: Reel[] = [
 
     duration: "4K 6:03",
 
-    category: "#Lifestyle",
+    category: "#Arcade",
 
     views: "812 views",
 
@@ -172,7 +140,7 @@ export const reels: Reel[] = [
 
     duration: "4K 6:03",
 
-    category: "#Fitness",
+    category: "#Puzzle",
 
     views: "812 views",
 

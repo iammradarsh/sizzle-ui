@@ -14,10 +14,12 @@ export default function ReelActions({ likes, comments }: Props) {
       className="
 absolute
 right-4
-top-75
-hidden
+top-70
 -translate-y-1/2
-group-hover:flex
+opacity-0
+group-hover:opacity-100
+group-focus-within:opacity-100
+flex
 flex-col
 items-center
 gap-5

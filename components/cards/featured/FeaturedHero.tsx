@@ -38,6 +38,7 @@ export default function FeaturedHero({ logo, name, bio }: FeaturedHeroProps) {
       <div className="mt-10 flex items-center gap-4">
         {/* View Profile */}
         <button
+          onClick={() => console.log("View Profile")}
           className="
             flex
             h-12
@@ -64,6 +65,7 @@ export default function FeaturedHero({ logo, name, bio }: FeaturedHeroProps) {
 
         {/* Tip */}
         <button
+          onClick={() => console.log("Tip")}
           className="
             flex
             h-12
@@ -82,6 +84,7 @@ export default function FeaturedHero({ logo, name, bio }: FeaturedHeroProps) {
 
         {/* Follow */}
         <button
+          onClick={() => console.log("Follow")}
           className="
             flex
             h-12

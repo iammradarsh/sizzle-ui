@@ -96,6 +96,7 @@ export default function PersonalCard({
 
         {/* More Button */}
         <button
+          onClick={() => console.log("more")}
           className="
             mt-5
             flex

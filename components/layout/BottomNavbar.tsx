@@ -70,7 +70,7 @@ export default function BottomNavbar() {
 relative
 overflow-hidden
 
-h-20
+h-18
 px-8
 
 rounded-[24px]
@@ -127,7 +127,9 @@ ${active ? "text-white" : "text-zinc-400 hover:text-white"}
                     )}
                   </div>
 
-                  <span>{item.label}</span>
+                  <span className="text-sm font-neue-regular">
+                    {item.label}
+                  </span>
                 </motion.div>
               </Button>
             </Link>
