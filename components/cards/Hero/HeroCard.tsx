@@ -138,12 +138,9 @@ export default function HeroCard({
                 </div>
               ) : (
                 <div className="flex gap-3">
-                  <span className="rounded-md bg-black/40 px-3 py-2">
-                    {movieStats?.quality}
-                  </span>
-
-                  <span className="rounded-md bg-black/40 px-3 py-2">
-                    {movieStats?.duration}
+                  <span className="rounded-md flex items-center gap-1 bg-black/40 px-3 py-2">
+                    <span>{movieStats?.quality}</span>
+                    <span>{movieStats?.duration}</span>
                   </span>
 
                   <span className="rounded-md bg-black/40 px-3 py-2">
