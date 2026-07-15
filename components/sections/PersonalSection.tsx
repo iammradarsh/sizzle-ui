@@ -15,7 +15,7 @@ export default function PersonalSection() {
   });
 
   return (
-    <section className="mt-24 px-8">
+    <section className="mt-24 px-8 overflow-hidden">
       {/* Header */}
       <div className="mb-10 flex items-center justify-between">
         <div className="flex items-center gap-2">
@@ -62,7 +62,7 @@ export default function PersonalSection() {
       </div>
 
       {/* Cards */}
-      <div ref={emblaRef} className="overflow-hidden">
+      <div ref={emblaRef} className="select-none">
         <div className="flex gap-9">
           {personalCreators.map((creator) => (
             <PersonalCard

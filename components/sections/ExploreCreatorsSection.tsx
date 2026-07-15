@@ -17,7 +17,7 @@ export default function ExploreCreatorsSection() {
   });
 
   return (
-    <section className="mt-24 px-8">
+    <section className="mt-24 px-8 overflow-hidden">
       {/* Heading */}
       <div className="mb-10">
         <p className="text-sm text-[#8A8A8A]">Explore by category</p>
@@ -37,7 +37,7 @@ export default function ExploreCreatorsSection() {
       </div>
 
       {/* Categories */}
-      <div className="mb-12 overflow-hidden" ref={emblaRef}>
+      <div className="mb-12 select-none" ref={emblaRef}>
         <div className="flex gap-3">
           {creatorCategories.map((category) => (
             <CategoryChip

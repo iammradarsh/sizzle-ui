@@ -16,7 +16,7 @@ export default function CreatorHighlightsSection() {
   });
 
   return (
-    <section className="mt-24 px-8">
+    <section className="mt-24 px-8 select-none overflow-hidden">
       {/* Subtitle */}
       <p className="text-sm text-[#8A8A8A]">Discover more creators</p>
 
@@ -66,7 +66,7 @@ export default function CreatorHighlightsSection() {
       </div>
 
       {/* Carousel */}
-      <div ref={emblaRef} className="overflow-hidden">
+      <div ref={emblaRef} className="select-none">
         <div className="flex gap-6">
           {creatorHighlights.map((item) => (
             <CreatorHighlightCard

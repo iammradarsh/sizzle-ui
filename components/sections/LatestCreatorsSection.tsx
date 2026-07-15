@@ -15,7 +15,7 @@ export default function LatestCreatorsSection() {
   });
 
   return (
-    <section className="mt-24 px-8">
+    <section className="mt-24 px-8 overflow-hidden">
       <p className="text-zinc-400 text-sm">The latest creators</p>
       <div className="mb-10 flex items-center justify-between">
         <div className="flex items-center gap-2">
@@ -61,7 +61,7 @@ export default function LatestCreatorsSection() {
         </div>
       </div>
 
-      <div ref={emblaRef} className="overflow-hidden">
+      <div ref={emblaRef} className="select-none">
         <div className="flex gap-8">
           {latestCreators.map((creator) => (
             <SuggestedCreatorCard

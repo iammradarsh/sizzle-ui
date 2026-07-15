@@ -28,7 +28,7 @@ export default function CategoriesSection() {
   }, [emblaApi]);
 
   return (
-    <section className="mt-20 px-8">
+    <section className="mt-20 px-8 overflow-hidden">
       <div className="mb-8 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <h2 className="font-neue-semibold text-xl text-white">
@@ -73,7 +73,7 @@ export default function CategoriesSection() {
         </div>
       </div>
 
-      <div className="overflow-hidden" ref={emblaRef}>
+      <div className=" select-none" ref={emblaRef}>
         <div className="flex gap-5">
           {categories.map((category) => (
             <CategoryCard key={category.id} {...category} />

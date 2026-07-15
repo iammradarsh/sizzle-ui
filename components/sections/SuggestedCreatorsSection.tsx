@@ -15,7 +15,7 @@ export default function SuggestedCreatorsSection() {
   });
 
   return (
-    <section className="mt-24 px-8">
+    <section className="mt-24 px-8 overflow-hidden">
       <div className="mb-10 flex items-center justify-between">
         <div className="flex items-center gap-4">
           <Image
@@ -74,7 +74,7 @@ export default function SuggestedCreatorsSection() {
         </div>
       </div>
 
-      <div ref={emblaRef} className="overflow-hidden">
+      <div ref={emblaRef} className="select-none">
         <div className="flex gap-8">
           {suggestedCreators.map((creator) => (
             <SuggestedCreatorCard key={creator.id} {...creator} />

@@ -16,7 +16,7 @@ export default function FeaturedCreatorsSection() {
   });
 
   return (
-    <section className="mt-24 px-8">
+    <section className="mt-24 px-8 overflow-hidden">
       <div className="mb-10 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <h2 className="text-xl font-neue-semibold text-white">
@@ -61,7 +61,7 @@ export default function FeaturedCreatorsSection() {
         </div>
       </div>
 
-      <div ref={emblaRef} className="overflow-hidden">
+      <div ref={emblaRef} className="select-none">
         <div className="flex gap-8">
           {featuredCreators.map((creator) => (
             <SuggestedCreatorCard key={creator.id} {...creator} />

@@ -17,7 +17,7 @@ export default function ReelsSection() {
   });
 
   return (
-    <section className="mt-20 px-8">
+    <section className="mt-20 px-8 overflow-hidden">
       <p className="text-zinc-400 text-sm">Based on your memberships</p>
 
       <div className="mb-8 flex items-center justify-between">
@@ -64,7 +64,7 @@ export default function ReelsSection() {
         </div>
       </div>
 
-      <div ref={emblaRef} className="overflow-hidden">
+      <div ref={emblaRef} className="select-none">
         <div className="flex gap-6">
           {reels.map((reel) => (
             <ReelCard key={reel.id} {...reel} />

@@ -16,7 +16,7 @@ export default function LifestyleSection() {
   });
 
   return (
-    <section className="mt-20 px-8 select-none">
+    <section className="mt-20 px-8 select-none overflow-hidden">
       <p className="text-sm text-[#8A8A8A]">You know what you like</p>
 
       <div className="mb-8 flex items-center justify-between">
@@ -63,7 +63,7 @@ export default function LifestyleSection() {
         </div>
       </div>
 
-      <div ref={emblaRef} className="overflow-hidden">
+      <div ref={emblaRef} className="select-none">
         <div className="flex gap-6">
           {lifestyleReels.map((reel) => (
             <ReelCard key={reel.id} {...reel} />

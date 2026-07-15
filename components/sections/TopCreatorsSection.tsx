@@ -14,7 +14,7 @@ export default function TopCreatorsSection() {
   });
 
   return (
-    <section className="mt-24 px-8">
+    <section className="mt-24 px-8 overflow-hidden">
       {/* Header */}
       <div className="mb-10 flex items-center justify-between">
         <div>
@@ -66,7 +66,7 @@ export default function TopCreatorsSection() {
 
       {/* Carousel */}
       <div className="">
-        <div ref={emblaRef} className="overflow-hidden">
+        <div ref={emblaRef} className="select-none">
           <div className="flex gap-4">
             {topCreators.map((creator) => (
               <TopCreatorSlide

@@ -91,10 +91,10 @@ export default function CreatorHighlightCard({
           />
 
           <div>
-            <h3 className="font-neue-semibold text-md text-white">{name}</h3>
+            <h3 className="font-neue-regular text-md text-white">{name}</h3>
 
             {/* Stats */}
-            <div className="mt-2 flex items-center gap-4">
+            <div className="mt-2 flex items-center gap-2">
               {stats.map((stat) => (
                 <div key={stat.icon} className="flex items-center gap-1">
                   <Image src={stat.icon} alt="" width={14} height={14} />
@@ -111,7 +111,7 @@ export default function CreatorHighlightCard({
           onClick={() => setIsFollowing(!isFollowing)}
           className={`
             h-10
-            rounded-xl
+            rounded-sm
             px-5
             font-neue-semibold
             transition-all

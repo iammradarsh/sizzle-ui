@@ -42,11 +42,11 @@ export const creatorHighlights: CreatorHighlight[] = [
       "/images/highlights/1-3.png",
     ],
 
-    viewIcon: "/images/icons/gallery.svg",
+    viewIcon: "/images/icons/gallery-grey.svg",
 
-videoIcon: "/images/icons/play.svg",
+videoIcon: "/images/icons/play-grey.svg",
 
-likeIcon: "/images/icons/crown.svg",
+likeIcon: "/images/icons/crown-grey.svg",
   },
 
   {
@@ -68,11 +68,11 @@ likeIcon: "/images/icons/crown.svg",
       "/images/highlights/2-3.png",
     ],
 
-    viewIcon: "/images/icons/gallery.svg",
+    viewIcon: "/images/icons/gallery-grey.svg",
 
-videoIcon: "/images/icons/play.svg",
+videoIcon: "/images/icons/play-grey.svg",
 
-likeIcon: "/images/icons/crown.svg",
+likeIcon: "/images/icons/crown-grey.svg",
   },
 
   {
@@ -93,11 +93,11 @@ likeIcon: "/images/icons/crown.svg",
       "/images/highlights/3-2.png",
       "/images/highlights/3-3.png",
     ],
-    viewIcon: "/images/icons/gallery.svg",
+    viewIcon: "/images/icons/gallery-grey.svg",
 
-videoIcon: "/images/icons/play.svg",
+videoIcon: "/images/icons/play-grey.svg",
 
-likeIcon: "/images/icons/crown.svg",
+likeIcon: "/images/icons/crown-grey.svg",
   },
 
   {
@@ -118,10 +118,10 @@ likeIcon: "/images/icons/crown.svg",
       "/images/highlights/4-2.png",
       "/images/highlights/4-3.png",
     ],
-    viewIcon: "/images/icons/gallery.svg",
+    viewIcon: "/images/icons/gallery-grey.svg",
 
-videoIcon: "/images/icons/play.svg",
+videoIcon: "/images/icons/play-grey.svg",
 
-likeIcon: "/images/icons/crown.svg",
+likeIcon: "/images/icons/crown-grey.svg",
   },
 ];
