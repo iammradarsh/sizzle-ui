@@ -36,16 +36,24 @@ export default function PersonalCard({
 }: PersonalCardProps) {
   return (
     <motion.div
-      whileHover={{
-        scale: 1.02,
-      }}
-      transition={{
-        duration: 0.25,
-      }}
+      // whileHover={{
+      //   scale: 1.02,
+      // }}
+      // transition={{
+      //   duration: 0.25,
+      // }}
       className="w-[190px] shrink-0"
     >
       {/* Image */}
-      <div className="relative h-[190px] w-[190px] overflow-hidden rounded-[48px]">
+      <motion.div
+        whileHover={{
+          scale: 1.02,
+        }}
+        transition={{
+          duration: 0.35,
+        }}
+        className="relative h-[190px] w-[190px] overflow-hidden rounded-[48px]"
+      >
         <motion.div
           // whileHover={{
           //   scale: 1.02,
@@ -57,7 +65,7 @@ export default function PersonalCard({
         >
           <Image src={image} alt={name} fill className="object-cover" />
         </motion.div>
-      </div>
+      </motion.div>
 
       {/* Content */}
       <div className="mt-4">

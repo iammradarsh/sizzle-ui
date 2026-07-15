@@ -29,17 +29,23 @@ export default function SuggestedCreatorCard({
   const [isFollowing, setIsFollowing] = useState(following);
   return (
     <motion.div
-      whileHover={{
-        scale: 1.02,
-      }}
-      transition={{
-        duration: 0.25,
-        ease: "easeInOut",
-      }}
+      // whileHover={{
+      //   scale: 1.02,
+      // }}
+      // transition={{
+      //   duration: 0.25,
+      //   ease: "easeInOut",
+      // }}
       className="w-[190px] shrink-0 flex flex-col"
     >
       {showBorder ? (
-        <div
+        <motion.div
+          whileHover={{
+            scale: 1.02,
+          }}
+          transition={{
+            duration: 0.35,
+          }}
           className="
       w-[190px]
       rounded-[36px]
@@ -57,15 +63,24 @@ export default function SuggestedCreatorCard({
             height={190}
             className="h-[190px] w-[190px] rounded-[34px] object-cover"
           />
-        </div>
+        </motion.div>
       ) : (
-        <Image
-          src={image}
-          alt={name}
-          width={190}
-          height={190}
-          className="h-[190px] w-[190px] rounded-[34px] object-cover"
-        />
+        <motion.div
+          whileHover={{
+            scale: 1.02,
+          }}
+          transition={{
+            duration: 0.35,
+          }}
+        >
+          <Image
+            src={image}
+            alt={name}
+            width={190}
+            height={190}
+            className="h-[190px] w-[190px] rounded-[34px] object-cover"
+          />
+        </motion.div>
       )}
 
       <div className="card-detail flex flex-col">

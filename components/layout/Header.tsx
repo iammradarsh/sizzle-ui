@@ -75,7 +75,7 @@ export default function Header() {
         {/* Right */}
         <div className="flex items-center gap-3">
           {/* Create */}
-          <Button className="relative h-11 overflow-hidden rounded-lg border-0 px-6 text-white">
+          <Button className="relative h-11 overflow-hidden rounded-[16px] border-0 px-6 text-white">
             <Image
               src="/images/CreateButtonBG.png"
               alt=""
