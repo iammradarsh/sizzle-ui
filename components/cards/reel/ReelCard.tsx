@@ -68,6 +68,42 @@ export default function ReelCard({
   const [currentImage, setCurrentImage] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
+  const [progress, setProgress] = useState(22); // Actual progress
+  const [hoverProgress, setHoverProgress] = useState<number | null>(null); // Hover position
+  const [showPreview, setShowPreview] = useState(false);
+
+  const progressRef = useRef<HTMLDivElement>(null);
+
+  const handleProgressMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!progressRef.current) return;
+
+    const rect = progressRef.current.getBoundingClientRect();
+
+    const percent = Math.min(
+      Math.max(((e.clientX - rect.left) / rect.width) * 100, 0),
+      100,
+    );
+
+    setHoverProgress(percent);
+  };
+
+  const handleProgressEnter = () => {
+    setShowPreview(true);
+    setHoverProgress(progress);
+  };
+  const handleProgressLeave = () => {
+    setShowPreview(false);
+    setHoverProgress(null);
+  };
+
+  const displayProgress = hoverProgress ?? progress;
+
+  const handleSeek = () => {
+    if (hoverProgress === null) return;
+
+    setProgress(hoverProgress);
+  };
+
   return (
     <motion.div
       onHoverStart={() => setIsHovered(true)}
@@ -328,7 +364,17 @@ export default function ReelCard({
               ease: "easeInOut",
             }}
           >
-            <ReelControls />
+            <ReelControls
+              progress={displayProgress}
+              hoverProgress={hoverProgress}
+              showPreview={showPreview}
+              progressRef={progressRef}
+              previewImage={images[currentImage]}
+              onMouseMove={handleProgressMove}
+              onMouseEnter={handleProgressEnter}
+              onMouseLeave={handleProgressLeave}
+              onClick={handleSeek}
+            />
           </motion.div>
         </div>
 
