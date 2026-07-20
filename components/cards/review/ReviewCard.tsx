@@ -48,7 +48,7 @@ export default function ReviewCard({
         flex-col
       "
     >
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 h-full">
         {/* Header */}
         <div className="flex items-start justify-between">
           <div className="flex gap-3">
@@ -72,7 +72,7 @@ export default function ReviewCard({
           <span className="text-[14px] text-[#8A8A8A]">{time}</span>
         </div>
 
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col justify-between h-full">
           {/* Rating */}
           <div
             className=" flex items-center gap-1.5"
