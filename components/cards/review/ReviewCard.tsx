@@ -55,8 +55,8 @@ export default function ReviewCard({
             <Image
               src={avatar}
               alt={name}
-              width={48}
-              height={48}
+              width={50}
+              height={50}
               className="rounded-xl"
             />
 
@@ -100,8 +100,9 @@ export default function ReviewCard({
             className="
           line-clamp-4
           text-sm
+          font-neue-regular
         
-          text-[#E7E7E7]
+          text-[#fff]
         "
           >
             {review}
@@ -124,7 +125,7 @@ export default function ReviewCard({
                 <div
                   key={tag}
                   className="
-                rounded-full
+                rounded-[12px]
                 border
                 border-white/10
                 bg-[#28282A]
@@ -132,7 +133,7 @@ export default function ReviewCard({
                 px-3
               "
                 >
-                  <span className="text-[13px] text-white">{tag}</span>
+                  <span className="text-[12px] text-white">{tag}</span>
                 </div>
               ))}
             </div>

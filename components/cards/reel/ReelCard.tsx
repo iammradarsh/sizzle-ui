@@ -244,7 +244,7 @@ export default function ReelCard({
       rounded-sm
       bg-black/40
       px-3
-      py-1
+      h-[18px]
       text-[10px]
       backdrop-blur-md
     "
@@ -287,8 +287,8 @@ export default function ReelCard({
           >
             {/* Video Badge */}
             {mediaType === "video" && duration && (
-              <div className="flex h-6 items-center rounded-sm bg-black/40 px-3 backdrop-blur-md">
-                <span className="font-neue-regular text-sm text-white">
+              <div className="flex h-6 items-center rounded-[6px] bg-black/40 px-3 backdrop-blur-md">
+                <span className="font-neue-regular text-xs text-white">
                   {duration}
                 </span>
               </div>
@@ -296,15 +296,15 @@ export default function ReelCard({
 
             {/* Gallery Badge */}
             {mediaType === "gallery" && (
-              <div className="flex h-8 items-center gap-2 rounded-sm bg-black/40 px-3 backdrop-blur-md">
+              <div className="flex h-6 items-center gap-2 rounded-[6px] bg-black/40 px-3 backdrop-blur-md">
                 <Image
                   src="/images/icons/gallery.svg"
                   alt="Gallery"
-                  width={12}
-                  height={12}
+                  width={14}
+                  height={14}
                 />
 
-                <span className="font-neue-regular text-sm text-white">
+                <span className="font-neue-regular text-xs text-white">
                   {imageCount}
                 </span>
               </div>
@@ -312,8 +312,8 @@ export default function ReelCard({
 
             {/* Image Badge (Optional) */}
             {mediaType === "image" && duration && (
-              <div className="flex h-8 items-center rounded-sm bg-black/40 px-3 backdrop-blur-md">
-                <span className="font-neue-regular text-sm text-white">
+              <div className="flex h-6 items-center  bg-black/40 px-3 backdrop-blur-md">
+                <span className="font-neue-regular text-xs text-white">
                   {duration}
                 </span>
               </div>
