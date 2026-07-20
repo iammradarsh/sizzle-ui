@@ -43,7 +43,7 @@ export default function LatestCreatorsSection() {
   }, [emblaApi]);
 
   return (
-    <section className="mt-24 px-8 overflow-hidden">
+    <section className="mt-24 px-8 pb-2 overflow-hidden">
       {/* Header */}
       <SectionHeader
         subtitle="The latest creators"

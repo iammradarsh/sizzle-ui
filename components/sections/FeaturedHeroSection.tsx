@@ -62,7 +62,7 @@ export default function FeaturedHeroSection({ hero }: Props) {
       <div className="absolute inset-0 bg-black/45" />
 
       {/* Content */}
-      <div className="relative flex h-full items-center justify-between pl-8">
+      <div className="relative flex h-full items-center justify-between pl-20">
         {/* Left */}
         <FeaturedHero
           logo={hero.creatorLogo}

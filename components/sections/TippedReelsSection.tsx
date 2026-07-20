@@ -60,24 +60,7 @@ export default function TippedReelsSection() {
       <div ref={emblaRef} className="">
         <div className="flex gap-2">
           {tippedReels.map((item) => (
-            <ReelCard
-              key={item.id}
-              mediaType={item.mediaType}
-              images={item.images}
-              imageCount={item.imageCount}
-              creatorLogo={item.creatorLogo}
-              avatar={item.avatar}
-              title={item.title}
-              creator={item.creator}
-              duration={item.duration}
-              category={item.category}
-              views={item.views}
-              time={item.time}
-              badge={item.badge}
-              locked={item.locked}
-              likes={item.likes}
-              comments={item.comments}
-            />
+            <ReelCard key={item.id} {...item} />
           ))}
         </div>
       </div>

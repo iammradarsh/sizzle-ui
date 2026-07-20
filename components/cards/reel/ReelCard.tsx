@@ -37,6 +37,8 @@ interface ReelCardProps {
 
   badge?: string;
 
+  isPremium?: boolean;
+
   locked?: string;
 
   likes: number;
@@ -60,6 +62,7 @@ export default function ReelCard({
   views,
   time,
   badge,
+  isPremium,
   locked,
   likes,
   comments,
@@ -220,7 +223,12 @@ export default function ReelCard({
           )}
 
           {/* Badge */}
-          <ReelBadge badge={badge} locked={locked} isHovered={isHovered} />
+          <ReelBadge
+            badge={badge}
+            premium={isPremium}
+            locked={locked}
+            isHovered={isHovered}
+          />
 
           {/* gallery counter */}
 

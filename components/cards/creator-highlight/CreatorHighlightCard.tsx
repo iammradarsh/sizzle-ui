@@ -139,6 +139,7 @@ export default function CreatorHighlightCard({
       flex-1
       overflow-hidden
       rounded-[15px]
+      
     "
           >
             {/* Number */}
@@ -152,6 +153,7 @@ export default function CreatorHighlightCard({
     font-neue-black
     text-[40px]
     leading-none
+    
   "
             >
               {index + 1}
@@ -166,7 +168,19 @@ object-cover
 transition-transform
 duration-500
 group-hover/image:scale-105
+
+
 "
+            />
+
+            {/* Gradient Overlay */}
+            <div
+              className="
+      pointer-events-none
+      absolute
+      inset-0
+      bg-[linear-gradient(143deg,rgba(0,0,0,1)_0%,rgba(0,0,0,0)_50%)]
+    "
             />
           </div>
         ))}

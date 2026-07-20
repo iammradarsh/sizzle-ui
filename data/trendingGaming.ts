@@ -6,7 +6,7 @@ export const reels: Reel[] = [
 
     mediaType: "image",
 
-    images: ["/images/reels/reel1.png"],
+    images: ["/images/reels/reel9.png"],
 
     creatorLogo: "/images/logos/banana-joe.png",
 
@@ -72,7 +72,7 @@ export const reels: Reel[] = [
 
     mediaType: "image",
 
-    images: ["/images/reels/reel3.png"],
+    images: ["/images/reels/reel10.png"],
 
     creatorLogo: "/images/logos/megamind.png",
 
@@ -100,7 +100,7 @@ export const reels: Reel[] = [
 
     mediaType: "image",
 
-    images: ["/images/reels/reel4.png"],
+    images: ["/images/reels/reel11.png"],
 
     creatorLogo: "/images/logos/dexter.png",
 
@@ -128,7 +128,34 @@ export const reels: Reel[] = [
 
     mediaType: "image",
 
-    images: ["/images/reels/reel5.png"],
+    images: ["/images/reels/reel12.png"],
+
+    creatorLogo: "/images/logos/megamind.png",
+
+    avatar: "/images/avatars/priya.png",
+
+    title: "Raw And Unfiltered: What It Is Really Like Doing This For A Living",
+
+    creator: "Yara Santos",
+
+    duration: "4K 6:03",
+
+    category: "#Puzzle",
+
+    views: "812 views",
+
+    time: "2d",
+
+    likes: 758,
+
+    comments: 18,
+  },
+  {
+    id: 6,
+
+    mediaType: "image",
+
+    images: ["/images/reels/reel11.png"],
 
     creatorLogo: "/images/logos/megamind.png",
 

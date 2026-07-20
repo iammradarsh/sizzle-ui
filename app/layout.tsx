@@ -42,6 +42,33 @@ export default function RootLayout({
       `}
     >
       <body className="min-h-screen bg-black text-white">
+        <svg width="0" height="0" className="absolute" aria-hidden="true">
+          <defs>
+            <filter
+              id="liquidGlass"
+              x="-20%"
+              y="-20%"
+              width="140%"
+              height="140%"
+            >
+              <feTurbulence
+                type="fractalNoise"
+                baseFrequency="0.015"
+                numOctaves="2"
+                seed="4"
+                result="noise"
+              />
+
+              <feDisplacementMap
+                in="SourceGraphic"
+                in2="noise"
+                scale="6"
+                xChannelSelector="R"
+                yChannelSelector="G"
+              />
+            </filter>
+          </defs>
+        </svg>
         <Header />
 
         <main className="flex-1">{children}</main>

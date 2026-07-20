@@ -2,6 +2,8 @@ import { Reel } from "./reels";
 
 export interface TopTippedReel extends Reel {
   rank: number;
+
+
 }
 
 export const topTipped: TopTippedReel[] = [
@@ -12,7 +14,7 @@ export const topTipped: TopTippedReel[] = [
 
     mediaType: "image",
 
-    images: ["/images/reels/reel1.png"],
+    images: ["/images/reels/reel5.png"],
 
     creatorLogo: "/images/logos/banana-joe.png",
 
@@ -82,7 +84,7 @@ export const topTipped: TopTippedReel[] = [
 
     mediaType: "image",
 
-    images: ["/images/reels/reel3.png"],
+    images: ["/images/reels/reel6.png"],
 
     creatorLogo: "/images/logos/machete.png",
 
@@ -98,6 +100,9 @@ export const topTipped: TopTippedReel[] = [
 
     views: "812 views",
 
+    isPremium: true,
+
+
     time: "2d",
 
     likes: 758,
@@ -112,7 +117,7 @@ export const topTipped: TopTippedReel[] = [
 
     mediaType: "image",
 
-    images: ["/images/reels/reel4.png"],
+    images: ["/images/reels/reel7.png"],
 
     creatorLogo: "/images/logos/dexter.png",
 
@@ -142,7 +147,7 @@ export const topTipped: TopTippedReel[] = [
 
     mediaType: "image",
 
-    images: ["/images/reels/reel5.png"],
+    images: ["/images/reels/reel8.png"],
 
     creatorLogo: "/images/logos/megamind.png",
 

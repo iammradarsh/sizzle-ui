@@ -60,7 +60,7 @@ export default function CreatorsSection() {
       />
 
       <div className="" ref={emblaRef}>
-        <div className="flex gap-[15px]">
+        <div className="flex gap-[0px]">
           {creators.map((creator) => (
             <CreatorCard key={creator.id} {...creator} />
           ))}

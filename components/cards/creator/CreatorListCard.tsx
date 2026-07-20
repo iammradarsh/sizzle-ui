@@ -23,7 +23,7 @@ export default function CreatorListCard({
   return (
     <motion.div
       whileHover={{
-        scale: 0.98,
+        width: "448px",
       }}
       transition={{
         duration: 0.25,
@@ -35,7 +35,7 @@ export default function CreatorListCard({
         gap-4
         rounded-[15px]
         h-[84px]
-        w-[448px]
+        w-[446px]
         px-4
         transition-colors
         duration-300

@@ -75,7 +75,7 @@ export const featuredHeroes: FeaturedHeroData[] = [
       {
         id: 4,
         mediaType: "image",
-        images: ["/images/featured/reel3.png"],
+        images: ["/images/featured/reel1.png"],
         creatorLogo: "/images/logos/clueless.png",
         avatar: "/images/avatars/moana.png",
         title: "The Morning Routine That Actually Changed My Life",
@@ -151,7 +151,7 @@ export const featuredHeroes: FeaturedHeroData[] = [
       {
         id: 4,
         mediaType: "image",
-        images: ["/images/featured/reel3.png"],
+        images: ["/images/featured/4.png"],
         creatorLogo: "/images/logos/clueless.png",
         avatar: "/images/avatars/moana.png",
         title: "The Morning Routine That Actually Changed My Life",

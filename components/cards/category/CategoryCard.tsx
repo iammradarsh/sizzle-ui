@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 
 import CategoryImage from "./CategoryImage";
+import SquircleAvatar from "@/components/common/SquircleAvatar";
 
 interface Props {
   title: string;
@@ -35,7 +36,24 @@ export default function CategoryCard({ title, image }: Props) {
     >
       <h3 className="font-neue-black text-lg text-white">{title}</h3>
 
-      <CategoryImage image={image} title={title} />
+      <div className="relative w-[100px] right-0 flex gap-2.5">
+        <SquircleAvatar
+          src={image}
+          alt={title ?? ""}
+          avatarSize={60}
+          borderSize={62}
+          borderVariant="solid"
+          borderWidth={1}
+        />
+        <SquircleAvatar
+          src={image}
+          alt={title ?? ""}
+          avatarSize={60}
+          borderSize={62}
+          borderVariant="solid"
+          borderWidth={1}
+        />
+      </div>
     </motion.div>
   );
 }

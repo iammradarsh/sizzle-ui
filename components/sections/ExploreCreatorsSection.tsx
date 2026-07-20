@@ -31,18 +31,20 @@ export default function ExploreCreatorsSection() {
   );
 
   return (
-    <section className="mt-24 px-8 overflow-hidden">
+    <section className="mt-24 overflow-hidden">
       {/* Header */}
-      <SectionHeader
-        subtitle="Explore by category"
-        title="More Creators Worth Knowing"
-        // showControls
-        onPrev={() => emblaApi?.scrollPrev()}
-        onNext={() => emblaApi?.scrollNext()}
-      />
+      <div className="px-8">
+        <SectionHeader
+          subtitle="Explore by category"
+          title="More Creators Worth Knowing"
+          // showControls
+          onPrev={() => emblaApi?.scrollPrev()}
+          onNext={() => emblaApi?.scrollNext()}
+        />
+      </div>
 
       {/* Categories */}
-      <div className="mb-12 select-none" ref={emblaRef}>
+      <div className="mb-12 px-8 select-none" ref={emblaRef}>
         <div className="flex gap-3">
           {creatorCategories.map((category) => (
             <CategoryChip
@@ -56,7 +58,7 @@ export default function ExploreCreatorsSection() {
       </div>
 
       {/* Creator Grid */}
-      <div className="grid grid-cols-3 gap-x-4 gap-y-4">
+      <div className="flex flex-wrap w-full ml-2">
         {filteredCreators.map((creator) => (
           <CreatorListCard
             key={creator.id}

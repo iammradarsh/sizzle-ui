@@ -26,7 +26,7 @@ export default function ReelFooter({
   rank,
 }: ReelFooterProps) {
   return (
-    <div className="mt-5 flex justify-start gap-2">
+    <div className="mt-3 flex justify-start gap-2">
       {/* Rank */}
       {rank && (
         <div className="mb-2">

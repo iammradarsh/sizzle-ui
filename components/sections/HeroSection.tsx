@@ -37,6 +37,7 @@ const heroCards: HeroCardProps[] = [
     creatorViews: "812 views",
     time: "2d",
   },
+
   {
     image: "/images/HeroCardImg2.png",
     badge: {
@@ -60,6 +61,34 @@ const heroCards: HeroCardProps[] = [
 
     description: "Seems like you have found a LUCKY POST on your feed 💖",
     creator: "Adela Morales",
+    creatorViews: "812 views",
+    time: "2d",
+  },
+
+  {
+    image: "/images/HeroCardImg1.png",
+    badge: {
+      text: "ORIGINAL",
+      icon: "/images/icons/SizzleLogo.svg",
+      iconWidth: 30,
+      iconHeight: 8,
+    },
+    movieLogo: "/images/movie-logo.png",
+
+    statType: "creator",
+
+    creatorStats: {
+      views: 480,
+      videos: 26,
+      likes: 780,
+    },
+
+    category: "",
+    title: "SAINT",
+
+    description:
+      "Life got so serious lately, I have almost forgot I used to paint 😅",
+    creator: "Saint Lavigne",
     creatorViews: "812 views",
     time: "2d",
   },
@@ -105,7 +134,7 @@ export default function HeroSection() {
       >
         <CarouselContent className="touch-pan-x">
           {heroCards.map((card) => (
-            <CarouselItem key={card.title} className="basis-[49%] shrink-0">
+            <CarouselItem key={card.title} className="basis-auto shrink-0">
               <HeroCard {...card} />
             </CarouselItem>
           ))}

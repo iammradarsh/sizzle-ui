@@ -27,17 +27,17 @@ export interface Reel {
 
   locked?: string;
 
+  isPremium?: boolean;
+
   likes: number;
 
   comments: number;
-  
+
   showCertified?: boolean;
 
-certifiedLogo?: string;
+  certifiedLogo?: string;
 
-certifiedFrame?: string;
-
-isPremium?: boolean;
+  certifiedFrame?: string;
 }
 
 export const reels: Reel[] = [

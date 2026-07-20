@@ -18,8 +18,8 @@ export default function FeaturedHero({ logo, name, bio }: FeaturedHeroProps) {
         src={logo}
         alt="Logo"
         width={120}
-        height={22}
-        className="mb-6 h-auto w-auto"
+        height={28}
+        className="mb-[25px] h-auto w-auto"
       />
 
       {/* Name */}
@@ -35,7 +35,7 @@ export default function FeaturedHero({ logo, name, bio }: FeaturedHeroProps) {
       <p className="mt-6 text-[16px] text-white font-neue-regular">{bio}</p>
 
       {/* Buttons */}
-      <div className="mt-10 flex items-center gap-4">
+      <div className="mt-10 flex items-center gap-2.5">
         {/* View Profile */}
         <button
           onClick={() => console.log("View Profile")}

@@ -34,7 +34,7 @@ export default function ReelControls({
     <div
       className="
 absolute
-bottom-4
+bottom-[15px]
 left-4
 right-4
 "

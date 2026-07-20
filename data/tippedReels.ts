@@ -6,7 +6,7 @@ export const tippedReels: Reel[] = [
 
     mediaType: "image",
 
-    images: ["/images/reels/reel1.png"],
+    images: ["/images/reels/reel12.png"],
 
     creatorLogo: "/images/logos/banana-joe.png",
 
@@ -68,7 +68,7 @@ export const tippedReels: Reel[] = [
 
     comments: 18,
 
-    isPremium: true,
+    isPremium: false,
   },
 
   {
@@ -76,7 +76,7 @@ export const tippedReels: Reel[] = [
 
     mediaType: "image",
 
-    images: ["/images/reels/reel3.png"],
+    images: ["/images/reels/reel13.png"],
 
     creatorLogo: "/images/logos/machete.png",
 
@@ -92,6 +92,8 @@ export const tippedReels: Reel[] = [
 
     views: "812 views",
 
+    isPremium: true,
+
     time: "2d",
 
     likes: 758,
@@ -104,7 +106,7 @@ export const tippedReels: Reel[] = [
 
     mediaType: "image",
 
-    images: ["/images/reels/reel4.png"],
+    images: ["/images/reels/reel14.png"],
 
     creatorLogo: "/images/logos/dexter.png",
 
@@ -132,7 +134,7 @@ export const tippedReels: Reel[] = [
 
     mediaType: "image",
 
-    images: ["/images/reels/reel5.png"],
+    images: ["/images/reels/reel15.png"],
 
     creatorLogo: "/images/logos/megamind.png",
 
