@@ -1,5 +1,6 @@
 "use client";
 
+import SquircleAvatar from "@/components/common/SquircleAvatar";
 import Image from "next/image";
 
 interface FeaturedFooterProps {
@@ -24,18 +25,21 @@ export default function FeaturedFooter({
   return (
     <div className="mt-4">
       {/* Title */}
-      <h3 className="line-clamp-2 text-[17px] font-neue-semibold leading-[1.3] text-white">
+      <h3 className="line-clamp-2 text-[16px] font-neue-semibold leading-[1.3] text-white">
         {title}
       </h3>
 
       {/* Meta */}
-      <div className="mt-3 flex items-center gap-2">
-        <Image
+      <div className="mt-1 flex items-center gap-2">
+        <SquircleAvatar
           src={avatar}
-          alt={creator}
-          width={18}
-          height={18}
-          className="rounded-full"
+          alt={creator ?? ""}
+          avatarSize={14}
+          borderSize={16}
+          borderVariant="solid"
+          borderWidth={1}
+          cornerRadius={4 / 14}
+          cornerSmoothing={8}
         />
 
         {/* <span className="text-[13px] text-[#A1A1AA]">{creator}</span> */}

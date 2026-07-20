@@ -18,7 +18,7 @@ export default function CategoryCard({ title, image }: Props) {
       className="
       overflow-hidden
       flex
-      h-[80px]
+      h-[90px]
       w-[190px]
       cursor-pointer
       items-center
@@ -29,6 +29,7 @@ export default function CategoryCard({ title, image }: Props) {
       transition-colors
       hover:bg-[#28282A]
       gap-2
+      shrink-0
       
     "
     >

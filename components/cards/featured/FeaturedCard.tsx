@@ -36,31 +36,22 @@ export default function FeaturedCard({
   time,
 }: FeaturedCardProps) {
   return (
-    <div className="w-[250px] shrink-0">
+    <div className="w-[246px] shrink-0">
       {/* Card */}
-      <div className="relative h-[380px] overflow-hidden rounded-md">
+      <div className="relative h-[380px] overflow-hidden rounded-[15px]">
         {/* Image */}
         <Image src={image} alt={title} fill className="object-cover" />
 
         {/* Gradient */}
         <div className="absolute inset-0 " />
 
-        {/* Logo */}
-        {/* <Image
-          src={creatorLogo}
-          alt="Logo"
-          width={110}
-          height={40}
-          className="absolute bottom-14 left-5 h-auto w-auto"
-        /> */}
-
         {/* Bottom Tags */}
-        <div className="absolute bottom-5 left-5 flex gap-2">
-          <div className="rounded-sm bg-black/40 px-2 py-1 text-xs text-white backdrop-blur-md">
+        <div className="absolute bottom-4 left-4 flex gap-2">
+          <div className="rounded-sm bg-black/40 h-6 w-15.5 flex items-center justify-center text-xs text-white backdrop-blur-md">
             {duration}
           </div>
 
-          <div className="rounded-sm bg-black/40 px-2 py-1 text-xs text-white backdrop-blur-md">
+          <div className="rounded-sm bg-black/40 h-6 w-15.5 flex items-center justify-center text-xs text-white backdrop-blur-md">
             {category}
           </div>
         </div>

@@ -18,15 +18,17 @@ export default function CreatorCard(props: Props) {
       // whileHover={{
       //   y: -5,
       // }}
-      className="w-[170px] flex flex-col items-start shrink-0"
+      className="w-[200px] h-[280px] flex flex-col items-start shrink-0"
     >
       <CreatorAvatar image={props.image} name={props.name} />
 
-      <h3 className="mt-4 font-neue-semibold text-lg text-white">
-        {props.name}
-      </h3>
+      <div>
+        <h3 className="mt-4 font-neue-regular text-[16px] font-[400] text-white">
+          {props.name}
+        </h3>
 
-      <CreatorStats videos={props.videos} posts={props.posts} />
+        <CreatorStats videos={props.videos} posts={props.posts} />
+      </div>
     </motion.div>
   );
 }

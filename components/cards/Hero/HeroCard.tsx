@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import HeroCardBadge from "./HeroCardBadge";
+
 export interface HeroCardProps {
   image: string;
   badge?: {
@@ -49,9 +51,9 @@ export default function HeroCard({
   time,
 }: HeroCardProps) {
   return (
-    <div className="group w-full rounded-lg p-4 transition-colors duration-300 hover:bg-[#19191B]">
+    <div className="group w-fit rounded-lg p-3 transition-colors duration-300 hover:bg-[#19191B]">
       {/* IMAGE CARD */}
-      <div className="relative h-[420px] overflow-hidden rounded-md">
+      <div className="relative w-[646px] h-[440px] overflow-hidden rounded-md">
         <Image
           src={image}
           alt={title}
@@ -63,7 +65,7 @@ export default function HeroCard({
 
         {/* <div className="absolute inset-0 bg-black/25 group-hover:bg-black/45 transition-all duration-300" /> */}
 
-        <div className="absolute inset-[24px] z-10 pointer-events-none">
+        <div className="absolute inset-[20px] z-10 pointer-events-none">
           <Image
             src="/images/HeroCardFrame.png"
             alt="Frame"
@@ -74,53 +76,7 @@ export default function HeroCard({
 
         <div className="absolute inset-0 z-20 flex flex-col px-12 pt-10 pb-12">
           {/* Badge */}
-          <div>
-            <div className="text-[11px] font-semibold uppercase tracking-wide text-white">
-              {badge && (
-                <div
-                  className="
-      inline-flex
-      rounded-sm
-       
-      p-[1px]
-    "
-                >
-                  <div
-                    className="
-        flex
-        h-8
-        items-center
-        gap-2
-        bg-black/50
-       rounded-sm
-        backdrop-blur-md
-        px-3
-      "
-                  >
-                    <Image
-                      src={badge.icon}
-                      alt={badge.text}
-                      width={badge.iconWidth}
-                      height={badge.iconHeight}
-                      className="shrink-0 object-contain"
-                    />
-
-                    <span
-                      className="
-          font-neue-semibold
-          text-[11px]
-          uppercase
-          tracking-wide
-          text-white
-        "
-                    >
-                      {badge.text}
-                    </span>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
+          {badge && <HeroCardBadge badge={badge} />}
 
           {/* Bottom Content */}
           <div className="mt-auto">
@@ -128,41 +84,41 @@ export default function HeroCard({
               <Image
                 src={movieLogo}
                 alt="Movie Logo"
-                width={110}
-                height={50}
-                className="mb-5 h-auto w-[110px]"
+                width={77.17}
+                height={10}
+                className="mb-2 w-[77.17px]"
               />
             )}
 
-            <p className="mb-2 text-xl font-neue-semibold uppercase tracking-[0.2em] text-white">
+            <p className=" text-xl font-neue-semibold uppercase tracking-[0.2em] text-white">
               {category}
             </p>
 
-            <h2 className="text-4xl font-black uppercase leading-[0.9] text-white font-neue-black">
+            <h2 className="text-[60px] font-black uppercase leading-[0.9] text-white font-neue-black whitespace-pre-line">
               {title}
             </h2>
 
-            <div className="mt-6">
+            <div className="mt-4">
               {statType === "creator" ? (
                 <div className="flex items-center gap-5 text-white">
                   <div className="flex items-center gap-2">
                     <Image
                       src="/images/icons/gallery.svg"
                       alt="Gallery"
-                      width={18}
-                      height={18}
+                      width={16}
+                      height={16}
                     />
-                    <span>{creatorStats?.views}</span>
+                    <span className="text-[14px]">{creatorStats?.views}</span>
                   </div>
 
                   <div className="flex items-center gap-2">
                     <Image
                       src="/images/icons/play.svg"
                       alt="Videos"
-                      width={18}
-                      height={18}
+                      width={16}
+                      height={16}
                     />
-                    <span>{creatorStats?.videos}</span>
+                    <span className="text-[14px]">{creatorStats?.videos}</span>
                   </div>
 
                   <div className="flex items-center gap-2">
@@ -172,17 +128,17 @@ export default function HeroCard({
                       width={18}
                       height={18}
                     />
-                    <span>{creatorStats?.likes}</span>
+                    <span className="text-[14px]">{creatorStats?.likes}</span>
                   </div>
                 </div>
               ) : (
                 <div className="flex gap-3">
-                  <span className="rounded-md flex items-center gap-1 bg-black/40 px-3 py-2">
-                    <span>{movieStats?.quality}</span>
-                    <span>{movieStats?.duration}</span>
+                  <span className="rounded-[6px] flex items-center gap-1 bg-black/40 px-3 h-[24px]">
+                    <span className="text-[12px]">{movieStats?.quality}</span>
+                    <span className="text-[12px]">{movieStats?.duration}</span>
                   </span>
 
-                  <span className="rounded-md bg-black/40 px-3 py-2">
+                  <span className="rounded-[6px] bg-black/40 px-3 flex items-center text-[12px] h-[24px]">
                     {movieStats?.tag}
                   </span>
                 </div>
@@ -194,9 +150,9 @@ export default function HeroCard({
 
       {/* FOOTER */}
       <div className="mt-5 px-2">
-        <p className="line-clamp-2 text-lg text-white">{description}</p>
+        <p className="line-clamp-2 text-[16px] text-white">{description}</p>
 
-        <div className="mt-3 flex items-center gap-2 text-sm text-zinc-400">
+        <div className="flex items-center gap-2 text-[14px] text-zinc-400">
           <span>{creator}</span>
           <span className="flex items-center gap-1">
             <span>

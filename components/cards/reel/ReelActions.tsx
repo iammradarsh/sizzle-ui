@@ -14,7 +14,7 @@ export default function ReelActions({ likes, comments }: Props) {
       className="
 absolute
 right-4
-top-70
+top-77
 -translate-y-1/2
 opacity-0
 group-hover:opacity-100

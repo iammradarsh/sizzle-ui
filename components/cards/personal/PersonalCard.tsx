@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "motion/react";
+import SquircleAvatar from "@/components/common/SquircleAvatar";
 
 import PersonalStats from "./PersonalStats";
 import PersonalService from "./PersonalService";
@@ -42,29 +42,19 @@ export default function PersonalCard({
       // transition={{
       //   duration: 0.25,
       // }}
-      className="w-[190px] shrink-0"
+      className="w-[200px] shrink-0"
     >
       {/* Image */}
-      <motion.div
-        whileHover={{
-          scale: 1.02,
-        }}
-        transition={{
-          duration: 0.35,
-        }}
-        className="relative h-[190px] w-[190px] overflow-hidden rounded-[48px]"
-      >
-        <motion.div
-          // whileHover={{
-          //   scale: 1.02,
-          // }}
-          // transition={{
-          //   duration: 0.35,
-          // }}
-          className="h-full w-full"
-        >
-          <Image src={image} alt={name} fill className="object-cover" />
-        </motion.div>
+      <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.35 }}>
+        <SquircleAvatar
+          src={image}
+          alt={name}
+          avatarSize={200}
+          borderSize={204}
+          borderVariant="solid"
+          cornerRadius={54 / 200} // 0.27
+          cornerSmoothing={6}
+        />
       </motion.div>
 
       {/* Content */}

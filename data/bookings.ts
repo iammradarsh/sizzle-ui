@@ -55,7 +55,7 @@ export const bookings: Booking[] = [
     bookedText: "Booked 12 times this week",
 
     overlayGradient:
-      "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(200,50,176,0.90) 50%, #CC2FB0 100%)",
+      "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(200,50,176,0.90) 50%, rgba(204, 47, 176, 1) 100%)",
 
     footerColor: "rgba(0, 0, 0, 0.25)",
   },
@@ -86,7 +86,7 @@ export const bookings: Booking[] = [
     bookedText: "Booked 8 times this week",
 
     overlayGradient:
-      "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(127,55,233,0.90) 50%, #7E37E7 100%)",
+      "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(127,55,233,0.90) 50%, rgba(126, 55, 231, 1) 100%)",
 
     footerColor: "rgba(0, 0, 0, 0.25)",
   },
@@ -117,7 +117,7 @@ export const bookings: Booking[] = [
     bookedText: "Booked 10 times this week",
 
     overlayGradient:
-      "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,156,145,0.90) 50%, #009C91 100%)",
+      "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,156,145,0.90) 50%, rgba(0, 156, 145, 1) 100%)",
 
     footerColor: "rgba(0, 0, 0, 0.25)",
   },
@@ -148,7 +148,7 @@ export const bookings: Booking[] = [
     bookedText: "Booked 7 times this week",
 
     overlayGradient:
-      "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(228,29,71,0.90) 50%, #E51D47 100%)",
+      "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(228,29,71,0.90) 50%, rgba(229, 29, 71, 1) 100%)",
 
     footerColor: "rgba(0, 0, 0, 0.25)",
   },

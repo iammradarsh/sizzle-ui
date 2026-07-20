@@ -24,7 +24,7 @@ export default function ReelBadge({ badge, locked, isHovered }: Props) {
       className="absolute left-4 top-4 z-20 flex gap-2"
     >
       {badge && (
-        <span className="rounded-sm font-neue-semibold flex items-center justify-center px-3 py-1 text-sm text-white bg-gradient-to-l from-pink-600 via-red-600 to-orange-500">
+        <span className="rounded-[6px] font-neue-semibold flex items-center justify-center w-10 h-6 text-xs text-white bg-gradient-to-l from-pink-600 via-red-600 to-orange-500">
           {badge}
         </span>
       )}
@@ -33,8 +33,8 @@ export default function ReelBadge({ badge, locked, isHovered }: Props) {
         <div
           className="
       flex
-      h-8
-      w-8
+      h-6
+      w-6
       shrink-0
       items-center
       justify-center
@@ -45,9 +45,9 @@ export default function ReelBadge({ badge, locked, isHovered }: Props) {
           <Image
             src={locked}
             alt="Locked"
-            width={14}
-            height={14}
-            className="h-[14px] w-[14px] object-contain"
+            width={12}
+            height={12}
+            className="h-[12px] w-[[6px]px] object-contain"
           />
         </div>
       )}

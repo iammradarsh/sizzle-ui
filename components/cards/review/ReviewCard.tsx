@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "motion/react";
+import SquircleAvatar from "@/components/common/SquircleAvatar";
 
 interface Props {
   avatar: string;
@@ -33,108 +34,109 @@ export default function ReviewCard({
 }: Props) {
   return (
     <motion.div
-      whileHover={{
-        scale: 0.98,
-      }}
-      transition={{
-        duration: 0.25,
-        ease: "easeInOut",
-      }}
       className="
-        w-[370px]
+        w-[360px]
+        h-[245px]
         shrink-0
-        rounded-[20px]
+        rounded-[15px]
         border
         border-white/10
         bg-[#19191B]
         hover:bg-[#28282A]
         p-5
+        flex
+        flex-col
       "
     >
-      {/* Header */}
-      <div className="flex items-start justify-between">
-        <div className="flex gap-3">
-          <Image
-            src={avatar}
-            alt={name}
-            width={48}
-            height={48}
-            className="rounded-xl"
-          />
+      <div className="flex flex-col gap-4">
+        {/* Header */}
+        <div className="flex items-start justify-between">
+          <div className="flex gap-3">
+            <Image
+              src={avatar}
+              alt={name}
+              width={48}
+              height={48}
+              className="rounded-xl"
+            />
 
-          <div>
-            <h3 className="font-neue-semibold text-[20px] leading-none text-white">
-              {name}
-            </h3>
+            <div>
+              <h3 className="font-neue-semibold text-[16px] leading-none text-white">
+                {name}
+              </h3>
 
-            <p className="mt-1 text-[14px] text-[#8A8A8A]">{username}</p>
+              <p className="mt-1 text-[12px] text-[#8A8A8A]">{username}</p>
+            </div>
           </div>
+
+          <span className="text-[14px] text-[#8A8A8A]">{time}</span>
         </div>
 
-        <span className="text-[14px] text-[#8A8A8A]">{time}</span>
-      </div>
+        <div className="flex flex-col gap-1">
+          {/* Rating */}
+          <div
+            className=" flex items-center gap-1.5"
+            role="img"
+            aria-label={`Rating: ${rating} out of 5 stars`}
+          >
+            {Array.from({ length: 5 }).map((_, index) => (
+              <Image
+                key={index}
+                src={
+                  index < rating
+                    ? "/images/icons/star-fill.svg"
+                    : "/images/icons/star-empty.svg"
+                }
+                alt=""
+                aria-hidden="true"
+                width={20}
+                height={20}
+              />
+            ))}
+          </div>
 
-      {/* Rating */}
-      <div
-        className="mt-5 flex items-center gap-1.5"
-        role="img"
-        aria-label={`Rating: ${rating} out of 5 stars`}
-      >
-        {Array.from({ length: 5 }).map((_, index) => (
-          <Image
-            key={index}
-            src={
-              index < rating
-                ? "/images/icons/star-fill.svg"
-                : "/images/icons/star-empty.svg"
-            }
-            alt=""
-            aria-hidden="true"
-            width={18}
-            height={18}
-          />
-        ))}
-      </div>
-
-      {/* Review */}
-      <p
-        className="
-          mt-5
+          {/* Review */}
+          <p
+            className="
           line-clamp-4
           text-sm
         
           text-[#E7E7E7]
         "
-      >
-        {review}
-      </p>
+          >
+            {review}
+          </p>
 
-      {/* Bottom */}
-      <div className="mt-6 flex items-center gap-3">
-        <Image
-          src={creatorAvatar}
-          alt=""
-          width={34}
-          height={34}
-          className="rounded-sm"
-        />
+          {/* Bottom */}
+          <div className="flex items-center gap-3">
+            <SquircleAvatar
+              src={creatorAvatar}
+              alt={name}
+              avatarSize={28}
+              borderSize={32}
+              borderVariant="solid"
+              cornerRadius={10 / 28} // 0.27
+              cornerSmoothing={6}
+            />
 
-        <div className="flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <div
-              key={tag}
-              className="
+            <div className="flex flex-wrap gap-2">
+              {tags.map((tag) => (
+                <div
+                  key={tag}
+                  className="
                 rounded-full
                 border
                 border-white/10
-                bg-[#2A2A2D]
+                bg-[#28282A]
+                h-[28px]
                 px-3
-                py-2
               "
-            >
-              <span className="text-[13px] text-white">{tag}</span>
+                >
+                  <span className="text-[13px] text-white">{tag}</span>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </motion.div>

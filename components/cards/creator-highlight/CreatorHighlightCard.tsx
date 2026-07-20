@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 import { useState } from "react";
+import SquircleAvatar from "@/components/common/SquircleAvatar";
 
 interface Props {
   avatar: string;
@@ -57,13 +58,6 @@ export default function CreatorHighlightCard({
 
   return (
     <motion.div
-      whileHover={{
-        scale: 0.98,
-      }}
-      transition={{
-        duration: 0.25,
-        ease: "easeInOut",
-      }}
       className="
         group
         w-[390px]
@@ -82,24 +76,27 @@ export default function CreatorHighlightCard({
       {/* Header */}
       <div className="flex items-start justify-between ">
         <div className="flex gap-3">
-          <Image
+          <SquircleAvatar
             src={avatar}
-            alt={name}
-            width={56}
-            height={56}
-            className="rounded-2xl object-cover"
+            alt={name ?? ""}
+            avatarSize={60}
+            borderSize={60}
+            borderVariant="solid"
+            borderWidth={0}
           />
 
           <div>
-            <h3 className="font-neue-regular text-md text-white">{name}</h3>
+            <h3 className="font-neue-semibold text-[16px] text-white">
+              {name}
+            </h3>
 
             {/* Stats */}
             <div className="mt-2 flex items-center gap-2">
               {stats.map((stat) => (
                 <div key={stat.icon} className="flex items-center gap-1">
-                  <Image src={stat.icon} alt="" width={14} height={14} />
+                  <Image src={stat.icon} alt="" width={12} height={12} />
 
-                  <span className="text-sm text-[#A0A0A0]">{stat.value}</span>
+                  <span className="text-sm text-[#A3A3A3]">{stat.value}</span>
                 </div>
               ))}
             </div>
@@ -111,14 +108,18 @@ export default function CreatorHighlightCard({
           onClick={() => setIsFollowing(!isFollowing)}
           className={`
             h-10
-            rounded-sm
+            rounded-[12px]
             px-5
             font-neue-semibold
+            text-[14px]
             transition-all
+            flex 
+            items-center
+            justify-center
             ${
               isFollowing
                 ? "bg-[#2B2B2E] text-white"
-                : "bg-white text-black hover:bg-[#E5E5E5]"
+                : "bg-white text-black hover:bg-[#DFDCD7]"
             }
           `}
         >
@@ -137,7 +138,7 @@ export default function CreatorHighlightCard({
       h-[170px]
       flex-1
       overflow-hidden
-      rounded-2xl
+      rounded-[15px]
     "
           >
             {/* Number */}
@@ -149,7 +150,7 @@ export default function CreatorHighlightCard({
     top-3
     z-20
     font-neue-black
-    text-[44px]
+    text-[40px]
     leading-none
   "
             >

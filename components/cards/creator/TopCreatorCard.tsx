@@ -28,20 +28,14 @@ export default function TopCreatorCard({
     <>
       {/* Card */}
       <motion.div
-        whileHover={{
-          scale: 0.98,
-        }}
-        transition={{
-          duration: 0.25,
-          ease: "easeInOut",
-        }}
         className="
           group
           relative
           z-10
-          h-[420px]
+          h-[400px]
+          w-[260px]
           overflow-hidden
-          rounded-md
+          rounded-[15px]
           select-none
         "
       >
@@ -54,7 +48,7 @@ export default function TopCreatorCard({
             object-cover
             transition-transform
             duration-500
-            group-hover:scale-105
+            group-hover:scale-102
           "
         />
 
@@ -71,7 +65,8 @@ export default function TopCreatorCard({
         />
 
         {/* Bottom Content */}
-        <div className="absolute bottom-6 left-6 right-6">
+
+        <div className="absolute bottom-6 left-5 right-5">
           <TopCreatorBadge icon={badgeIcon} label={badge} />
           <h3
             className="

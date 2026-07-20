@@ -22,7 +22,7 @@ export interface PersonalCreator {
 export const personalCreators: PersonalCreator[] = [
   {
     id: 1,
-    image: "/images/personal/1.png",
+    image: "/images/personal/1.jpg",
     name: "Jade Vixenxo",
     rating: 98,
     reviews: 135,
@@ -42,7 +42,7 @@ export const personalCreators: PersonalCreator[] = [
 
   {
     id: 2,
-    image: "/images/personal/2.png",
+    image: "/images/personal/2.jpg",
     name: "Mia Storm",
     rating: 98,
     reviews: 135,
@@ -62,7 +62,7 @@ export const personalCreators: PersonalCreator[] = [
 
   {
     id: 3,
-    image: "/images/personal/3.png",
+    image: "/images/personal/3.jpg",
     name: "Luna Belle",
     rating: 98,
     reviews: 135,
@@ -82,7 +82,7 @@ export const personalCreators: PersonalCreator[] = [
 
   {
     id: 4,
-    image: "/images/personal/4.png",
+    image: "/images/personal/4.jpg",
     name: "Ruby Rose",
     rating: 98,
     reviews: 135,
@@ -102,7 +102,7 @@ export const personalCreators: PersonalCreator[] = [
 
   {
     id: 5,
-    image: "/images/personal/5.png",
+    image: "/images/personal/5.jpg",
     name: "Angel Eyes",
     rating: 98,
     reviews: 135,
@@ -122,7 +122,7 @@ export const personalCreators: PersonalCreator[] = [
 
   {
     id: 6,
-    image: "/images/personal/6.png",
+    image: "/images/personal/6.jpg",
     name: "Kitten Kait",
     rating: 98,
     reviews: 135,

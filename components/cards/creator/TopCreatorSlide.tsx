@@ -3,6 +3,8 @@
 import TopCreatorCard from "./TopCreatorCard";
 
 interface Props {
+  isFirst?: boolean;
+
   rank: number;
 
   image: string;
@@ -17,6 +19,7 @@ interface Props {
 }
 
 export default function TopCreatorSlide({
+  isFirst = false,
   rank,
   image,
   badge,
@@ -28,9 +31,8 @@ export default function TopCreatorSlide({
     <div className="relative w-[300px] ml-14 shrink-0 overflow-visible">
       {/* Number */}
       <span
-        className="
-          absolute
-          left-[-45px]
+        className={`absolute
+          ${isFirst ? "left-[-10px]" : "left-[-40px]"}
           bottom-[-18px]
           z-0
           select-none
@@ -39,8 +41,7 @@ export default function TopCreatorSlide({
           text-[300px]
           leading-none
           
-          gradient-rank-text
-        "
+          gradient-rank-text`}
       >
         {rank}
       </span>

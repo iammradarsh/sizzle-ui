@@ -1,5 +1,6 @@
 "use client";
 
+import SquircleAvatar from "@/components/common/SquircleAvatar";
 import Image from "next/image";
 
 interface ReelFooterProps {
@@ -36,45 +37,50 @@ export default function ReelFooter({
       )}
 
       <div>
-        {/* Title */}
-        <h3 className="font-neue-regular text-md leading-[1.35] text-white">
-          {title}
-        </h3>
+        <div className="flex flex-col gap-[4px]">
+          {/* Title */}
+          <h3 className="font-neue-regular text-[16px] leading-[20px] text-white">
+            {title}
+          </h3>
 
-        {/* Creator */}
-        <div className="mt-3 flex items-center gap-2">
-          <Image
-            src={avatar}
-            alt={creator}
-            width={20}
-            height={20}
-            className="rounded-full"
-          />
+          {/* Creator */}
+          <div className="flex items-center gap-2">
+            <SquircleAvatar
+              src={avatar}
+              alt={creator ?? ""}
+              avatarSize={14}
+              borderSize={16}
+              borderVariant="solid"
+              borderWidth={1}
+              cornerRadius={4 / 14}
+              cornerSmoothing={8}
+            />
 
-          <span className="font-neue-regular text-[14px] text-white">
-            {creator}
-          </span>
-
-          <span className="flex items-center gap-1">
-            <span>
-              <Image
-                src="/images/icons/eye.svg"
-                alt="Views"
-                width={12}
-                height={12}
-              />
+            <span className="font-neue-regular text-[14px] text-white">
+              {creator}
             </span>
+
+            <span className="flex items-center gap-1">
+              <span>
+                <Image
+                  src="/images/icons/eye.svg"
+                  alt="Views"
+                  width={12}
+                  height={12}
+                />
+              </span>
+
+              <span className="font-neue-regular text-[14px] text-[#A1A1AA]">
+                {views}
+              </span>
+            </span>
+
+            <span className="text-[#71717A]">•</span>
 
             <span className="font-neue-regular text-[14px] text-[#A1A1AA]">
-              {views}
+              {time}
             </span>
-          </span>
-
-          <span className="text-[#71717A]">•</span>
-
-          <span className="font-neue-regular text-[14px] text-[#A1A1AA]">
-            {time}
-          </span>
+          </div>
         </div>
       </div>
     </div>

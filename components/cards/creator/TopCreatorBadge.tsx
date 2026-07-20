@@ -11,30 +11,36 @@ interface Props {
 export default function TopCreatorBadge({ icon, label }: Props) {
   return (
     <div
-      className="
-        inline-flex
-        items-center
-        gap-2
-        rounded-sm
-        bg-black/65
-        px-3
-        py-2
-        backdrop-blur-md
-      "
+      className="mb-2 border-[6px] border-transparent bg-black/50 backdrop-blur-[20px] rounded-sm w-fit h-[24px]"
+      style={{
+        borderImage: 'url("/images/badge-border.svg") 2',
+        borderImageWidth: 0.4,
+      }}
     >
-      <Image src={icon} alt="" width={12} height={12} />
-
-      <span
+      <div
         className="
-          text-[11px]
-          font-neue-semibold
-          uppercase
-          tracking-wide
-          text-white
+          flex
+          items-center
+          justify-start
+          gap-1
+          h-full
+          px-1
         "
       >
-        {label}
-      </span>
+        <Image src={icon} alt={icon} width={12} height={12} />
+
+        <span
+          className="
+            text-[10px]
+            font-normal
+            font-neue-semibold
+            uppercase
+            text-white
+          "
+        >
+          {label}
+        </span>
+      </div>
     </div>
   );
 }

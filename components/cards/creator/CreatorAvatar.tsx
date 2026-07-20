@@ -12,20 +12,20 @@ export default function CreatorAvatar({ image, name }: Props) {
   return (
     <motion.div
       whileHover={{
-        y: 4,
-        scale: 1.02,
+        height: "190px",
+        width: "190px",
       }}
       transition={{
         duration: 0.25,
       }}
-      className="relative h-[150px] w-[150px]"
+      className="relative h-[180px] w-[180px] origin-right"
     >
       <Image
         src={image}
         alt={name}
         fill
-        sizes="150px"
-        className="object-contain"
+        sizes="180px"
+        className="object-cover"
       />
     </motion.div>
   );

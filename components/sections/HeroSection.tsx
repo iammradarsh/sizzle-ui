@@ -29,7 +29,7 @@ const heroCards: HeroCardProps[] = [
     },
 
     category: "",
-    title: "SAINT LAVIGNE",
+    title: "SAINT\nLAVIGNE",
 
     description:
       "Life got so serious lately, I have almost forgot I used to paint 😅",
@@ -45,7 +45,7 @@ const heroCards: HeroCardProps[] = [
       iconWidth: 14,
       iconHeight: 14,
     },
-    movieLogo: undefined,
+    movieLogo: "/images/movie2-logo.png",
 
     statType: "movie",
 
@@ -55,8 +55,8 @@ const heroCards: HeroCardProps[] = [
       tag: "#Beauty",
     },
 
-    category: "CHUCKY",
-    title: "ADELA MORALES",
+    category: "",
+    title: "ADELA\nMORALES",
 
     description: "Seems like you have found a LUCKY POST on your feed 💖",
     creator: "Adela Morales",
@@ -105,7 +105,7 @@ export default function HeroSection() {
       >
         <CarouselContent className="touch-pan-x">
           {heroCards.map((card) => (
-            <CarouselItem key={card.title} className="basis-[48%] shrink-0">
+            <CarouselItem key={card.title} className="basis-[49%] shrink-0">
               <HeroCard {...card} />
             </CarouselItem>
           ))}

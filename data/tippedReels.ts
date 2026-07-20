@@ -108,7 +108,7 @@ export const tippedReels: Reel[] = [
 
     creatorLogo: "/images/logos/dexter.png",
 
-    avatar: "/images/avatars/luca.png",
+    avatar: "/images/avatars/moana.png",
 
     title: "We Surprised Our Biggest Fan With Their Dream Day",
 

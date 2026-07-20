@@ -114,7 +114,7 @@ export default function ReelCard({
       // transition={{
       //   duration: 0.25,
       // }}
-      className="group w-[306px] shrink-0"
+      className="group w-[335] shrink-0"
     >
       <div
         className="
@@ -130,8 +130,8 @@ export default function ReelCard({
           className="
     relative
     mx-auto
-    h-[460px]
-    w-[290px]
+    h-[480px]
+    w-[311px]
     overflow-hidden
     rounded-md
     bg-[#1B1B1D]
@@ -355,27 +355,29 @@ export default function ReelCard({
           </motion.div>
 
           {/* Controls */}
-          <motion.div
-            animate={{
-              opacity: isHovered ? 1 : 0,
-            }}
-            transition={{
-              duration: 0.25,
-              ease: "easeInOut",
-            }}
-          >
-            <ReelControls
-              progress={displayProgress}
-              hoverProgress={hoverProgress}
-              showPreview={showPreview}
-              progressRef={progressRef}
-              previewImage={images[currentImage]}
-              onMouseMove={handleProgressMove}
-              onMouseEnter={handleProgressEnter}
-              onMouseLeave={handleProgressLeave}
-              onClick={handleSeek}
-            />
-          </motion.div>
+          {mediaType === "video" && (
+            <motion.div
+              animate={{
+                opacity: isHovered ? 1 : 0,
+              }}
+              transition={{
+                duration: 0.25,
+                ease: "easeInOut",
+              }}
+            >
+              <ReelControls
+                progress={displayProgress}
+                hoverProgress={hoverProgress}
+                showPreview={showPreview}
+                progressRef={progressRef}
+                previewImage={images[currentImage]}
+                onMouseMove={handleProgressMove}
+                onMouseEnter={handleProgressEnter}
+                onMouseLeave={handleProgressLeave}
+                onClick={handleSeek}
+              />
+            </motion.div>
+          )}
         </div>
 
         {/* Footer */}

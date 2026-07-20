@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useRef } from "react";
+import { useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 
 import ReelCard from "@/components/cards/reel/ReelCard";
@@ -10,9 +10,12 @@ import { topTipped } from "@/data/topTipped";
 import { Button } from "../ui/button";
 import { tippedReels } from "@/data/tippedReels";
 import WheelGesturesPlugin from "embla-carousel-wheel-gestures";
+import SectionHeader from "../common/SectionHeader";
 
 export default function TippedReelsSection() {
   const wheelGestures = WheelGesturesPlugin();
+  const [canScrollPrev, setCanScrollPrev] = useState(false);
+  const [canScrollNext, setCanScrollNext] = useState(false);
 
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
@@ -21,97 +24,41 @@ export default function TippedReelsSection() {
     },
     [wheelGestures],
   );
-  const sliderRef = useRef<HTMLDivElement>(null);
 
-  function scrollLeft() {
-    sliderRef.current?.scrollBy({
-      left: -340,
-      behavior: "smooth",
-    });
-  }
+  useEffect(() => {
+    if (!emblaApi) return;
 
-  function scrollRight() {
-    sliderRef.current?.scrollBy({
-      left: 340,
-      behavior: "smooth",
-    });
-  }
+    const updateButtons = () => {
+      setCanScrollPrev(emblaApi.canScrollPrev());
+      setCanScrollNext(emblaApi.canScrollNext());
+    };
+
+    updateButtons();
+
+    emblaApi.on("select", updateButtons);
+    emblaApi.on("reInit", updateButtons);
+
+    return () => {
+      emblaApi.off("select", updateButtons);
+      emblaApi.off("reInit", updateButtons);
+    };
+  }, [emblaApi]);
   return (
     <section className="mt-24 px-8 overflow-hidden">
       {/* Header */}
-      <div className="mb-8 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <h2 className="font-neue-semibold text-xl text-white">
-            Fresh from creators you tipped
-          </h2>
-
-          <Image
-            src="/images/icons/arrow-right.svg"
-            alt=""
-            width={18}
-            height={18}
-            className="mt-1.5"
-          />
-        </div>
-
-        {/* Arrows */}
-        <div className="flex items-center gap-2">
-          <button
-            onClick={() => emblaApi?.scrollPrev()}
-            className="
-            flex
-            h-8
-            w-8
-            items-center
-            justify-center
-            rounded-sm
-            bg-[#19191B]
-            transition-all
-            duration-200
-            hover:bg-[#3C3C3E]
-            active:scale-95
-          "
-          >
-            <Image
-              src="/images/icons/chevron-left.svg"
-              alt="Previous"
-              width={14}
-              height={14}
-              className="opacity-80 transition-opacity duration-200 group-hover:opacity-100"
-            />
-          </button>
-
-          <button
-            onClick={() => emblaApi?.scrollNext()}
-            className="
-            group
-            flex
-            h-8
-            w-8
-            items-center
-            justify-center
-            rounded-sm
-            bg-[#19191B]
-            transition-all
-            duration-200
-            hover:bg-[#3C3C3E]
-            active:scale-95
-          "
-          >
-            <Image
-              src="/images/icons/chevron-right.svg"
-              alt="Next"
-              width={14}
-              height={14}
-              className="opacity-80 transition-opacity duration-200 group-hover:opacity-100"
-            />
-          </button>
-        </div>
-      </div>
+      <SectionHeader
+        // subtitle="Sizzle+ Certified"
+        title="Fresh from creators you tipped"
+        showControls
+        onPrev={() => emblaApi?.scrollPrev()}
+        onNext={() => emblaApi?.scrollNext()}
+        canScrollPrev={canScrollPrev}
+        canScrollNext={canScrollNext}
+      />
 
       {/* Cards */}
       <div ref={emblaRef} className="">
-        <div className="flex gap-9">
+        <div className="flex gap-2">
           {tippedReels.map((item) => (
             <ReelCard
               key={item.id}

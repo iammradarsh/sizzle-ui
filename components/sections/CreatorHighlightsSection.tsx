@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
+import { useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 
@@ -9,9 +10,12 @@ import CreatorHighlightCard from "@/components/cards/creator-highlight/CreatorHi
 
 import { creatorHighlights } from "@/data/creatorHighlights";
 import WheelGesturesPlugin from "embla-carousel-wheel-gestures";
+import SectionHeader from "../common/SectionHeader";
 
 export default function CreatorHighlightsSection() {
   const wheelGestures = WheelGesturesPlugin();
+  const [canScrollPrev, setCanScrollPrev] = useState(false);
+  const [canScrollNext, setCanScrollNext] = useState(false);
 
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
@@ -21,81 +25,37 @@ export default function CreatorHighlightsSection() {
     [wheelGestures],
   );
 
+  useEffect(() => {
+    if (!emblaApi) return;
+
+    const updateButtons = () => {
+      setCanScrollPrev(emblaApi.canScrollPrev());
+      setCanScrollNext(emblaApi.canScrollNext());
+    };
+
+    updateButtons();
+
+    emblaApi.on("select", updateButtons);
+    emblaApi.on("reInit", updateButtons);
+
+    return () => {
+      emblaApi.off("select", updateButtons);
+      emblaApi.off("reInit", updateButtons);
+    };
+  }, [emblaApi]);
+
   return (
     <section className="mt-24 px-8 select-none overflow-hidden">
-      {/* Subtitle */}
-      {/* <p className="text-sm text-[#8A8A8A]">Discover more creators</p> */}
-
       {/* Header */}
-      <div className="mb-8 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <h2 className="font-neue-semibold text-xl text-white">
-            Creator highlights
-          </h2>
-
-          <Image
-            src="/images/icons/arrow-right.svg"
-            alt=""
-            width={18}
-            height={18}
-            className="mt-1.5"
-          />
-        </div>
-
-        {/* Arrows */}
-        <div className="flex items-center gap-2">
-          <button
-            onClick={() => emblaApi?.scrollPrev()}
-            className="
-            flex
-            h-8
-            w-8
-            items-center
-            justify-center
-            rounded-sm
-            bg-[#19191B]
-            transition-all
-            duration-200
-            hover:bg-[#3C3C3E]
-            active:scale-95
-          "
-          >
-            <Image
-              src="/images/icons/chevron-left.svg"
-              alt="Previous"
-              width={14}
-              height={14}
-              className="opacity-80 transition-opacity duration-200 group-hover:opacity-100"
-            />
-          </button>
-
-          <button
-            onClick={() => emblaApi?.scrollNext()}
-            className="
-            group
-            flex
-            h-8
-            w-8
-            items-center
-            justify-center
-            rounded-sm
-            bg-[#19191B]
-            transition-all
-            duration-200
-            hover:bg-[#3C3C3E]
-            active:scale-95
-          "
-          >
-            <Image
-              src="/images/icons/chevron-right.svg"
-              alt="Next"
-              width={14}
-              height={14}
-              className="opacity-80 transition-opacity duration-200 group-hover:opacity-100"
-            />
-          </button>
-        </div>
-      </div>
+      <SectionHeader
+        // subtitle="Sizzle+ Certified"
+        title="Creator highlights"
+        showControls
+        onPrev={() => emblaApi?.scrollPrev()}
+        onNext={() => emblaApi?.scrollNext()}
+        canScrollPrev={canScrollPrev}
+        canScrollNext={canScrollNext}
+      />
 
       {/* Carousel */}
       <div ref={emblaRef} className="select-none">

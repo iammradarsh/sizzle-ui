@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "motion/react";
+import SquircleAvatar from "@/components/common/SquircleAvatar";
 
 interface Props {
   avatar: string;
@@ -32,23 +33,26 @@ export default function CreatorListCard({
         flex
         items-center
         gap-4
-        rounded-lg
-        p-4
+        rounded-[15px]
+        h-[84px]
+        w-[448px]
+        px-4
         transition-colors
         duration-300
-        ${highlight ? "bg-[#1D1D1F]" : "hover:bg-[#141416]"}
+        ${highlight ? "bg-[#19191B]" : "hover:bg-[#19191B]"}
       `}
     >
-      <Image
+      <SquircleAvatar
         src={avatar}
-        alt={name}
-        width={58}
-        height={58}
-        className="rounded-sm object-cover"
+        alt={name ?? ""}
+        avatarSize={60}
+        borderSize={62}
+        borderVariant="solid"
+        borderWidth={1}
       />
 
       <div className="min-w-0">
-        <h3 className="truncate text-md font-neue-semibold text-white">
+        <h3 className="truncate text-md font-neue-semibold font-normal text-white">
           {name}
         </h3>
 

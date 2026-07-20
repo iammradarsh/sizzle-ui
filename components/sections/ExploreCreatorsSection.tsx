@@ -9,6 +9,7 @@ import CreatorListCard from "@/components/cards/creator/CreatorListCard";
 
 import { creatorCategories, exploreCreators } from "@/data/exploreCreators";
 import WheelGesturesPlugin from "embla-carousel-wheel-gestures";
+import SectionHeader from "../common/SectionHeader";
 
 export default function ExploreCreatorsSection() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -31,24 +32,14 @@ export default function ExploreCreatorsSection() {
 
   return (
     <section className="mt-24 px-8 overflow-hidden">
-      {/* Heading */}
-      <div className="mb-10">
-        <p className="text-sm text-[#8A8A8A]">Explore by category</p>
-
-        <div className="mt-1 flex items-center gap-2">
-          <h2 className="font-neue-semibold text-xl text-white">
-            More Creators Worth Knowing
-          </h2>
-
-          <Image
-            src="/images/icons/arrow-right.svg"
-            alt=""
-            width={18}
-            height={18}
-            className="mt-1.5"
-          />
-        </div>
-      </div>
+      {/* Header */}
+      <SectionHeader
+        subtitle="Explore by category"
+        title="More Creators Worth Knowing"
+        // showControls
+        onPrev={() => emblaApi?.scrollPrev()}
+        onNext={() => emblaApi?.scrollNext()}
+      />
 
       {/* Categories */}
       <div className="mb-12 select-none" ref={emblaRef}>

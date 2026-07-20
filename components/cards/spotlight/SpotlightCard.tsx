@@ -30,18 +30,11 @@ export default function SpotlightCard({
 }: Props) {
   return (
     <motion.div
-      whileHover={{
-        scale: 0.98,
-      }}
-      transition={{
-        duration: 0.25,
-        ease: "easeInOut",
-      }}
       className="
         group
         relative
-        h-[390px]
-        w-[300px]
+        h-[400px]
+        w-[311px]
         shrink-0
         overflow-hidden
         rounded-[24px]
@@ -52,7 +45,7 @@ export default function SpotlightCard({
         src={image}
         alt={name}
         fill
-        className="object-cover transition-transform duration-500 group-hover:scale-105"
+        className="object-cover transition-transform duration-500 group-hover:scale-102"
       />
 
       {/* Bottom Gradient */}
@@ -62,10 +55,13 @@ export default function SpotlightCard({
           background: overlayGradient,
         }}
       >
-        <div className="absolute bottom-8 left-10 right-10">
+        <div
+          className="absolute bottom-8 left-10 right-10 flex
+        flex-col gap-3"
+        >
           {/* Badge */}
           <div
-            className="inline-flex rounded-sm p-[1px]"
+            className="inline-flex rounded-sm p-[1px] w-fit"
             style={{
               background:
                 "linear-gradient(90deg, #FC7C20 0%, #F61785 57%, #D9107F 100%)",
@@ -102,7 +98,6 @@ export default function SpotlightCard({
           {/* Name */}
           <h3
             className="
-              mt-4
               whitespace-pre-line
               text-[34px]
               font-neue-black
@@ -115,7 +110,7 @@ export default function SpotlightCard({
           </h3>
 
           {/* Description */}
-          <p className="mt-3 text-sm text-white/80 font-neue-regular">
+          <p className="text-sm text-white/80 font-neue-regular">
             {description}
           </p>
         </div>
@@ -123,7 +118,7 @@ export default function SpotlightCard({
 
       {/* Frame */}
 
-      <div className="absolute inset-[10px] z-10 pointer-events-none">
+      <div className="absolute inset-[18px] z-10 pointer-events-none">
         <Image src={frame} alt="Frame" fill className="object-fill" />
       </div>
     </motion.div>

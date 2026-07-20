@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "motion/react";
 
 interface Props {
+  isFirst?: boolean;
   rank: number;
   image: string;
   badge: string;
@@ -21,6 +22,7 @@ interface Props {
 }
 
 export default function BookingCard({
+  isFirst = false,
   rank,
   image,
   badge,
@@ -39,37 +41,32 @@ export default function BookingCard({
     <div className="relative ml-30 w-[255px] shrink-0 overflow-visible">
       {/* Background Number */}
       <span
-        className="
-          number-gradient
-          absolute
-          left-[-100px]
-          bottom-[-18px]
-          z-0
-          select-none
-          pointer-events-none
-          font-neue-black
-          text-[300px]
-          leading-none
-          gradient-rank-text
-        "
+        className={`
+    absolute
+    ${isFirst ? "left-[-60px]" : "left-[-80px]"}
+    bottom-[-18px]
+    z-0
+    select-none
+    pointer-events-none
+    font-neue-black
+    text-[300px]
+    leading-none
+    gradient-rank-text
+  `}
       >
         {rank}
       </span>
 
       {/* Card */}
       <motion.div
-        whileHover={{ scale: 0.98 }}
-        transition={{
-          duration: 0.25,
-          ease: "easeInOut",
-        }}
         className="
           group
           relative
           z-10
-          h-[420px]
+          h-[400px]
+          w-[260px]
           overflow-hidden
-          rounded-lg
+          rounded-[15px]
         "
       >
         {/* Image */}
@@ -81,7 +78,7 @@ export default function BookingCard({
             object-cover
             transition-transform
             duration-500
-            group-hover:scale-105
+            group-hover:scale-102
           "
         />
 
@@ -93,7 +90,7 @@ export default function BookingCard({
     left-0
     right-0
     z-10
-    h-[220px]
+    h-[225px]
   "
           style={{
             background: overlayGradient,
@@ -111,31 +108,32 @@ export default function BookingCard({
             >
               {/* Badge */}
               <div
-                className="inline-flex rounded-sm p-[1px]"
+                className="border-[6px] border-transparent bg-[#2a2a2d48] backdrop-blur-[20px] rounded-sm w-fit h-[24px]"
                 style={{
-                  background:
-                    "linear-gradient(90deg, #FC7C20 0%, #F61785 58%, #D9107F 100%)",
+                  borderImage: 'url("/images/badge-border.svg") 2',
+                  borderImageWidth: 0.4,
                 }}
               >
                 <div
                   className="
       flex
-      h-9
       items-center
-      gap-2
-      rounded-sm
-      bg-[#2A2A2D]
-      px-4
+      justify-start
+      gap-1
+      h-full
+      
+      
+      px-1
     "
                 >
-                  <Image src={badgeIcon} alt={badge} width={14} height={14} />
+                  <Image src={badgeIcon} alt={badge} width={12} height={12} />
 
                   <span
                     className="
-        text-[11px]
+        text-[10px]
+        font-normal
         font-neue-semibold
         uppercase
-        tracking-[0.04em]
         text-white
       "
                   >
@@ -149,7 +147,7 @@ export default function BookingCard({
                 className="
         mt-4
         whitespace-pre-line
-        text-[31px]
+        text-[48px]
         font-neue-black
         uppercase
         leading-[0.9]
@@ -169,11 +167,9 @@ export default function BookingCard({
                     height={14}
                   />
 
-                  <span className="font-neue-semibold text-[16px]">
-                    {rating}
-                  </span>
+                  <span className="font-neue-semibold text-sm">{rating}</span>
 
-                  <span className="text-[14px] text-white/70">({reviews})</span>
+                  <span className="text-[12px] text-white/70">({reviews})</span>
                 </div>
 
                 <div className="flex items-center gap-1">
@@ -184,7 +180,7 @@ export default function BookingCard({
                     height={14}
                   />
 
-                  <span className="font-neue-semibold text-[16px]">
+                  <span className="font-neue-semibold text-sm">
                     {responseTime}
                   </span>
                 </div>
@@ -236,11 +232,13 @@ export default function BookingCard({
                 <Image
                   src="/images/icons/fire-white.svg"
                   alt=""
-                  width={12}
-                  height={12}
+                  width={10}
+                  height={10}
                 />
 
-                <span className="text-[12px] text-white/85">{bookedText}</span>
+                <span className="font-neue-semibold font-normal text-[12px] text-white/85">
+                  {bookedText}
+                </span>
               </div>
             </div>
           </div>

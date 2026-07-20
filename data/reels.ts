@@ -44,7 +44,7 @@ export const reels: Reel[] = [
   {
     id: 1,
 
-    mediaType: "image",
+    mediaType: "video",
 
     images: ["/images/reels/reel1.png"],
 
@@ -86,7 +86,7 @@ export const reels: Reel[] = [
 
     creatorLogo: "/images/logos/megamind.png",
 
-    avatar: "/images/avatars/priya.png",
+    avatar: "/images/avatars/jonaorie.png",
 
     title: "I Tried The Morning Routine Every Influencer Swears By",
 
@@ -110,13 +110,13 @@ export const reels: Reel[] = [
   {
     id: 3,
 
-    mediaType: "image",
+    mediaType: "video",
 
     images: ["/images/reels/reel3.png"],
 
     creatorLogo: "/images/logos/megamind.png",
 
-    avatar: "/images/avatars/priya.png",
+    avatar: "/images/avatars/zara.png",
 
     title: "Getting Ready With Me For The Most Important Date Night",
 
@@ -138,13 +138,13 @@ export const reels: Reel[] = [
   {
     id: 4,
 
-    mediaType: "image",
+    mediaType: "video",
 
     images: ["/images/reels/reel4.png"],
 
     creatorLogo: "/images/logos/dexter.png",
 
-    avatar: "/images/avatars/priya.png",
+    avatar: "/images/avatars/yara.png",
 
     title: "Raw And Unfiltered: What It Is Really Like Doing This For A Living",
 
@@ -166,7 +166,7 @@ export const reels: Reel[] = [
   {
     id: 5,
 
-    mediaType: "image",
+    mediaType: "video",
 
     images: ["/images/reels/reel5.png"],
 

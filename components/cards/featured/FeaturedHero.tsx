@@ -17,8 +17,8 @@ export default function FeaturedHero({ logo, name, bio }: FeaturedHeroProps) {
       <Image
         src={logo}
         alt="Logo"
-        width={110}
-        height={40}
+        width={120}
+        height={22}
         className="mb-6 h-auto w-auto"
       />
 
@@ -32,7 +32,7 @@ export default function FeaturedHero({ logo, name, bio }: FeaturedHeroProps) {
       </h1>
 
       {/* Bio */}
-      <p className="mt-6 text-sm text-white/80">{bio}</p>
+      <p className="mt-6 text-[16px] text-white font-neue-regular">{bio}</p>
 
       {/* Buttons */}
       <div className="mt-10 flex items-center gap-4">
@@ -41,13 +41,13 @@ export default function FeaturedHero({ logo, name, bio }: FeaturedHeroProps) {
           onClick={() => console.log("View Profile")}
           className="
             flex
-            h-12
+            h-12.5
             items-center
-            gap-3
-            rounded-lg
+            gap-2
+            rounded-[16px]
             bg-white
             px-6
-            text-sm
+            text-[16px]
             font-neue-semibold
             text-black
             transition
@@ -57,8 +57,8 @@ export default function FeaturedHero({ logo, name, bio }: FeaturedHeroProps) {
           <Image
             src="/images/icons/profile.svg"
             alt=""
-            width={18}
-            height={18}
+            width={16}
+            height={16}
           />
           View profile
         </button>
@@ -68,12 +68,12 @@ export default function FeaturedHero({ logo, name, bio }: FeaturedHeroProps) {
           onClick={() => console.log("Tip")}
           className="
             flex
-            h-12
-            w-12
+            h-12.5
+            w-12.5
             items-center
             justify-center
-            rounded-lg
-            bg-white/15
+            rounded-[16px]
+            bg-white/20
             backdrop-blur-md
             transition
             hover:bg-white/20
@@ -87,12 +87,12 @@ export default function FeaturedHero({ logo, name, bio }: FeaturedHeroProps) {
           onClick={() => console.log("Follow")}
           className="
             flex
-            h-12
-            w-12
+            h-12.5
+            w-12.5
             items-center
             justify-center
-            rounded-lg
-            bg-white/15
+            rounded-[16px]
+            bg-white/20
             backdrop-blur-md
             transition
             hover:bg-white/20

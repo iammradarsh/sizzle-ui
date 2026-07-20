@@ -18,14 +18,16 @@ export default function CategoryChip({
       onClick={onClick}
       className={`
   shrink-0
-  rounded-lg
+  rounded-[14px]
   border
-  px-6
-  py-2
+  px-5
+  h-10
   font-neue-medium
-  text-[17px]
+  text-[14px]
   transition-all
   duration-200
+  font-neue-semibold
+  font-normal
 
   ${
     active
@@ -35,11 +37,10 @@ export default function CategoryChip({
         text-black
       `
       : `
-        border-[#303033]
+        border-[#38373B]
         bg-transparent
         text-white
-        hover:border-[#3A3A3E]
-        hover:bg-[#1F1F22]
+        hover:bg-[#19191B]
       `
   }
 `}
