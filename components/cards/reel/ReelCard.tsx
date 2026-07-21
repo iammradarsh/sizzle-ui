@@ -265,7 +265,7 @@ export default function ReelCard({
               duration: 0.25,
               ease: "easeInOut",
             }}
-            className="absolute bottom-[59px] left-[15px]"
+            className="absolute bottom-[59px] left-[15px] z-50"
           >
             <Image
               src={creatorLogo}
@@ -292,11 +292,6 @@ export default function ReelCard({
 
           {/* 2. Color Gradient Overlay (Rich Dark Text Protection) */}
           <div className="absolute bottom-0 inset-x-0 h-[140px] pointer-events-none bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-
-          {/* 3. Text Element (Place your "MACHETE" header code right here) */}
-          <h3 className="absolute bottom-[52px] left-[15px] text-white font-black italic uppercase text-2xl tracking-wider select-none z-20">
-            Machete
-          </h3>
 
           {/* Bottom Meta Badges Container */}
           <motion.div
