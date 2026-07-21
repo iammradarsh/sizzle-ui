@@ -91,11 +91,11 @@ export default function PersonalCard({
             mt-5
             flex
             h-10
+            w-20
             items-center
             justify-center
-            rounded-sm
-            bg-[#1D1D20]
-            px-5
+            rounded-[12px]
+            bg-[#19191B]
 
             font-neue-semibold
             text-sm
@@ -104,7 +104,7 @@ export default function PersonalCard({
             transition-all
             duration-200
 
-            hover:bg-[#2A2A2E]
+            hover:bg-[#28282A]
           "
         >
           +{more} more
