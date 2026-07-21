@@ -97,7 +97,7 @@ export default function SectionHeader({
                 </p>
               )}
 
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-[2px]">
                 <h2 className="font-neue-semibold text-2xl text-white">
                   {title}
                 </h2>
