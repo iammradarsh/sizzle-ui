@@ -31,20 +31,18 @@ export default function SuggestedCreatorCard({
   const [isFollowing, setIsFollowing] = useState(following);
 
   return (
-    <motion.div
-      whileHover={{ scale: 1.05 }}
-      transition={{ duration: 0.35 }}
-      className="w-[190px] shrink-0 flex flex-col "
-    >
-      <SquircleAvatar
-        src={image}
-        alt={name}
-        avatarSize={200}
-        borderSize={204}
-        borderVariant={borderVariant}
-        cornerRadius={54 / 200} // 0.27
-        cornerSmoothing={6}
-      />
+    <motion.div className="w-[190px] shrink-0 flex flex-col ">
+      <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.35 }}>
+        <SquircleAvatar
+          src={image}
+          alt={name}
+          avatarSize={200}
+          borderSize={204}
+          borderVariant={borderVariant}
+          cornerRadius={54 / 200} // 0.27
+          cornerSmoothing={6}
+        />
+      </motion.div>
 
       <div className="card-detail flex flex-col">
         <div className="mt-2 flex items-center gap-2">
