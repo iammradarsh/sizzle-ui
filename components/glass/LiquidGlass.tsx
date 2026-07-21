@@ -44,10 +44,10 @@ export default function LiquidGlass({
         style={{
           background: `
             radial-gradient(circle at top left,
-              rgba(255,255,255,.10),
+              rgba(255,255,255,.025),
               transparent 40%),
             radial-gradient(circle at bottom right,
-              rgba(255,255,255,.08),
+              rgba(255,255,255,.02),
               transparent 45%)
           `,
         }}
@@ -69,12 +69,12 @@ export default function LiquidGlass({
 
            
 
-            bg-white/[0.06]
+            bg-[rgba(25,25,27,0.75)]
 
             backdrop-blur-[32px]
             backdrop-saturate-[180%]
 
-            shadow-[0_20px_60px_rgba(0,0,0,.45)]
+            shadow-[0_8px_24px_rgba(0,0,0,.45)]
           "
         >
           {/* Top Highlight */}
@@ -87,7 +87,7 @@ export default function LiquidGlass({
 
               bg-gradient-to-r
               from-transparent
-              via-white/80
+              via-white/15
               to-transparent
             "
           />
@@ -151,7 +151,7 @@ export default function LiquidGlass({
   "
             style={{
               background:
-                "linear-gradient(90deg, transparent, rgba(255,255,255,.20), rgba(255,255,255,.08), transparent)",
+                "linear-gradient(90deg, transparent, rgba(255,255,255,.05), rgba(255,255,255,.02), transparent)",
             }}
           />
 
@@ -161,8 +161,8 @@ export default function LiquidGlass({
               background: useMotionTemplate`
       radial-gradient(
         circle at ${mouseX}% ${mouseY}%,
-        rgba(255,255,255,.18),
-        rgba(255,255,255,.08) 18%,
+        rgba(255,255,255,.05),
+        rgba(255,255,255,.02) 18%,
         transparent 45%
       )
     `,
@@ -175,7 +175,7 @@ export default function LiquidGlass({
               background: useMotionTemplate`
       radial-gradient(
         circle at ${mouseX}% ${mouseY}%,
-        rgba(255,255,255,.10),
+        rgba(255,255,255,.03),
         transparent 60%
       )
     `,
@@ -191,11 +191,11 @@ export default function LiquidGlass({
             style={{
               background: `
       radial-gradient(circle at 20% 15%,
-      rgba(255,255,255,.10),
+      rgba(255,255,255,.025),
       transparent 28%),
 
       radial-gradient(circle at 85% 80%,
-      rgba(255,255,255,.08),
+      rgba(255,255,255,.02),
       transparent 35%)
     `,
             }}

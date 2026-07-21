@@ -49,7 +49,7 @@ export default function BottomNavigation() {
       }}
     >
       <LiquidGlass width={580} height={90} cornerRadius={34}>
-        <div className="flex h-full items-center justify-center gap-2 px-3">
+        <div className="flex h-full items-center justify-center px-3">
           {navItems.map((item) => {
             const active = activeTab === item.label;
 
@@ -157,7 +157,7 @@ export default function BottomNavigation() {
                   </motion.div>
                 )}
 
-                <div className="relative z-20 flex flex-col items-center gap-1">
+                <div className="relative z-20 flex flex-col items-center">
                   <Image
                     src={active ? item.activeIcon : item.icon}
                     alt={item.label}

@@ -28,23 +28,31 @@ gap-5
       <button>
         <Image src="/images/icons/heart.svg" alt="" width={28} height={28} />
 
-        <p className="mt-1 text-xs">{likes}</p>
+        <p className="mt-1 text-[10px] font-neue-semibold font-normal text-white">
+          {likes}
+        </p>
       </button>
 
       <button>
         <Image src="/images/icons/comment.svg" alt="" width={28} height={28} />
 
-        <p className="mt-1 text-xs">{comments}</p>
+        <p className="mt-1 text-[10px] font-neue-semibold font-normal text-white">
+          {comments}
+        </p>
       </button>
 
       <button>
         <Image src="/images/icons/gift.svg" alt="" width={28} height={28} />
-        <p className="mt-1 text-xs">Gift</p>
+        <p className="mt-1 text-[10px] font-neue-semibold font-normal text-white">
+          Gift
+        </p>
       </button>
 
       <button>
         <Image src="/images/icons/save.svg" alt="" width={28} height={28} />
-        <p className="mt-1 text-xs">Save</p>
+        <p className="mt-1 text-[10px] font-neue-semibold font-normal text-white">
+          Save
+        </p>
       </button>
 
       <button>

@@ -188,7 +188,7 @@ export default function ReelCard({
           )}
 
           {/* Dark Overlay */}
-          <div className="absolute inset-0 " />
+          {/* <div className="absolute inset-0 " /> */}
 
           {/* Hover Overlay */}
           <div
@@ -247,6 +247,9 @@ export default function ReelCard({
       h-[18px]
       text-[10px]
       backdrop-blur-md
+      flex
+      items-center
+      justify-center
     "
             >
               {currentImage + 1}/{imageCount}
@@ -262,14 +265,14 @@ export default function ReelCard({
               duration: 0.25,
               ease: "easeInOut",
             }}
-            className="absolute bottom-14 left-6"
+            className="absolute bottom-[59px] left-[15px]"
           >
             <Image
               src={creatorLogo}
               alt="logo"
               width={120}
               height={50}
-              className="h-auto w-auto mb-5"
+              className="h-auto w-[120px] h-auto"
             />
           </motion.div>
 
@@ -283,7 +286,7 @@ export default function ReelCard({
               duration: 0.25,
               ease: "easeInOut",
             }}
-            className="absolute bottom-6 left-6 flex items-center gap-2"
+            className="absolute bottom-[15px] left-[15px] flex items-center gap-2"
           >
             {/* Video Badge */}
             {mediaType === "video" && duration && (
@@ -312,7 +315,7 @@ export default function ReelCard({
 
             {/* Image Badge (Optional) */}
             {mediaType === "image" && duration && (
-              <div className="flex h-6 items-center  bg-black/40 px-3 backdrop-blur-md">
+              <div className="flex h-6 items-center rounded-[6px] bg-black/40 px-3 backdrop-blur-md">
                 <span className="font-neue-regular text-xs text-white">
                   {duration}
                 </span>
@@ -320,8 +323,8 @@ export default function ReelCard({
             )}
 
             {/* Category */}
-            <div className="flex h-8 items-center rounded-sm bg-black/40 px-3 backdrop-blur-md">
-              <span className="font-neue-regular text-sm text-white">
+            <div className="flex h-6 items-center rounded-[6px] bg-black/40 px-3 backdrop-blur-md">
+              <span className="font-neue-regular text-xs text-white">
                 {category}
               </span>
             </div>

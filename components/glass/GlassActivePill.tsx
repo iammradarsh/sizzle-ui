@@ -20,79 +20,77 @@ export default function GlassActivePill({
         stiffness: 420,
         damping: 34,
       }}
-      className="
-        absolute
-        inset-0
-        overflow-hidden
-        rounded-full
-      "
+      className="absolute inset-0 overflow-hidden rounded-full"
     >
       {/* Background */}
       <div
         className="
           absolute
           inset-0
-          backdrop-blur-2xl
-          backdrop-saturate-[180%]
 
-          shadow-[0_8px_30px_rgba(255,255,255,.08),0_12px_24px_rgba(0,0,0,.28)]
+          rounded-full
+
+          border
+          border-white/[0.04]
+
+          bg-[linear-gradient(180deg,rgba(70,70,72,.95)_0%,rgba(58,58,60,.92)_100%)]
+
+          backdrop-blur-xl
+          backdrop-saturate-150
+
+          shadow-[0_6px_16px_rgba(0,0,0,.30)]
         "
       />
 
-      {/* Inner highlight */}
+      {/* Inner Highlight */}
       <div
         className="absolute inset-[1px] rounded-full"
         style={{
-          boxShadow:
-            "inset 0 1px 1px rgba(255,255,255,.35), inset 0 -1px 1px rgba(255,255,255,.05)",
+          boxShadow: "inset 0 1px 0 rgba(255,255,255,.14)",
         }}
       />
 
-      {/* Top shine */}
-      <div
-        className="
-          absolute
-          left-4
-          right-4
-          top-1
-          h-px
-          
-        "
-      />
+      {/* Top Shine */}
+      <div className="absolute left-5 right-5 top-px h-px bg-gradient-to-r from-transparent via-white/18 to-transparent" />
 
-      {/* Animated reflection */}
+      {/* Reflection */}
       <motion.div
         animate={{
-          x: ["-140%", "180%"],
+          x: ["-150%", "180%"],
         }}
         transition={{
-          duration: 4,
+          duration: 5,
           repeat: Infinity,
           ease: "linear",
         }}
         className="
           absolute
           inset-y-0
-          w-20
+          -left-16
+          w-16
           rotate-[18deg]
-          blur-xl
+          blur-2xl
         "
+        style={{
+          background:
+            "linear-gradient(90deg,transparent,rgba(255,255,255,.05),transparent)",
+        }}
       />
 
-      {/* Soft breathing glow */}
+      {/* Breathing Glow */}
       <motion.div
         animate={{
-          opacity: [0.15, 0.3, 0.15],
+          opacity: [0.04, 0.08, 0.04],
         }}
         transition={{
-          duration: 2.8,
+          duration: 3,
           repeat: Infinity,
         }}
         className="
           absolute
           inset-0
           rounded-full
-         
+          bg-white
           blur-xl
         "
       />
