@@ -256,26 +256,6 @@ export default function ReelCard({
             </motion.div>
           )}
 
-          {/* Creator Logo */}
-          <motion.div
-            animate={{
-              opacity: isHovered ? 0 : 1,
-            }}
-            transition={{
-              duration: 0.25,
-              ease: "easeInOut",
-            }}
-            className="absolute bottom-[59px] left-[15px] z-50"
-          >
-            <Image
-              src={creatorLogo}
-              alt="logo"
-              width={120}
-              height={50}
-              className="h-auto w-[120px] h-auto"
-            />
-          </motion.div>
-
           {/* 1. Progressive Backdrop Blur Layer (Pure Blur) */}
           <div
             className="absolute bottom-0 inset-x-0 h-[100px] pointer-events-none"
@@ -293,7 +273,27 @@ export default function ReelCard({
           {/* 2. Color Gradient Overlay (Rich Dark Text Protection) */}
           <div className="absolute bottom-0 inset-x-0 h-[140px] pointer-events-none bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
 
-          {/* Bottom Meta Badges Container */}
+          {/* Creator Logo */}
+          <motion.div
+            animate={{
+              opacity: isHovered ? 0 : 1,
+            }}
+            transition={{
+              duration: 0.25,
+              ease: "easeInOut",
+            }}
+            className="absolute bottom-[59px] left-[15px]"
+          >
+            <Image
+              src={creatorLogo}
+              alt="logo"
+              width={120}
+              height={50}
+              className="h-auto w-[120px] h-auto"
+            />
+          </motion.div>
+
+          {/* Bottom Meta */}
           <motion.div
             initial={false}
             animate={{
@@ -303,7 +303,7 @@ export default function ReelCard({
               duration: 0.25,
               ease: "easeInOut",
             }}
-            className="absolute bottom-[15px] left-[15px] flex items-center gap-2 z-20"
+            className="absolute bottom-[15px] left-[15px] flex items-center gap-2"
           >
             {/* Video Badge */}
             {mediaType === "video" && duration && (
@@ -323,6 +323,7 @@ export default function ReelCard({
                   width={14}
                   height={14}
                 />
+
                 <span className="font-neue-regular text-xs text-white">
                   {imageCount}
                 </span>

@@ -4,17 +4,11 @@ interface Props {
   progress: number;
   hoverProgress: number | null;
   showPreview: boolean;
-
   progressRef: React.RefObject<HTMLDivElement | null>;
-
   onMouseMove: (e: React.MouseEvent<HTMLDivElement>) => void;
-
   onMouseEnter: () => void;
-
   onMouseLeave: () => void;
-
   onClick: () => void;
-
   previewImage: string;
 }
 
@@ -33,44 +27,47 @@ export default function ReelControls({
   return (
     <div
       className="
-absolute
-bottom-[15px]
-left-4
-right-4
-"
+        absolute
+        bottom-[15px]
+        left-4
+        right-4
+      "
     >
       {showPreview && hoverProgress !== null && (
         <div
           className="
-      absolute
-      bottom-2
-      w-[96px]
-      overflow-hidden
-      -translate-x-1/2
-      
-    "
+            absolute
+            bottom-2
+            w-[80px] /* 1. Match the exact card width for accurate math */
+            -translate-x-1/2
+            flex /* 2. Grid-like stack layouts neatly downwards */
+            flex-col
+            items-center
+          "
           style={{
             left: `${hoverProgress}%`,
           }}
         >
-          {/* Preview Image */}
+          {/* Preview Image Wrapper */}
           <div
             className="
-            rounded-[15px]
-            h-[122px]
-            w-[80px]
-    bg-white/20
-    p-[1px]
-  "
+              rounded-[15px]
+              h-[122px]
+              w-[80px]
+              bg-white/20
+              p-[1px]
+              mb-1
+            "
           >
             <div
               className="
-      relative
-      h-[120px]
-      w-[78px]
-      overflow-hidden
-      rounded-[15px]
-    "
+                relative
+                h-[120px]
+                w-[78px]
+                overflow-hidden
+                rounded-[15px]
+                
+              "
             >
               <Image
                 src={previewImage}
@@ -81,23 +78,23 @@ right-4
             </div>
           </div>
 
-          {/* Time */}
+          {/* Time text centered right below the thumbnail */}
           <div
             className="
-        flex
-        h-10
-        items-center
-        justify-center
-        mb-1
-        
-      "
+              flex
+              h-6 /* 3. Tightened line container height */
+              items-center
+              justify-center
+              mb-3
+            "
           >
-            <span className="font-neue-semibold text-[12px] text-white">
+            <span className="font-neue-semibold text-[12px] text-white whitespace-nowrap">
               1:34 / 6:03
             </span>
           </div>
         </div>
       )}
+
       <div
         ref={progressRef}
         onMouseMove={onMouseMove}
@@ -109,16 +106,16 @@ right-4
         {/* Track */}
         <div className="h-[6px] w-full rounded-full bg-white/20" />
 
-        {/* Progress */}
+        {/* Progress Bar */}
         <div
           className="
-      absolute
-      left-0
-      top-0
-      h-full
-      rounded-full
-      bg-[linear-gradient(270deg,#D9107F_0%,#EE1E03_29.33%,#F61785_57.21%,#FC7C20_100%)]
-    "
+            absolute
+            left-0
+            top-0
+            h-full
+            rounded-full
+            bg-[linear-gradient(270deg,#D9107F_0%,#EE1E03_29.33%,#F61785_57.21%,#FC7C20_100%)]
+          "
           style={{
             width: `${displayProgress}%`,
           }}
@@ -127,25 +124,25 @@ right-4
         {/* Thumb */}
         <div
           className="
-absolute
-top-1/2
--translate-y-1/2
-"
+            absolute
+            top-1/2
+            -translate-y-1/2
+          "
           style={{
-            left: `calc(${displayProgress}% - 8px)`,
+            left: `calc(${displayProgress}% - 4px)` /* 4. Adjusted offset half of thumb's width */,
           }}
         >
           <div
             className="
-relative
-h-2
-w-2
-rounded-full
-border-2
-border-white/20
-bg-white
-rounded-full outline outline-[6px] outline-rose-600/40
-"
+              relative
+              h-2
+              w-2
+              rounded-full
+              border-2
+              border-white/20
+              bg-white
+              outline outline-[6px] outline-rose-600/40
+            "
           />
         </div>
       </div>
