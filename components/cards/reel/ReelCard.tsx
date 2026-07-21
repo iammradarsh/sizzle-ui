@@ -195,7 +195,7 @@ export default function ReelCard({
             className="
           absolute
           inset-0
-          bg-black/20
+          bg-black/50
           opacity-0
           transition
           duration-300
