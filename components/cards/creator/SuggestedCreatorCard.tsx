@@ -87,21 +87,22 @@ export default function SuggestedCreatorCard({
         onClick={() => setIsFollowing(!isFollowing)}
         className={`
     mt-2
-    inline-flex
-    h-10
-    w-fit
+    flex
     items-center
     justify-center
-    gap-2
+    h-10
+    items-center
+    justify-center
+    gap-1.5
     rounded-[12px]
-    px-4
+    
     font-neue-semibold
     transition-all
     duration-300
     ${
       isFollowing
-        ? "bg-[#232325] text-[#A7A7A7] hover:bg-[#2C2C2F]"
-        : "bg-white text-black hover:bg-[#DFDCD7]"
+        ? "bg-[#19191BBF] text-[#fff] w-30 hover:bg-[#28282A]"
+        : "bg-white text-black w-20 hover:bg-[#DFDCD7]"
     }
   `}
       >

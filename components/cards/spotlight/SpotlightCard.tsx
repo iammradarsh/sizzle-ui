@@ -61,7 +61,7 @@ export default function SpotlightCard({
         >
           {/* Badge */}
           <div
-            className="inline-flex rounded-sm p-[1px] w-fit"
+            className="inline-flex rounded-sm p-[1px] w-fit mb-[3px]"
             style={{
               background:
                 "linear-gradient(90deg, #FC7C20 0%, #F61785 57%, #D9107F 100%)",

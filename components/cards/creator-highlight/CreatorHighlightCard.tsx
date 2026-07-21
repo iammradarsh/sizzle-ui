@@ -109,21 +109,53 @@ export default function CreatorHighlightCard({
           className={`
             h-10
             rounded-[12px]
-            px-5
+            flex
+            items-center
+            justify-center
             font-neue-semibold
             text-[14px]
             transition-all
             flex 
             items-center
             justify-center
+            gap-1.5
             ${
               isFollowing
-                ? "bg-[#2B2B2E] text-white"
-                : "bg-white text-black hover:bg-[#DFDCD7]"
+                ? "bg-[#19191BBF] w-30 text-white hover:bg-[#28282A]"
+                : "bg-white w-20 text-black hover:bg-[#DFDCD7]"
             }
           `}
         >
-          {isFollowing ? "✓ Following" : "+ Follow"}
+          {isFollowing ? (
+            <>
+              <Image
+                src="/images/icons/following-grey.svg"
+                alt="Following"
+                width={16}
+                height={16}
+                className="block group-hover:hidden"
+              />
+
+              <Image
+                src="/images/icons/following.svg"
+                alt="Following"
+                width={16}
+                height={16}
+                className="hidden group-hover:block"
+              />
+            </>
+          ) : (
+            <Image
+              src="/images/icons/plus-black.svg"
+              alt="Follow"
+              width={10}
+              height={10}
+            />
+          )}
+
+          <span className={isFollowing ? "text-white" : ""}>
+            {isFollowing ? "Following" : "Follow"}
+          </span>
         </button>
       </div>
 
