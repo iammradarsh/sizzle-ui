@@ -9,55 +9,55 @@ export default function Header() {
       <div className="flex items-center justify-between">
         {/* Left */}
         <div className="flex items-center gap-3">
-          <Button className="h-[44px] rounded-[14px] font-neue-semibold font-normal bg-white px-5 text-[14px] text-black hover:[#DFDCD7]">
+          <Button className="h-[44px] w-[107px] rounded-[14px] font-neue-semibold font-normal bg-white px-5 text-[14px] text-black hover:[#DFDCD7]">
             <Image
               src="/images/icons/foryou.svg"
               alt="For You"
               width={16}
               height={16}
-              className="mr-2 h-[16px] w-[16px]"
+              className=" h-[16px] w-[16px]"
             />
             For You
           </Button>
 
           <Button
             variant="secondary"
-            className="group h-[44px] rounded-[14px] font-neue-semibold font-normal border-0 bg-[#19191B] px-5 text-[14px] text-zinc-300 hover:bg-[#252528] hover:text-white"
+            className="group h-[44px] w-[120px] rounded-[14px] font-neue-semibold font-normal border-0 bg-[#19191B] px-5 text-[14px] text-zinc-300 hover:bg-[#252528] hover:text-white"
           >
             <Image
               src="/images/icons/following-grey.svg"
               alt="Following"
               width={18}
               height={18}
-              className="mr-2 h-[18px] w-[18px] group-hover:hidden"
+              className=" h-[18px] w-[18px] group-hover:hidden"
             />
             <Image
               src="/images/icons/following.svg"
               alt="Following"
               width={18}
               height={18}
-              className="mr-2 hidden h-[18px] w-[18px] group-hover:block"
+              className=" hidden h-[18px] w-[18px] group-hover:block"
             />
             Following
           </Button>
 
           <Button
             variant="secondary"
-            className="group h-[44px] rounded-[14px] font-neue-semibold font-normal border-0 bg-[#19191B] px-5 text-[14px] text-zinc-300 hover:bg-[#252528] hover:text-white"
+            className="group h-[44px] w-[147px] rounded-[14px] font-neue-semibold font-normal border-0 bg-[#19191B] text-[14px] text-zinc-300 hover:bg-[#252528] hover:text-white"
           >
             <Image
               src="/images/icons/crown-grey.svg"
               alt="Memberships"
               width={18}
               height={18}
-              className="mr-[6px] h-[18px] w-[18px] group-hover:hidden"
+              className=" h-[18px] w-[18px] group-hover:hidden"
             />
             <Image
               src="/images/icons/crown.svg"
               alt="Memberships"
               width={18}
               height={18}
-              className="mr-[6px] hidden h-[18px] w-[18px] group-hover:block"
+              className=" hidden h-[18px] w-[18px] group-hover:block"
             />
             Memberships
           </Button>
@@ -75,7 +75,7 @@ export default function Header() {
         {/* Right */}
         <div className="flex items-center gap-3">
           {/* Create */}
-          <Button className="relative h-[44px] overflow-hidden rounded-[14px] border-0 px-6 text-white">
+          <Button className="relative h-[44px] w-[110px] overflow-hidden rounded-[14px] border-0 px-6 text-white">
             <Image
               src="/images/CreateButtonBG.png"
               alt=""
@@ -84,7 +84,7 @@ export default function Header() {
               className="object-cover"
             />
 
-            <span className="relative z-10 flex items-center font-neue-semibold">
+            <span className="relative z-10 flex items-center font-neue-semibold text-[14px]">
               <Image
                 src="/images/icons/plus.svg"
                 alt="Create"
