@@ -41,7 +41,10 @@ export default function FeaturedHero({ logo, name, bio }: FeaturedHeroProps) {
           onClick={() => console.log("View Profile")}
           className="
             flex
+            items-center
+            justify-center
             h-12.5
+            w-40
             items-center
             gap-2
             rounded-[16px]
@@ -51,7 +54,7 @@ export default function FeaturedHero({ logo, name, bio }: FeaturedHeroProps) {
             font-neue-semibold
             text-black
             transition
-            hover:bg-white/90
+            hover:bg-[#DFDCD7]
           "
         >
           <Image
