@@ -23,7 +23,7 @@ export default function FeaturedFooter({
   time,
 }: FeaturedFooterProps) {
   return (
-    <div className="mt-4">
+    <div className="mt-3">
       {/* Title */}
       <h3 className="line-clamp-2 text-[16px] font-neue-semibold leading-[1.3] text-white">
         {title}
@@ -38,19 +38,17 @@ export default function FeaturedFooter({
           borderSize={16}
           borderVariant="solid"
           borderWidth={1}
-          cornerRadius={4 / 14}
-          cornerSmoothing={8}
+          cornerRadius={5 / 14}
+          cornerSmoothing={16}
         />
 
-        {/* <span className="text-[13px] text-[#A1A1AA]">{creator}</span> */}
+        <div className="flex gap-[4px] h-[18px]">
+          <span className="text-[14px] text-[#A3A3A3]">{views}</span>
 
-        {/* <span className="text-[#71717A]">•</span> */}
+          <span className="text-[#A3A3A3]">•</span>
 
-        <span className="text-[13px] text-[#A1A1AA]">{views}</span>
-
-        <span className="text-[#71717A]">•</span>
-
-        <span className="text-[13px] text-[#A1A1AA]">{time}</span>
+          <span className="text-[14px] text-[#A3A3A3]">{time}</span>
+        </div>
       </div>
     </div>
   );

@@ -276,7 +276,29 @@ export default function ReelCard({
             />
           </motion.div>
 
-          {/* Bottom Meta */}
+          {/* 1. Progressive Backdrop Blur Layer (Pure Blur) */}
+          <div
+            className="absolute bottom-0 inset-x-0 h-[100px] pointer-events-none"
+            style={{
+              backdropFilter: "blur(2px)",
+              WebkitBackdropFilter: "blur(20px)",
+              // Smooth 0 to 100 progressive fade of the blur effect
+              maskImage:
+                "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%)",
+              WebkitMaskImage:
+                "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50%)",
+            }}
+          />
+
+          {/* 2. Color Gradient Overlay (Rich Dark Text Protection) */}
+          <div className="absolute bottom-0 inset-x-0 h-[140px] pointer-events-none bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+
+          {/* 3. Text Element (Place your "MACHETE" header code right here) */}
+          <h3 className="absolute bottom-[52px] left-[15px] text-white font-black italic uppercase text-2xl tracking-wider select-none z-20">
+            Machete
+          </h3>
+
+          {/* Bottom Meta Badges Container */}
           <motion.div
             initial={false}
             animate={{
@@ -286,7 +308,7 @@ export default function ReelCard({
               duration: 0.25,
               ease: "easeInOut",
             }}
-            className="absolute bottom-[15px] left-[15px] flex items-center gap-2"
+            className="absolute bottom-[15px] left-[15px] flex items-center gap-2 z-20"
           >
             {/* Video Badge */}
             {mediaType === "video" && duration && (
@@ -306,7 +328,6 @@ export default function ReelCard({
                   width={14}
                   height={14}
                 />
-
                 <span className="font-neue-regular text-xs text-white">
                   {imageCount}
                 </span>

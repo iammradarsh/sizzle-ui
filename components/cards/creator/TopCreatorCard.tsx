@@ -7,13 +7,9 @@ import TopCreatorBadge from "./TopCreatorBadge";
 
 interface Props {
   image: string;
-
   badge: string;
-
   badgeIcon: string;
-
   name: string;
-
   description: string;
 }
 
@@ -52,22 +48,27 @@ export default function TopCreatorCard({
           "
         />
 
-        {/* Gradient */}
+        {/* 1. Progressive Backdrop Blur Layer (Pure Blur, No Text) */}
         <div
-          className="
-            absolute
-            inset-0
-            bg-gradient-to-t
-            from-black
-            via-black/20
-            to-transparent
-          "
+          className="absolute bottom-0 inset-x-0 h-[240px] pointer-events-none"
+          style={{
+            backdropFilter: "blur(2px)",
+            WebkitBackdropFilter: "blur(24px)",
+            // This mask controls the 0 to 100 progressive fade of the blur itself
+            maskImage:
+              "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 40%)",
+            WebkitMaskImage:
+              "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 40%)",
+          }}
         />
 
-        {/* Bottom Content */}
+        {/* 2. Color Gradient Overlay (Provides the Rich Dark Fade) */}
+        <div className="absolute bottom-0 inset-x-0 h-[240px] pointer-events-none bg-gradient-to-t from-black via-black/50 to-transparent" />
 
-        <div className="absolute bottom-6 left-5 right-5">
+        {/* 3. Text and Badge Layer (On Top) */}
+        <div className="absolute bottom-6 left-5 right-5 z-20">
           <TopCreatorBadge icon={badgeIcon} label={badge} />
+
           <h3
             className="
               whitespace-pre-line
@@ -76,6 +77,7 @@ export default function TopCreatorCard({
               uppercase
               leading-[0.9]
               text-white
+              mt-3
             "
           >
             {name}

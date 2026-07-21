@@ -98,7 +98,7 @@ export default function FeaturedHero({ logo, name, bio }: FeaturedHeroProps) {
             hover:bg-white/20
           "
         >
-          <Image src="/images/icons/plus.svg" alt="" width={22} height={22} />
+          <Image src="/images/icons/plus.svg" alt="" width={14} height={14} />
         </button>
       </div>
     </div>

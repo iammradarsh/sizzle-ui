@@ -45,7 +45,7 @@ export default function ExploreCreatorsSection() {
 
       {/* Categories */}
       <div className="mb-12 px-8 select-none" ref={emblaRef}>
-        <div className="flex gap-3">
+        <div className="flex gap-1.5">
           {creatorCategories.map((category) => (
             <CategoryChip
               key={category}
