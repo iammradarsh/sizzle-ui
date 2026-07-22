@@ -121,7 +121,7 @@ export default function ReelCard({
     >
       <div
         className="
-    rounded-xl
+    rounded-[15px]
     p-2
     transition-colors
     duration-300

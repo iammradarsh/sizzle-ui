@@ -6,12 +6,14 @@ interface Props {
   active?: boolean;
 
   onClick?: () => void;
+  className?: string;
 }
 
 export default function CategoryChip({
   label,
   active = false,
   onClick,
+  className,
 }: Props) {
   return (
     <button
@@ -28,6 +30,7 @@ export default function CategoryChip({
   duration-200
   font-neue-semibold
   font-normal
+  ${className ?? ""}
 
   ${
     active

@@ -58,9 +58,9 @@ export default function PersonalCard({
       </motion.div>
 
       {/* Content */}
-      <div className="mt-4">
+      <div className="mt-3">
         {/* Name */}
-        <h3 className="font-neue-regular text-md leading-1 text-white">
+        <h3 className="font-neue-regular text-md leading-5 text-white">
           {name}
         </h3>
 
@@ -74,7 +74,7 @@ export default function PersonalCard({
         </div>
 
         {/* Services */}
-        <div className="mt-4 ">
+        <div className="mt-1.5 ">
           {services.map((service) => (
             <PersonalService
               key={service.title}
@@ -88,7 +88,7 @@ export default function PersonalCard({
         <button
           onClick={() => console.log("more")}
           className="
-            mt-5
+            mt-3
             flex
             h-10
             w-20

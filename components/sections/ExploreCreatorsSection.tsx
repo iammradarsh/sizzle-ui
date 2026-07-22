@@ -52,6 +52,7 @@ export default function ExploreCreatorsSection() {
               label={category}
               active={selectedCategory === category}
               onClick={() => setSelectedCategory(category)}
+              className={category === "All" ? "w-[60px]" : ""}
             />
           ))}
         </div>
