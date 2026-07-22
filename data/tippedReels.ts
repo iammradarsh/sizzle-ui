@@ -8,7 +8,7 @@ export const tippedReels: Reel[] = [
 
     images: ["/images/reels/reel12.png"],
 
-    creatorLogo: "/images/logos/banana-joe.png",
+    creatorLogo: "/images/logos/banana-joe.svg",
 
     avatar: "/images/avatars/priya.png",
 
@@ -46,7 +46,7 @@ export const tippedReels: Reel[] = [
 
     imageCount: 18,
 
-    creatorLogo: "/images/logos/megamind.png",
+    creatorLogo: "/images/logos/megamind.svg",
 
     avatar: "/images/avatars/finn.png",
 
@@ -78,7 +78,7 @@ export const tippedReels: Reel[] = [
 
     images: ["/images/reels/reel13.png"],
 
-    creatorLogo: "/images/logos/machete.png",
+    creatorLogo: "/images/logos/machete.svg",
 
     avatar: "/images/avatars/deja.png",
 
@@ -108,7 +108,7 @@ export const tippedReels: Reel[] = [
 
     images: ["/images/reels/reel14.png"],
 
-    creatorLogo: "/images/logos/dexter.png",
+    creatorLogo: "/images/logos/dexter.svg",
 
     avatar: "/images/avatars/moana.png",
 
@@ -136,7 +136,7 @@ export const tippedReels: Reel[] = [
 
     images: ["/images/reels/reel15.png"],
 
-    creatorLogo: "/images/logos/megamind.png",
+    creatorLogo: "/images/logos/megamind.svg",
 
     avatar: "/images/avatars/yara.png",
 

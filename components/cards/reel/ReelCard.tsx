@@ -242,9 +242,9 @@ export default function ReelCard({
       right-4
       top-4
       rounded-sm
-      bg-black/40
-      px-3
-      h-[18px]
+      bg-black/50
+      h-[22px]
+      w-[34px]
       text-[10px]
       backdrop-blur-md
       flex
@@ -307,7 +307,7 @@ export default function ReelCard({
           >
             {/* Video Badge */}
             {mediaType === "video" && duration && (
-              <div className="flex h-6 items-center rounded-[6px] bg-black/40 px-3 backdrop-blur-md">
+              <div className="flex h-6 w-15 items-center justify-center rounded-[6px] bg-black/40 backdrop-blur-md">
                 <span className="font-neue-regular text-xs text-white">
                   {duration}
                 </span>
@@ -316,7 +316,7 @@ export default function ReelCard({
 
             {/* Gallery Badge */}
             {mediaType === "gallery" && (
-              <div className="flex h-6 items-center gap-2 rounded-[6px] bg-black/40 px-3 backdrop-blur-md">
+              <div className="h-6 w-11.5 flex items-center justify-center gap-1 rounded-[6px] bg-black/40 backdrop-blur-md">
                 <Image
                   src="/images/icons/gallery.svg"
                   alt="Gallery"
@@ -332,7 +332,7 @@ export default function ReelCard({
 
             {/* Image Badge (Optional) */}
             {mediaType === "image" && duration && (
-              <div className="flex h-6 items-center rounded-[6px] bg-black/40 px-3 backdrop-blur-md">
+              <div className="flex h-6 w-15 items-center justify-center rounded-[6px] bg-black/40 backdrop-blur-md">
                 <span className="font-neue-regular text-xs text-white">
                   {duration}
                 </span>
@@ -340,7 +340,7 @@ export default function ReelCard({
             )}
 
             {/* Category */}
-            <div className="flex h-6 items-center rounded-[6px] bg-black/40 px-3 backdrop-blur-md">
+            <div className="flex h-6 items-center rounded-[6px] bg-black/40 px-2 backdrop-blur-md">
               <span className="font-neue-regular text-xs text-white">
                 {category}
               </span>

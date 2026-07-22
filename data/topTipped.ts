@@ -16,7 +16,7 @@ export const topTipped: TopTippedReel[] = [
 
     images: ["/images/reels/reel5.png"],
 
-    creatorLogo: "/images/logos/banana-joe.png",
+    creatorLogo: "/images/logos/banana-joe.svg",
 
     avatar: "/images/avatars/priya.png",
 
@@ -54,7 +54,7 @@ export const topTipped: TopTippedReel[] = [
 
     imageCount: 18,
 
-    creatorLogo: "/images/logos/megamind.png",
+    creatorLogo: "/images/logos/megamind.svg",
 
     avatar: "/images/avatars/finn.png",
 
@@ -86,7 +86,7 @@ export const topTipped: TopTippedReel[] = [
 
     images: ["/images/reels/reel6.png"],
 
-    creatorLogo: "/images/logos/machete.png",
+    creatorLogo: "/images/logos/machete.svg",
 
     avatar: "/images/avatars/deja.png",
 
@@ -119,7 +119,7 @@ export const topTipped: TopTippedReel[] = [
 
     images: ["/images/reels/reel7.png"],
 
-    creatorLogo: "/images/logos/dexter.png",
+    creatorLogo: "/images/logos/dexter.svg",
 
     avatar: "/images/avatars/moana.png",
 
@@ -149,7 +149,7 @@ export const topTipped: TopTippedReel[] = [
 
     images: ["/images/reels/reel8.png"],
 
-    creatorLogo: "/images/logos/megamind.png",
+    creatorLogo: "/images/logos/megamind.svg",
 
     avatar: "/images/avatars/moana.png",
 

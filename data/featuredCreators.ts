@@ -72,4 +72,14 @@ export const featuredCreators: FeaturedCreator[] = [
 
     description: "Redhead · Curvy · Travel",
   },
+
+  {
+    id: 7,
+
+    image: "/images/featured-creators/4.png",
+
+    name: "Aria Voss",
+
+    description: "Blonde · Petite · Fashion",
+  },
 ];

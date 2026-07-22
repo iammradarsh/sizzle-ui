@@ -1,8 +1,10 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion } from "motion/react";
 import SquircleAvatar from "@/components/common/SquircleAvatar";
+import { ShowMore } from "@re-dev/react-truncate";
 
 interface Props {
   avatar: string;
@@ -51,7 +53,7 @@ export default function ReviewCard({
       <div className="flex flex-col gap-4 h-full">
         {/* Header */}
         <div className="flex items-start justify-between">
-          <div className="flex gap-3">
+          <div className="flex items-center gap-3.75">
             <Image
               src={avatar}
               alt={name}
@@ -61,11 +63,13 @@ export default function ReviewCard({
             />
 
             <div>
-              <h3 className="font-neue-semibold text-[16px] leading-none text-white">
+              <h3 className="font-neue-semibold text-[16px] leading-none text-white leading-5">
                 {name}
               </h3>
 
-              <p className="mt-1 text-[12px] text-[#8A8A8A]">{username}</p>
+              <p className="text-[12px] text-[#8A8A8A] leading-5.5">
+                {username}
+              </p>
             </div>
           </div>
 
@@ -75,7 +79,7 @@ export default function ReviewCard({
         <div className="flex flex-col justify-between h-full">
           {/* Rating */}
           <div
-            className=" flex items-center gap-1.5"
+            className=" flex items-center gap-1"
             role="img"
             aria-label={`Rating: ${rating} out of 5 stars`}
           >
@@ -96,17 +100,22 @@ export default function ReviewCard({
           </div>
 
           {/* Review */}
-          <p
-            className="
-          line-clamp-4
-          text-sm
-          font-neue-regular
-        
-          text-[#fff]
-        "
+          <ShowMore
+            lines={3}
+            more={
+              <button className="font-neue-semibold text-[#A3A3A3]">
+                ...Show more
+              </button>
+            }
+            less={
+              <button className="font-neue-semibold text-[#A3A3A3]">
+                ...Show less
+              </button>
+            }
+            className="text-sm font-neue-regular leading-5 text-white"
           >
             {review}
-          </p>
+          </ShowMore>
 
           {/* Bottom */}
           <div className="flex items-center gap-3">

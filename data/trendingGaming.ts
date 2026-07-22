@@ -8,7 +8,7 @@ export const reels: Reel[] = [
 
     images: ["/images/reels/reel9.png"],
 
-    creatorLogo: "/images/logos/banana-joe.png",
+    creatorLogo: "/images/logos/banana-joe.svg",
 
     avatar: "/images/avatars/priya.png",
 
@@ -44,7 +44,7 @@ export const reels: Reel[] = [
 
     imageCount: 18,
 
-    creatorLogo: "/images/logos/megamind.png",
+    creatorLogo: "/images/logos/megamind.svg",
 
     avatar: "/images/avatars/priya.png",
 
@@ -74,7 +74,7 @@ export const reels: Reel[] = [
 
     images: ["/images/reels/reel10.png"],
 
-    creatorLogo: "/images/logos/megamind.png",
+    creatorLogo: "/images/logos/megamind.svg",
 
     avatar: "/images/avatars/priya.png",
 
@@ -102,7 +102,7 @@ export const reels: Reel[] = [
 
     images: ["/images/reels/reel11.png"],
 
-    creatorLogo: "/images/logos/dexter.png",
+    creatorLogo: "/images/logos/dexter.svg",
 
     avatar: "/images/avatars/priya.png",
 
@@ -130,7 +130,7 @@ export const reels: Reel[] = [
 
     images: ["/images/reels/reel12.png"],
 
-    creatorLogo: "/images/logos/megamind.png",
+    creatorLogo: "/images/logos/megamind.svg",
 
     avatar: "/images/avatars/priya.png",
 
@@ -157,7 +157,7 @@ export const reels: Reel[] = [
 
     images: ["/images/reels/reel11.png"],
 
-    creatorLogo: "/images/logos/megamind.png",
+    creatorLogo: "/images/logos/megamind.svg",
 
     avatar: "/images/avatars/priya.png",
 

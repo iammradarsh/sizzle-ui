@@ -20,7 +20,7 @@ export default function CategoryCard({ title, image }: Props) {
       overflow-hidden
       flex
       h-[90px]
-      w-[190px]
+      w-[204px]
       cursor-pointer
       items-center
       justify-between
@@ -34,7 +34,7 @@ export default function CategoryCard({ title, image }: Props) {
       
     "
     >
-      <h3 className="font-neue-black text-lg text-white">{title}</h3>
+      <h3 className="font-neue-black text-xl text-white">{title}</h3>
 
       <div className="relative w-[100px] right-0 flex gap-2.5">
         <SquircleAvatar

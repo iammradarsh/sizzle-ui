@@ -58,4 +58,12 @@ export const suggestedCreators: SuggestedCreator[] = [
     name: "Jade Monroe",
     description: "Mixed · Slim · Fashion",
   },
+
+  {
+    id: 7,
+    image: "/images/creators/4.png",
+    avatar: "/images/avatars/mila.png",
+    name: "Luna Reyes",
+    description: "Redhead · Curvy · Wellness",
+  },
 ];

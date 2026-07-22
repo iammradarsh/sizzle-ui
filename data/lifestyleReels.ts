@@ -8,7 +8,7 @@ export const lifestyleReels: Reel[] = [
 
     images: ["/images/lifestyle/reel1.png"],
 
-    creatorLogo: "/images/logos/banana-joe.png",
+    creatorLogo: "/images/logos/banana-joe.svg",
 
     avatar: "/images/avatars/priya.png",
 
@@ -44,7 +44,7 @@ export const lifestyleReels: Reel[] = [
 
     imageCount: 18,
 
-    creatorLogo: "/images/logos/megamind.png",
+    creatorLogo: "/images/logos/megamind.svg",
 
     avatar: "/images/avatars/priya.png",
 
@@ -74,7 +74,7 @@ export const lifestyleReels: Reel[] = [
 
     images: ["/images/lifestyle/reel3.png"],
 
-    creatorLogo: "/images/logos/megamind.png",
+    creatorLogo: "/images/logos/megamind.svg",
 
     avatar: "/images/avatars/priya.png",
 
@@ -102,7 +102,7 @@ export const lifestyleReels: Reel[] = [
 
     images: ["/images/lifestyle/reel4.png"],
 
-    creatorLogo: "/images/logos/dexter.png",
+    creatorLogo: "/images/logos/dexter.svg",
 
     avatar: "/images/avatars/priya.png",
 
@@ -130,7 +130,7 @@ export const lifestyleReels: Reel[] = [
 
     images: ["/images/lifestyle/reel5.png"],
 
-    creatorLogo: "/images/logos/megamind.png",
+    creatorLogo: "/images/logos/megamind.svg",
 
     avatar: "/images/avatars/priya.png",
 

@@ -8,7 +8,7 @@ export const certifiedReels: Reel[] = [
 
     images: ["/images/certified/1.png"],
 
-    creatorLogo: "/images/logos/mission-mars.png",
+    creatorLogo: "/images/logos/mission-mars.svg",
 
     avatar: "/images/avatars/4.png",
 
@@ -36,7 +36,7 @@ export const certifiedReels: Reel[] = [
 
     images: ["/images/certified/2.png"],
 
-    creatorLogo: "/images/logos/mamma-mia.png",
+    creatorLogo: "/images/logos/mamma-mia.svg",
 
     avatar: "/images/avatars/4.png",
 
@@ -64,7 +64,7 @@ export const certifiedReels: Reel[] = [
 
     images: ["/images/certified/3.png"],
 
-    creatorLogo: "/images/logos/machete.png",
+    creatorLogo: "/images/logos/machete.svg",
 
     avatar: "/images/avatars/zara.png",
 
@@ -92,7 +92,7 @@ export const certifiedReels: Reel[] = [
 
     images: ["/images/certified/4.png"],
 
-    creatorLogo: "/images/logos/moana.png",
+    creatorLogo: "/images/logos/moana.svg",
 
     avatar: "/images/avatars/leila.png",
 
@@ -120,7 +120,7 @@ export const certifiedReels: Reel[] = [
 
     images: ["/images/certified/5.png"],
 
-    creatorLogo: "/images/logos/dexter.png",
+    creatorLogo: "/images/logos/dexter.svg",
 
     avatar: "/images/avatars/yara.png",
 

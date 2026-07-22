@@ -86,6 +86,18 @@ export const latestCreators: LatestCreator[] = [
 
     isNew: true,
   },
+
+  {
+    id: 7,
+
+    image: "/images/latest-creators/4.png",
+
+    name: "Aria Voss",
+
+    description: "Blonde · Petite · Fashion",
+
+    isNew: true,
+  },
 ];
 
 
