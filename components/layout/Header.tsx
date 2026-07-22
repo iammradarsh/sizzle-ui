@@ -5,8 +5,8 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full bg-black px-8 py-6">
-      <div className="flex items-center justify-between">
+    <header className="sticky top-0 z-50 w-full  px-8 py-6 bg-gradient-to-b from-black/50 via-black/40 to-black/0 backdrop-blur-xs">
+      <div className="z-10 flex items-center justify-between">
         {/* Left */}
         <div className="flex items-center gap-3">
           <Button className="h-[44px] w-[107px] rounded-[14px] font-neue-semibold font-normal bg-white px-5 text-[14px] text-black hover:[#DFDCD7]">
@@ -100,7 +100,7 @@ export default function Header() {
           <Button
             variant="outline"
             size="icon"
-            className="h-[44px] w-[44px] rounded-[14px] border-[rgba(255, 255, 255, 0.2)] bg-[rgba(0, 0, 0, 0.25)] hover:bg-[#19191B]"
+            className="h-[44px] w-[44px] rounded-[14px] border-[rgba(255, 255, 255, 0.2)] bg-black/25 backdrop-blur-2xl hover:bg-[#19191B]"
           >
             <Image
               src="/images/icons/chat.svg"
