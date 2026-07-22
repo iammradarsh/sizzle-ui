@@ -14,16 +14,10 @@ export default function FeaturedHero({ logo, name, bio }: FeaturedHeroProps) {
   return (
     <div className="max-w-[460px]">
       {/* Logo */}
-      <Image
-        src={logo}
-        alt="Logo"
-        width={120}
-        height={28}
-        className="mb-[25px] h-auto w-auto"
-      />
+      <Image src={logo} alt="Logo" width={120} height={28} className="" />
 
       {/* Name */}
-      <h1 className="font-neue-black text-[120px] leading-[0.9] uppercase text-white">
+      <h1 className="font-neue-black text-[120px] leading-25 uppercase text-white">
         {name.split(" ").map((word) => (
           <span key={word} className="block">
             {word}
@@ -32,10 +26,10 @@ export default function FeaturedHero({ logo, name, bio }: FeaturedHeroProps) {
       </h1>
 
       {/* Bio */}
-      <p className="mt-6 text-[16px] text-white font-neue-regular">{bio}</p>
+      <p className="mt-5 text-[16px] text-white font-neue-regular">{bio}</p>
 
       {/* Buttons */}
-      <div className="mt-10 flex items-center gap-2.5">
+      <div className="mt-7.5 flex items-center gap-2.5">
         {/* View Profile */}
         <button
           onClick={() => console.log("View Profile")}
@@ -49,7 +43,6 @@ export default function FeaturedHero({ logo, name, bio }: FeaturedHeroProps) {
             gap-2
             rounded-[16px]
             bg-white
-            px-6
             text-[16px]
             font-neue-semibold
             text-black

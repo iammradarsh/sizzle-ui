@@ -7,7 +7,7 @@ interface Props {
 
 export default function CreatorStats({ videos, posts }: Props) {
   return (
-    <div className="mt-2 flex items-center gap-4 text-sm text-zinc-400">
+    <div className="mt-1.5 flex items-center gap-4 text-sm text-zinc-400">
       <div className="flex items-center gap-1">
         <Image
           src="/images/icons/gallery-grey.svg"

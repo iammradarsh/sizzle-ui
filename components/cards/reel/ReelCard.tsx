@@ -136,7 +136,7 @@ export default function ReelCard({
     h-[480px]
     w-[311px]
     overflow-hidden
-    rounded-md
+    rounded-[15px]
     bg-[#1B1B1D]
   "
         >

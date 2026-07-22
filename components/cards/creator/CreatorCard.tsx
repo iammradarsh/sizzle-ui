@@ -18,7 +18,7 @@ export default function CreatorCard(props: Props) {
       // whileHover={{
       //   y: -5,
       // }}
-      className="w-[200px] h-[300px] flex flex-col items-start gap-[7px] shrink-0"
+      className="w-[200px] flex flex-col items-start gap-[7px] shrink-0"
     >
       {/* CreatorAvatar  */}
 
