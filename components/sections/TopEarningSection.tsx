@@ -46,7 +46,7 @@ export default function TopEarningSection() {
   }, [emblaApi]);
 
   return (
-    <section className="mt-24 px-8 overflow-hidden">
+    <section className="mt-16 px-8 overflow-hidden">
       {/* Header */}
 
       <SectionHeader

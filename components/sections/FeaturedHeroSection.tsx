@@ -48,7 +48,7 @@ export default function FeaturedHeroSection({ hero }: Props) {
   }, [emblaApi]);
 
   return (
-    <section className="relative mt-24 h-[760px] overflow-hidden ">
+    <section className="relative mt-16 h-[760px] overflow-hidden ">
       {/* Background */}
       <Image
         src={hero.background}
