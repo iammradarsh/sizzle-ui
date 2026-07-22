@@ -27,16 +27,16 @@ export default function Header() {
             <Image
               src="/images/icons/following-grey.svg"
               alt="Following"
-              width={18}
-              height={18}
-              className=" h-[18px] w-[18px] group-hover:hidden"
+              width={16}
+              height={16}
+              className=" h-[16px] w-[16px] group-hover:hidden"
             />
             <Image
               src="/images/icons/following.svg"
               alt="Following"
-              width={18}
-              height={18}
-              className=" hidden h-[18px] w-[18px] group-hover:block"
+              width={16}
+              height={16}
+              className=" hidden h-[16px] w-[16px] group-hover:block"
             />
             Following
           </Button>
@@ -48,16 +48,16 @@ export default function Header() {
             <Image
               src="/images/icons/crown-grey.svg"
               alt="Memberships"
-              width={18}
-              height={18}
-              className=" h-[18px] w-[18px] group-hover:hidden"
+              width={16}
+              height={16}
+              className=" h-[16px] w-[16px] group-hover:hidden"
             />
             <Image
               src="/images/icons/crown.svg"
               alt="Memberships"
-              width={18}
-              height={18}
-              className=" hidden h-[18px] w-[18px] group-hover:block"
+              width={16}
+              height={16}
+              className=" hidden h-[16px] w-[16px] group-hover:block"
             />
             Memberships
           </Button>
