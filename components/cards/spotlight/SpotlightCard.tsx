@@ -10,6 +10,8 @@ interface Props {
 
   overlayGradient: string;
 
+  badgeType: "fan-favorite" | "most-tipped" | "most-booked" | "top-earner";
+
   badge: string;
 
   badgeIcon: string;
@@ -23,11 +25,33 @@ export default function SpotlightCard({
   image,
   frame,
   overlayGradient,
+  badgeType,
   badge,
   badgeIcon,
   name,
   description,
 }: Props) {
+  const badgeVariants = {
+    "fan-favorite": {
+      container: "w-[99px] h-[24px]",
+    },
+    "most-tipped": {
+      container: "w-[96px] h-[24px]",
+      // icon: {
+      //   width: 12,
+      //   height: 12,
+      // },
+    },
+    "most-booked": {
+      container: "w-[105px] h-[24px]",
+    },
+    "top-earner": {
+      container: "w-[93px] h-[24px]",
+    },
+  };
+
+  const currentBadge = badgeVariants[badgeType];
+
   return (
     <motion.div
       className="
@@ -61,38 +85,25 @@ export default function SpotlightCard({
         >
           {/* Badge */}
           <div
-            className="inline-flex rounded-sm p-[1px] w-fit mb-[3px]"
+            className={`mb-2 flex items-center justify-center gap-1.5 border-[6px] border-transparent bg-black/50 backdrop-blur-[20px] rounded-sm ${currentBadge.container}`}
             style={{
-              background:
-                "linear-gradient(90deg, #FC7C20 0%, #F61785 57%, #D9107F 100%)",
+              borderImage: 'url("/images/badge-border.svg") 2',
+              borderImageWidth: 0.4,
             }}
           >
-            <div
-              className="
-      flex
-      h-7
-      items-center
-      gap-2
-      rounded-[8px]
-      bg-[#262628]/95
-      px-2
-      backdrop-blur-xl
-    "
-            >
-              <Image src={badgeIcon} alt={badge} width={14} height={14} />
+            <Image src={badgeIcon} alt={badge} width={12} height={12} />
 
-              <span
-                className="
-        text-[11px]
-        font-neue-regular
+            <span
+              className="
+        text-[10px]
+        font-neue-semibold
         uppercase
-        tracking-[0.06em]
+        font-normal
         text-white
       "
-              >
-                {badge}
-              </span>
-            </div>
+            >
+              {badge}
+            </span>
           </div>
 
           {/* Name */}

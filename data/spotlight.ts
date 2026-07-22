@@ -7,6 +7,12 @@ export interface Spotlight {
 
   overlayGradient: string;
 
+  badgeType:
+    | "fan-favorite"
+    | "most-tipped"
+    | "most-booked"
+    | "top-earner";
+
   badge: string;
 
   badgeIcon: string;
@@ -27,6 +33,8 @@ export const spotlight: Spotlight[] = [
     overlayGradient:
       "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(24,87,255,.9) 55%, #1857FF 100%)",
 
+    badgeType: "fan-favorite",
+
     badge: "FAN FAVORITE",
 
     badgeIcon: "/images/icons/double-heart.svg",
@@ -46,6 +54,8 @@ export const spotlight: Spotlight[] = [
     overlayGradient:
       "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(126,55,231,.9) 55%, #7E37E7 100%)",
 
+    badgeType: "most-tipped",
+
     badge: "MOST TIPPED",
 
     badgeIcon: "/images/icons/dollar.svg",
@@ -64,6 +74,8 @@ export const spotlight: Spotlight[] = [
 
     overlayGradient:
       "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(229,64,20,.9) 55%, #E54014 100%)",
+    
+    badgeType: "most-booked",
 
     badge: "MOST BOOKED",
 
@@ -83,6 +95,8 @@ export const spotlight: Spotlight[] = [
 
     overlayGradient:
       "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,156,145,.9) 55%, #009C91 100%)",
+    
+    badgeType: "top-earner",
 
     badge: "TOP EARNER",
 
@@ -101,6 +115,8 @@ export const spotlight: Spotlight[] = [
 
     overlayGradient:
       "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,156,145,.9) 55%, #009C91 100%)",
+
+    badgeType: "top-earner",
 
     badge: "TOP EARNER",
 

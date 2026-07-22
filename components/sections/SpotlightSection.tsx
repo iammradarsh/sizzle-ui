@@ -65,6 +65,7 @@ export default function SpotlightSection() {
               image={creator.image}
               frame={creator.frame}
               overlayGradient={creator.overlayGradient}
+              badgeType={creator.badgeType}
               badge={creator.badge}
               badgeIcon={creator.badgeIcon}
               name={creator.name}
