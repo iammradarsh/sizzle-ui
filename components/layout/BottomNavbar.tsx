@@ -167,7 +167,7 @@ export default function BottomNavigation() {
                   </motion.div>
                 )}
 
-                <div className="relative z-20 flex flex-col items-center">
+                <div className="relative z-20 flex flex-col items-center gap-[4px]">
                   <Image
                     src={active ? item.activeIcon : item.icon}
                     alt={item.label}
