@@ -84,13 +84,13 @@ export default function Header() {
               className="object-cover"
             />
 
-            <span className="relative z-10 flex items-center font-neue-semibold text-[14px]">
+            <span className="relative z-10 flex items-center gap-[6px] justify-center font-neue-semibold text-[14px]">
               <Image
                 src="/images/icons/plus.svg"
                 alt="Create"
                 width={14}
                 height={14}
-                className="mr-2 h-[14px] w-[14px]"
+                className="h-[14px] w-[14px]"
               />
               Create
             </span>
