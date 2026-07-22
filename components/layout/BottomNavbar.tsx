@@ -10,26 +10,36 @@ const navItems = [
     label: "Home",
     icon: "/images/icons/home-grey.svg",
     activeIcon: "/images/icons/home.svg",
+    width: 26,
+    height: 22,
   },
   {
     label: "Explore",
     icon: "/images/icons/explore-grey.svg",
     activeIcon: "/images/icons/explore.svg",
+    width: 22,
+    height: 22,
   },
   {
     label: "Search",
     icon: "/images/icons/search-grey.svg",
     activeIcon: "/images/icons/search.svg",
+    width: 20,
+    height: 20,
   },
   {
     label: "Leaderboard",
     icon: "/images/icons/leaderboard-grey.svg",
     activeIcon: "/images/icons/leaderboard.svg",
+    width: 22,
+    height: 22,
   },
   {
     label: "My Stuff",
     icon: "/images/icons/my-stuff-grey.svg",
     activeIcon: "/images/icons/my-stuff.svg",
+    width: 18,
+    height: 22,
   },
 ];
 
@@ -161,8 +171,8 @@ export default function BottomNavigation() {
                   <Image
                     src={active ? item.activeIcon : item.icon}
                     alt={item.label}
-                    width={22}
-                    height={22}
+                    width={item.width}
+                    height={item.height}
                   />
 
                   <span

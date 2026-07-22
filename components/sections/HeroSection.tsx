@@ -13,38 +13,11 @@ const heroCards: HeroCardProps[] = [
   {
     image: "/images/HeroCardImg1.png",
     badge: {
+      type: "original",
       text: "ORIGINAL",
       icon: "/images/icons/SizzleLogo.svg",
-      iconWidth: 30,
-      iconHeight: 8,
-    },
-    movieLogo: "/images/movie-logo.png",
-
-    statType: "creator",
-
-    creatorStats: {
-      views: 480,
-      videos: 26,
-      likes: 780,
-    },
-
-    category: "",
-    title: "SAINT\nLAVIGNE",
-
-    description:
-      "Life got so serious lately, I have almost forgot I used to paint 😅",
-    creator: "Saint Lavigne",
-    creatorViews: "812 views",
-    time: "2d",
-  },
-
-  {
-    image: "/images/HeroCardImg2.png",
-    badge: {
-      text: "TOP EARNER",
-      icon: "/images/icons/trophy.svg",
-      iconWidth: 14,
-      iconHeight: 14,
+      iconWidth: 35,
+      iconHeight: 10,
     },
     movieLogo: "/images/movie2-logo.png",
 
@@ -59,8 +32,37 @@ const heroCards: HeroCardProps[] = [
     category: "",
     title: "ADELA\nMORALES",
 
-    description: "Seems like you have found a LUCKY POST on your feed 💖",
+    description:
+      "Life got so serious lately, I have almost forgot I used to paint 😅",
     creator: "Adela Morales",
+    creatorViews: "812 views",
+    time: "2d",
+  },
+
+  {
+    image: "/images/HeroCardImg2.png",
+    badge: {
+      type: "top-earner",
+      text: "TOP EARNER",
+      icon: "/images/icons/trophy.svg",
+      iconWidth: 12,
+      iconHeight: 12,
+    },
+    movieLogo: "/images/movie-logo.png",
+
+    statType: "creator",
+
+    creatorStats: {
+      views: 480,
+      videos: 26,
+      likes: 780,
+    },
+
+    category: "",
+    title: "SAINT\nLAVIGNE",
+
+    description: "Seems like you have found a LUCKY POST on your feed 💖",
+    creator: "Saint Lavigne",
     creatorViews: "812 views",
     time: "2d",
   },
@@ -68,10 +70,11 @@ const heroCards: HeroCardProps[] = [
   {
     image: "/images/HeroCardImg1.png",
     badge: {
+      type: "original",
       text: "ORIGINAL",
       icon: "/images/icons/SizzleLogo.svg",
-      iconWidth: 30,
-      iconHeight: 8,
+      iconWidth: 35,
+      iconHeight: 10,
     },
     movieLogo: "/images/movie-logo.png",
 
@@ -95,10 +98,11 @@ const heroCards: HeroCardProps[] = [
   {
     image: "/images/HeroCardImg2.png",
     badge: {
-      text: "MOST WATCHED",
-      icon: "/images/icons/double-heart.svg",
-      iconWidth: 14,
-      iconHeight: 14,
+      type: "top-earner",
+      text: "TOP EARNER",
+      icon: "/images/icons/trophy.svg",
+      iconWidth: 12,
+      iconHeight: 12,
     },
     movieLogo: undefined,
 

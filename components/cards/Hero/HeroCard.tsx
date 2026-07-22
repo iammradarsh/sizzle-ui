@@ -5,6 +5,7 @@ import HeroCardBadge from "./HeroCardBadge";
 export interface HeroCardProps {
   image: string;
   badge?: {
+    type: "original" | "top-earner" | "most-watched";
     text: string;
     icon: string;
     iconWidth: number;
@@ -50,8 +51,10 @@ export default function HeroCard({
   creatorViews,
   time,
 }: HeroCardProps) {
+  const isOriginal = badge?.type === "original";
+
   return (
-    <div className="group w-fit rounded-lg p-3 transition-colors duration-300 hover:bg-[#19191B]">
+    <div className="group w-[670px] flex flex-col items-center justify-center gap-[12px] rounded-lg h-[520px] transition-colors duration-300 hover:bg-[#19191B]">
       {/* IMAGE CARD */}
       <div className="relative w-[646px] h-[440px] overflow-hidden rounded-md">
         <Image
@@ -84,9 +87,11 @@ export default function HeroCard({
               <Image
                 src={movieLogo}
                 alt="Movie Logo"
-                width={77.17}
-                height={10}
-                className="mb-2 w-[77.17px]"
+                width={isOriginal ? 80 : 80}
+                height={isOriginal ? 20 : 37}
+                className={`mb-2 ${
+                  isOriginal ? "w-[80px] h-[20px]" : "w-[80px] h-[37px]"
+                }`}
               />
             )}
 
@@ -133,12 +138,12 @@ export default function HeroCard({
                 </div>
               ) : (
                 <div className="flex gap-3">
-                  <span className="rounded-[6px] flex items-center gap-1 bg-black/40 px-3 h-[24px]">
+                  <span className="rounded-[6px] flex items-center justify-center gap-1 bg-black/40 w-[60px] h-[24px]">
                     <span className="text-[12px]">{movieStats?.quality}</span>
                     <span className="text-[12px]">{movieStats?.duration}</span>
                   </span>
 
-                  <span className="rounded-[6px] bg-black/40 px-3 flex items-center text-[12px] h-[24px]">
+                  <span className="rounded-[6px] bg-black/40 flex items-center justify-center text-[12px] w-[63] h-[24px]">
                     {movieStats?.tag}
                   </span>
                 </div>
@@ -149,7 +154,7 @@ export default function HeroCard({
       </div>
 
       {/* FOOTER */}
-      <div className="mt-5 px-2">
+      <div className="w-full px-3">
         <p className="line-clamp-2 text-[16px] text-white">{description}</p>
 
         <div className="flex items-center gap-2 text-[14px] text-zinc-400">
