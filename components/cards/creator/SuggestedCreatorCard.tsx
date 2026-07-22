@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "motion/react";
 import SquircleAvatar from "@/components/common/SquircleAvatar";
+import Image from "next/image";
 
 interface Props {
   image: string;
@@ -37,10 +38,11 @@ export default function SuggestedCreatorCard({
           src={image}
           alt={name}
           avatarSize={200}
-          borderSize={204}
+          borderSize={202}
           borderVariant={borderVariant}
-          cornerRadius={54 / 200} // 0.27
-          cornerSmoothing={6}
+          cornerRadius={52 / 200} // 0.27
+          cornerSmoothing={100}
+          borderWidth={1}
         />
       </motion.div>
 
@@ -99,14 +101,44 @@ export default function SuggestedCreatorCard({
     font-neue-semibold
     transition-all
     duration-300
+    text-[14px]
     ${
       isFollowing
-        ? "bg-[#19191BBF] text-[#fff] w-30 hover:bg-[#28282A]"
-        : "bg-white text-black w-20 hover:bg-[#DFDCD7]"
+        ? "bg-[#19191B] w-27.5 text-[#A3A3A3]"
+        : "bg-white w-20 text-black hover:bg-[#DFDCD7]"
     }
-  `}
+              `}
       >
-        {isFollowing ? "✓ Following" : "+ Follow"}
+        {isFollowing ? (
+          <>
+            <Image
+              src="/images/icons/check.svg"
+              alt="Following"
+              width={12}
+              height={12}
+              className="block group-hover:hidden"
+            />
+
+            <Image
+              src="/images/icons/check.svg"
+              alt="Following"
+              width={12}
+              height={12}
+              className="hidden group-hover:block"
+            />
+          </>
+        ) : (
+          <Image
+            src="/images/icons/plus-black.svg"
+            alt="Follow"
+            width={10}
+            height={10}
+          />
+        )}
+
+        <span className={isFollowing ? "text-[#A3A3A3]" : ""}>
+          {isFollowing ? "Following" : "Follow"}
+        </span>
       </motion.button>
     </motion.div>
   );

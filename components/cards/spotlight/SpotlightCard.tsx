@@ -61,7 +61,7 @@ export default function SpotlightCard({
         w-[311px]
         shrink-0
         overflow-hidden
-        rounded-[24px]
+        rounded-[15px]
       "
     >
       {/* Background */}
@@ -69,23 +69,25 @@ export default function SpotlightCard({
         src={image}
         alt={name}
         fill
-        className="object-cover transition-transform duration-500 group-hover:scale-102"
+        className="object-cover transition-transform duration-500 "
       />
 
       {/* Bottom Gradient */}
-      <div
-        className="absolute bottom-0 left-0 right-0 h-[190px] z-10"
-        style={{
-          background: overlayGradient,
-        }}
-      >
+      <div className="absolute bottom-0 left-0 right-0 h-[190px] z-10">
+        {/* 2. Color Gradient Overlay (Provides the Rich Dark Fade) */}
         <div
-          className="absolute bottom-8 left-10 right-10 flex
-        flex-col gap-3"
+          className="absolute bottom-0 inset-x-0 h-[180px] pointer-events-none "
+          style={{
+            background: overlayGradient,
+          }}
+        />
+        <div
+          className="absolute bottom-11.25 left-11.25  flex
+        flex-col"
         >
           {/* Badge */}
           <div
-            className={`mb-2 flex items-center justify-center gap-1.5 border-[6px] border-transparent bg-black/50 backdrop-blur-[20px] rounded-sm ${currentBadge.container}`}
+            className={`mb-[12px] flex items-center justify-center gap-1.5 border-[6px] border-transparent bg-black/50 backdrop-blur-[20px] rounded-sm ${currentBadge.container}`}
             style={{
               borderImage: 'url("/images/badge-border.svg") 2',
               borderImageWidth: 0.4,
@@ -110,11 +112,13 @@ export default function SpotlightCard({
           <h3
             className="
               whitespace-pre-line
-              text-[34px]
+              text-[48px]
               font-neue-black
               uppercase
-              leading-[0.9]
+              leading-10
               text-white
+              h-[74px}
+              mb-3
             "
           >
             {name}
@@ -129,7 +133,7 @@ export default function SpotlightCard({
 
       {/* Frame */}
 
-      <div className="absolute inset-[18px] z-10 pointer-events-none">
+      <div className="absolute inset-[15px] z-10 pointer-events-none">
         <Image src={frame} alt="Frame" fill className="object-fill" />
       </div>
     </motion.div>

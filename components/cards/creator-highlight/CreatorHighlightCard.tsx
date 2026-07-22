@@ -92,9 +92,14 @@ export default function CreatorHighlightCard({
 
             {/* Stats */}
             <div className="mt-2 flex items-center gap-2">
-              {stats.map((stat) => (
+              {stats.map((stat, index) => (
                 <div key={stat.icon} className="flex items-center gap-1">
-                  <Image src={stat.icon} alt="" width={12} height={12} />
+                  <Image
+                    src={stat.icon}
+                    alt=""
+                    width={index === stats.length - 1 ? 14 : 12}
+                    height={12}
+                  />
 
                   <span className="text-sm text-[#A3A3A3]">{stat.value}</span>
                 </div>
@@ -121,7 +126,7 @@ export default function CreatorHighlightCard({
             gap-1.5
             ${
               isFollowing
-                ? "bg-[#19191BBF] w-30 text-white hover:bg-[#28282A]"
+                ? "bg-[#19191B] w-27.5 text-white"
                 : "bg-white w-20 text-black hover:bg-[#DFDCD7]"
             }
           `}
@@ -129,18 +134,18 @@ export default function CreatorHighlightCard({
           {isFollowing ? (
             <>
               <Image
-                src="/images/icons/following-grey.svg"
+                src="/images/icons/check.svg"
                 alt="Following"
-                width={16}
-                height={16}
+                width={12}
+                height={12}
                 className="block group-hover:hidden"
               />
 
               <Image
-                src="/images/icons/following.svg"
+                src="/images/icons/check.svg"
                 alt="Following"
-                width={16}
-                height={16}
+                width={12}
+                height={12}
                 className="hidden group-hover:block"
               />
             </>

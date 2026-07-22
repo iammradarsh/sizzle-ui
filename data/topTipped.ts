@@ -16,9 +16,9 @@ export const topTipped: TopTippedReel[] = [
 
     images: ["/images/reels/reel5.png"],
 
-    creatorLogo: "/images/logos/banana-joe.svg",
+    creatorLogo: "/images/logos/marley-and-me.svg",
 
-    avatar: "/images/avatars/priya.png",
+    avatar: "/images/avatars/finn.png",
 
     title: "I Quit Social Media For 30 Days And It Changed Everything",
 
@@ -54,9 +54,9 @@ export const topTipped: TopTippedReel[] = [
 
     imageCount: 18,
 
-    creatorLogo: "/images/logos/megamind.svg",
+    creatorLogo: "/images/logos/mamma-mia.svg",
 
-    avatar: "/images/avatars/finn.png",
+    avatar: "/images/avatars/deja.png",
 
     title: "Rating Every Coffee Shop In The City As A Specialty Coffee Addict",
 
@@ -88,7 +88,7 @@ export const topTipped: TopTippedReel[] = [
 
     creatorLogo: "/images/logos/machete.svg",
 
-    avatar: "/images/avatars/deja.png",
+    avatar: "/images/avatars/priya2.png",
 
     title: "The Morning Routine Nobody Talks About But Everyone Should Try",
 
@@ -119,9 +119,9 @@ export const topTipped: TopTippedReel[] = [
 
     images: ["/images/reels/reel7.png"],
 
-    creatorLogo: "/images/logos/dexter.svg",
+    creatorLogo: "/images/logos/moana.svg",
 
-    avatar: "/images/avatars/moana.png",
+    avatar: "/images/avatars/luca.png",
 
     title: "We Surprised Our Biggest Fan With Their Dream Day",
 

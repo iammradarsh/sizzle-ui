@@ -8,17 +8,17 @@ export const reels: Reel[] = [
 
     images: ["/images/reels/reel9.png"],
 
-    creatorLogo: "/images/logos/banana-joe.svg",
+    creatorLogo: "/images/logos/Der-Ex.svg",
 
-    avatar: "/images/avatars/priya.png",
+    avatar: "/images/avatars/zoe.png",
 
-    title: "The Workout That Has Everyone Going Absolutely Crazy",
+    title: "I Let My Followers Control My Entire Day And Regretted Nothing",
 
-    creator: "Baddie Bianca",
+    creator: "Zoe Castillo",
 
     duration: "HD 4:28",
 
-    category: "#Arcade",
+    category: "#Gaming",
 
     views: "812 views",
 
@@ -32,27 +32,21 @@ export const reels: Reel[] = [
   {
     id: 2,
 
-    mediaType: "gallery",
+    mediaType: "image",
 
-    images: [
-      "/images/reels/2/1.png",
-      "/images/reels/2/2.png",
-      "/images/reels/2/3.png",
-      "/images/reels/2/4.png",
-      "/images/reels/2/5.png",
-    ],
+    images: ["/images/reels/reel10.png"],
 
     imageCount: 18,
 
-    creatorLogo: "/images/logos/megamind.svg",
+    creatorLogo: "/images/logos/mib.svg",
 
-    avatar: "/images/avatars/priya.png",
+    avatar: "/images/avatars/dante.png",
 
-    title: "I Tried The Morning Routine Every Influencer Swears By",
+    title: "The Workout Nobody Is Talking About That Actually Works",
 
-    creator: "Leila Castillo",
+    creator: "Dante Mercer",
 
-    category: "#Adventure",
+    category: "#Gaming",
 
     views: "812 views",
 
@@ -60,7 +54,7 @@ export const reels: Reel[] = [
 
     badge: "New",
 
-    locked: "/images/icons/lock.svg",
+    locked: "",
 
     likes: 758,
 
@@ -72,19 +66,19 @@ export const reels: Reel[] = [
 
     mediaType: "image",
 
-    images: ["/images/reels/reel10.png"],
+    images: ["/images/reels/reel11.png"],
 
-    creatorLogo: "/images/logos/megamind.svg",
+    creatorLogo: "/images/logos/mulan.svg",
 
-    avatar: "/images/avatars/priya.png",
+    avatar: "/images/avatars/isla.png",
 
-    title: "Getting Ready With Me For The Most Important Date Night",
+    title: "Living Like A Millionaire For 72 Hours On A Budget",
 
-    creator: "Zara Okonkwo",
+    creator: "Isla Park",
 
     duration: "4K 6:03",
 
-    category: "#Story",
+    category: "#Gaming",
 
     views: "812 views",
 
@@ -100,19 +94,19 @@ export const reels: Reel[] = [
 
     mediaType: "image",
 
-    images: ["/images/reels/reel11.png"],
+    images: ["/images/reels/reel12.png"],
 
-    creatorLogo: "/images/logos/dexter.svg",
+    creatorLogo: "/images/logos/Mission_to_Mars.svg",
 
-    avatar: "/images/avatars/priya.png",
+    avatar: "/images/avatars/rhys.png",
 
-    title: "Raw And Unfiltered: What It Is Really Like Doing This For A Living",
+    title: "Everything I Wish I Knew Before Starting My Creator Journey",
 
-    creator: "Yara Santos",
+    creator: "Rhys Okafor",
 
     duration: "4K 6:03",
 
-    category: "#Arcade",
+    category: "#Gaming",
 
     views: "812 views",
 
@@ -128,7 +122,7 @@ export const reels: Reel[] = [
 
     mediaType: "image",
 
-    images: ["/images/reels/reel12.png"],
+    images: ["/images/reels/reel13.png"],
 
     creatorLogo: "/images/logos/megamind.svg",
 
@@ -140,7 +134,7 @@ export const reels: Reel[] = [
 
     duration: "4K 6:03",
 
-    category: "#Puzzle",
+    category: "#Gaming",
 
     views: "812 views",
 
@@ -167,7 +161,7 @@ export const reels: Reel[] = [
 
     duration: "4K 6:03",
 
-    category: "#Puzzle",
+    category: "#Gaming",
 
     views: "812 views",
 

@@ -41,17 +41,17 @@ export default function CategoryCard({ title, image }: Props) {
           src={image}
           alt={title ?? ""}
           avatarSize={60}
-          borderSize={62}
+          borderSize={60}
           borderVariant="solid"
-          borderWidth={1}
+          borderWidth={0}
         />
         <SquircleAvatar
           src={image}
           alt={title ?? ""}
           avatarSize={60}
-          borderSize={62}
+          borderSize={60}
           borderVariant="solid"
-          borderWidth={1}
+          borderWidth={0}
         />
       </div>
     </motion.div>

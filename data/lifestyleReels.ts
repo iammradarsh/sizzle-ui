@@ -8,13 +8,13 @@ export const lifestyleReels: Reel[] = [
 
     images: ["/images/lifestyle/reel1.png"],
 
-    creatorLogo: "/images/logos/banana-joe.svg",
+    creatorLogo: "/images/logos/Der-Ex.svg",
 
     avatar: "/images/avatars/priya.png",
 
-    title: "The Workout That Has Everyone Going Absolutely Crazy",
+    title: "I Gave A Stranger €500 To Plan My Entire Day",
 
-    creator: "Baddie Bianca",
+    creator: "Marlowe Fox",
 
     duration: "HD 4:28",
 
@@ -32,25 +32,21 @@ export const lifestyleReels: Reel[] = [
   {
     id: 2,
 
-    mediaType: "gallery",
+     mediaType: "image",
 
-    images: [
-      "/images/lifestyle/2/1.png",
-      "/images/lifestyle/2/2.png",
-      "/images/lifestyle/2/3.png",
-      "/images/lifestyle/2/4.png",
-      "/images/lifestyle/2/5.png",
-    ],
+    images: ["/images/lifestyle/reel2.png"],
 
     imageCount: 18,
 
-    creatorLogo: "/images/logos/megamind.svg",
+    creatorLogo: "/images/logos/mib.svg",
 
     avatar: "/images/avatars/priya.png",
 
-    title: "I Tried The Morning Routine Every Influencer Swears By",
+    title: "Living Off Only My Fans' Recommendations For 48 Hours",
 
-    creator: "Leila Castillo",
+    creator: "Saint Lavigne",
+
+    duration: "4K 6:03",
 
     category: "#Fitness",
 
@@ -74,15 +70,15 @@ export const lifestyleReels: Reel[] = [
 
     images: ["/images/lifestyle/reel3.png"],
 
-    creatorLogo: "/images/logos/megamind.svg",
+    creatorLogo: "/images/logos/mulan.svg",
 
     avatar: "/images/avatars/priya.png",
 
-    title: "Getting Ready With Me For The Most Important Date Night",
+    title: "I Recreated My Most Viewed Video As A Total Disaster",
 
-    creator: "Zara Okonkwo",
+    creator: "Ember Roux",
 
-    duration: "4K 6:03",
+    duration: "4K 2:15",
 
     category: "#Fitness",
 
@@ -102,15 +98,15 @@ export const lifestyleReels: Reel[] = [
 
     images: ["/images/lifestyle/reel4.png"],
 
-    creatorLogo: "/images/logos/dexter.svg",
+    creatorLogo: "/images/logos/Mission_to_Mars.svg",
 
     avatar: "/images/avatars/priya.png",
 
-    title: "Raw And Unfiltered: What It Is Really Like Doing This For A Living",
+    title: "Nobody Believed I Could Do This In One Take",
 
-    creator: "Yara Santos",
+    creator: "Roman Sade",
 
-    duration: "4K 6:03",
+    duration: "4K 4:28",
 
     category: "#Lifestyle",
 

@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 
 import ReelCard from "@/components/cards/reel/ReelCard";
 
-import { reels } from "@/data/reels";
+import { reels } from "@/data/trendingGaming";
 import Image from "next/image";
 import WheelGesturesPlugin from "embla-carousel-wheel-gestures";
 import SectionHeader from "../common/SectionHeader";

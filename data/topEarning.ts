@@ -16,7 +16,7 @@ export const topEarning: TopEarningReel[] = [
 
     creatorLogo: "/images/logos/death-unicorn.svg",
 
-    avatar: "/images/avatars/moana.png",
+    avatar: "/images/avatars/nadia.png",
 
     title: "What Happens When You Wake Up At 5AM For 21 Days Straight",
 
@@ -46,7 +46,7 @@ export const topEarning: TopEarningReel[] = [
 
     creatorLogo: "/images/logos/creed.svg",
 
-    avatar: "/images/avatars/moana.png",
+    avatar: "/images/avatars/yara.png",
 
     title: "I Tried Every Viral Food Trend So You Don't Have To",
 
@@ -76,7 +76,7 @@ export const topEarning: TopEarningReel[] = [
 
     creatorLogo: "/images/logos/007.svg",
 
-    avatar: "/images/avatars/moana.png",
+    avatar: "/images/avatars/camille.png",
 
     title: "The Honest Truth About Being A Full Time Creator",
 
@@ -110,7 +110,7 @@ export const topEarning: TopEarningReel[] = [
 
     creatorLogo: "/images/logos/ice-age.svg",
 
-    avatar: "/images/avatars/moana.png",
+    avatar: "/images/avatars/marcus.png",
 
     title: "We Tested The Most Hyped Gym In The City And Here's What We Found",
 

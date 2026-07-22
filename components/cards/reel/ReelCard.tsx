@@ -208,8 +208,8 @@ export default function ReelCard({
             <Image
               src="/images/certified/certified-logo.png"
               alt="Certified"
-              width={84}
-              height={32}
+              width={62}
+              height={37}
               priority
               className="
       absolute

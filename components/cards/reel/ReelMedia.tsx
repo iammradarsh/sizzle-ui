@@ -17,7 +17,7 @@ export default function ReelMedia({ images, currentImage, title }: Props) {
       sizes="320px"
       loading="lazy"
       draggable={false}
-      className="object-cover select-none"
+      className="object-cover select-none scale-102"
     />
   );
 }

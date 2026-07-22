@@ -18,9 +18,9 @@ export const latestCreators: LatestCreator[] = [
 
     image: "/images/latest-creators/1.png",
 
-    name: "Bianca Torres",
+    name: "Valentina Cruz",
 
-    description: "Curvy · Latina · Lifestyle",
+    description: "Curvy · Latina · Fashion",
 
     isNew: true,
   },
@@ -30,9 +30,9 @@ export const latestCreators: LatestCreator[] = [
 
     image: "/images/latest-creators/2.png",
 
-    name: "Mila Ferreira",
+    name: "Amara Diallo",
 
-    description: "Thick · Brunette · Fitness",
+    description: "Blonde · Athletic · Martial Arts",
 
     isNew: true,
   },
@@ -42,9 +42,9 @@ export const latestCreators: LatestCreator[] = [
 
     image: "/images/latest-creators/3.png",
 
-    name: "Leila Okafor",
+    name: "Hailey Storm",
 
-    description: "Ebony · Natural Hair · Dance",
+    description: "Exotic · Brown Skin · Astrology",
 
     following: true,
 
@@ -56,9 +56,9 @@ export const latestCreators: LatestCreator[] = [
 
     image: "/images/latest-creators/4.png",
 
-    name: "Aria Voss",
+    name: "Priya Nair",
 
-    description: "Blonde · Petite · Fashion",
+    description: "Thick · Mixed · Streetwear",
 
     isNew: true,
   },
@@ -68,9 +68,9 @@ export const latestCreators: LatestCreator[] = [
 
     image: "/images/latest-creators/5.png",
 
-    name: "Selene Cruz",
+    name: "Zoe Blackwood",
 
-    description: "Athletic · Mixed · Comedy",
+    description: "Redhead · Petite · Tattoos",
 
     isNew: true,
   },
@@ -80,9 +80,9 @@ export const latestCreators: LatestCreator[] = [
 
     image: "/images/latest-creators/6.png",
 
-    name: "Naomi Saint",
+    name: "Sienna Vale",
 
-    description: "Redhead · Curvy · Travel",
+    description: "Slim · Brunette · Nightlife",
 
     isNew: true,
   },

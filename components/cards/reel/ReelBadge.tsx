@@ -30,7 +30,7 @@ export default function ReelBadge({
     >
       {/* Gradient Badge */}
       {badge && (
-        <span className="flex h-6 min-w-10 items-center justify-center rounded-[6px] bg-gradient-to-l from-pink-600 via-red-600 to-orange-500 px-2 font-neue-semibold text-xs text-white">
+        <span className="flex h-6 min-w-10 items-center justify-center rounded-[6px] bg-gradient-to-l from-pink-600 via-red-600 to-orange-500  font-neue-semibold text-xs text-white">
           {badge}
         </span>
       )}

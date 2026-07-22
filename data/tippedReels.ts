@@ -8,7 +8,7 @@ export const tippedReels: Reel[] = [
 
     images: ["/images/reels/reel12.png"],
 
-    creatorLogo: "/images/logos/banana-joe.svg",
+    creatorLogo: "/images/logos/marley-and-me.svg",
 
     avatar: "/images/avatars/priya.png",
 
@@ -46,7 +46,7 @@ export const tippedReels: Reel[] = [
 
     imageCount: 18,
 
-    creatorLogo: "/images/logos/megamind.svg",
+    creatorLogo: "/images/logos/mamma-mia.svg",
 
     avatar: "/images/avatars/finn.png",
 
@@ -60,9 +60,9 @@ export const tippedReels: Reel[] = [
 
     time: "2d",
 
-    badge: "New",
+    badge: "",
 
-    locked: "/images/icons/lock.svg",
+    locked: "",
 
     likes: 758,
 
@@ -108,7 +108,7 @@ export const tippedReels: Reel[] = [
 
     images: ["/images/reels/reel14.png"],
 
-    creatorLogo: "/images/logos/dexter.svg",
+    creatorLogo: "/images/logos/moana.svg",
 
     avatar: "/images/avatars/moana.png",
 

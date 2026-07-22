@@ -48,7 +48,7 @@ export default function CertifiedSection() {
       {/* Header */}
       <SectionHeader
         subtitle="Sizzle+ Certified"
-        title="More Creators Worth Knowing"
+        title="Standout content this week"
         showControls
         onPrev={() => emblaApi?.scrollPrev()}
         onNext={() => emblaApi?.scrollNext()}
