@@ -22,24 +22,26 @@ export default function CreatorCard(props: Props) {
     >
       {/* CreatorAvatar  */}
 
-      <motion.div
-        whileHover={{
-          height: "190px",
-          width: "190px",
-        }}
-        transition={{
-          duration: 0.25,
-        }}
-        className="relative h-[180px] w-[180px] origin-bottom"
-      >
-        <Image
-          src={props.image}
-          alt={props.name}
-          fill
-          sizes="180px"
-          className="object-cover"
-        />
-      </motion.div>
+      <div className="relative h-[180px] w-[180px]">
+        <motion.div
+          whileHover={{
+            height: "190px",
+            width: "190px",
+          }}
+          transition={{
+            duration: 0.25,
+          }}
+          className="relative h-[180px] w-[180px] origin-bottom"
+        >
+          <Image
+            src={props.image}
+            alt={props.name}
+            fill
+            sizes="180px"
+            className="object-cover"
+          />
+        </motion.div>
+      </div>
 
       <div>
         <h3 className="font-neue-regular text-[16px] font-[400] text-white">
