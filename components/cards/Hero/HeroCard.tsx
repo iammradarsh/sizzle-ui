@@ -56,9 +56,9 @@ export default function HeroCard({
   const isOriginal = badge?.type === "original";
 
   return (
-    <div className="group w-[670px] flex flex-col items-center justify-center gap-[12px] rounded-lg h-[520px] transition-colors duration-300 hover:bg-[#19191B]">
+    <div className="group w-[670px] flex flex-col items-center justify-center gap-[12px] rounded-[15px] h-[520px] transition-colors duration-300 hover:bg-[#19191B]">
       {/* IMAGE CARD */}
-      <div className="relative w-[646px] h-[440px] overflow-hidden rounded-md">
+      <div className="relative w-[646px] h-[440px] overflow-hidden rounded-[10px]">
         <Image
           src={image}
           alt={title}
@@ -163,7 +163,7 @@ export default function HeroCard({
       <div className="w-full px-3">
         <p className="line-clamp-1 text-[16px] text-white">{description}</p>
 
-        <div className="flex items-center gap-2 text-[14px] text-zinc-400">
+        <div className="flex items-center gap-2 text-[14px] text-[#A3A3A3]">
           <span>{creator}</span>
           <span className="flex items-center gap-1">
             <span>

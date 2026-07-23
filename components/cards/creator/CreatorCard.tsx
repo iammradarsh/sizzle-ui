@@ -20,7 +20,7 @@ export default function CreatorCard(props: Props) {
       // }}
       className="w-[200px] flex flex-col items-start gap-[7px] shrink-0"
     >
-      {/* CreatorAvatar  */}
+      {/* CreatorImage  */}
 
       <div className="relative h-[180px] w-[180px]">
         <motion.div
@@ -46,7 +46,7 @@ export default function CreatorCard(props: Props) {
       </div>
 
       <div>
-        <h3 className="font-neue-regular text-[16px] font-[400] text-white">
+        <h3 className="font-neue-regular text-[16px] text-white">
           {props.name}
         </h3>
 

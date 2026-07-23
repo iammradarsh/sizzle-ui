@@ -92,7 +92,7 @@ export default function SectionHeader({
 
             <div>
               {subtitle && (
-                <p className="mb-1 font-neue-regular text-sm text-zinc-400">
+                <p className="mb-1 font-neue-regular text-sm text-[#A3A3A3]">
                   {subtitle}
                 </p>
               )}

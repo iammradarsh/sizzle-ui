@@ -5,11 +5,11 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full  px-7.5 py-7.5 bg-gradient-to-b from-black/50 via-black/40 to-black/0 backdrop-blur-xs">
+    <header className="sticky top-0 z-50 w-full  px-8 py-6 bg-gradient-to-b from-black/50 via-black/40 to-black/0 backdrop-blur-xs">
       <div className="z-10 flex items-center justify-between">
         {/* Left */}
         <div className="flex items-center gap-3">
-          <Button className="h-[44px] w-[107px] rounded-[14px] font-neue-semibold font-normal bg-white px-5 text-[14px] text-black hover:[#DFDCD7]">
+          <Button className="flex items-center justify-center h-[44px] w-[107px] rounded-[14px] font-neue-semibold font-normal bg-white text-[14px] text-black hover:[#DFDCD7] border-none">
             <Image
               src="/images/icons/foryou.svg"
               alt="For You"
@@ -20,10 +20,7 @@ export default function Header() {
             For You
           </Button>
 
-          <Button
-            variant="secondary"
-            className="group h-[44px] w-[120px] rounded-[14px] font-neue-semibold font-normal border-0 bg-[#19191B] px-5 text-[14px] text-zinc-300 hover:bg-[#252528] hover:text-white"
-          >
+          <Button className="group flex items-center justify-center h-[44px] w-[120px] rounded-[14px] font-neue-semibold font-normal border-0 bg-[#19191B] text-[14px] text-zinc-300 hover:bg-[#252528] hover:text-white">
             <Image
               src="/images/icons/following-grey.svg"
               alt="Following"
@@ -41,10 +38,7 @@ export default function Header() {
             Following
           </Button>
 
-          <Button
-            variant="secondary"
-            className="group h-[44px] w-[147px] rounded-[14px] font-neue-semibold font-normal border-0 bg-[#19191B] text-[14px] text-zinc-300 hover:bg-[#252528] hover:text-white"
-          >
+          <Button className="group flex items-center justify-center h-[44px] w-[147px] rounded-[14px] font-neue-semibold font-normal border-0 bg-[#19191B] text-[14px] text-zinc-300 hover:bg-[#252528] hover:text-white">
             <Image
               src="/images/icons/crown-grey.svg"
               alt="Memberships"
@@ -75,7 +69,7 @@ export default function Header() {
         {/* Right */}
         <div className="flex items-center gap-3">
           {/* Create */}
-          <Button className="relative h-[44px] w-[110px] overflow-hidden rounded-[14px] border-0 px-6 text-white">
+          <Button className="flex items-center justify-center font-neue-semibold relative h-[44px] w-[110px] overflow-hidden rounded-[14px] border-0 text-white">
             <Image
               src="/images/CreateButtonBG.png"
               alt=""
