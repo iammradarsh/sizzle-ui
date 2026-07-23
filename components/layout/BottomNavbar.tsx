@@ -105,7 +105,7 @@ export default function BottomNavigation() {
 
                   bg-white/[0.08]
 
-                  backdrop-blur-xl
+                  backdrop-blur-md
                   backdrop-saturate-[180%]
 
                   shadow-[0_6px_18px_rgba(255,255,255,.06),0_8px_18px_rgba(0,0,0,.28)]

@@ -39,7 +39,7 @@ export default function LiquidGlass({
           -inset-6
           rounded-[60px]
           opacity-70
-          blur-3xl
+          blur-md
         "
         style={{
           background: `
@@ -56,8 +56,8 @@ export default function LiquidGlass({
       <div
         className="absolute inset-0 overflow-hidden rounded-[34px]"
         style={{
-          backdropFilter: "blur(32px) saturate(180%)",
-          WebkitBackdropFilter: "blur(32px) saturate(180%)",
+          backdropFilter: "blur(10px) saturate(180%)",
+          WebkitBackdropFilter: "blur(10px) saturate(180%)",
         }}
       >
         <div
@@ -147,7 +147,7 @@ export default function LiquidGlass({
     inset-y-0
     w-44
     rotate-[18deg]
-    blur-3xl
+    blur-md
   "
             style={{
               background:
