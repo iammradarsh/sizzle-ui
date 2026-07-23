@@ -35,7 +35,7 @@ export default function TopCreatorSlide({
       {/* Number */}
       <span
         className={`absolute
-          ${isFirst ? "left-[-10px]" : "left-[-40px]"}
+          ${isFirst ? "left-[0px]" : "left-[-30px]"}
           bottom-[-18px]
           z-0
           select-none
@@ -44,7 +44,7 @@ export default function TopCreatorSlide({
           text-[300px]
           leading-none
           
-          gradient-rank-text`}
+         gradient-rank-text`}
       >
         {rank}
       </span>

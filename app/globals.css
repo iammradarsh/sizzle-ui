@@ -126,6 +126,14 @@
     rgba(255, 255, 255, 0.05) 0%,
     rgba(255, 255, 255, 0.75) 100%
   );
+  
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.second-gradient-rank-text {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.050)  70%, rgba(255, 255, 255, 0.050) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

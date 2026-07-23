@@ -43,7 +43,7 @@ export default function BookingCard({
       <span
         className={`
     absolute
-    ${isFirst ? "left-[-60px]" : "left-[-80px]"}
+    ${isFirst ? "left-[-60px]" : "left-[-90px]"}
     bottom-[-18px]
     z-0
     select-none
@@ -51,7 +51,7 @@ export default function BookingCard({
     font-neue-black
     text-[300px]
     leading-none
-    gradient-rank-text
+     second-gradient-rank-text
   `}
       >
         {rank}
