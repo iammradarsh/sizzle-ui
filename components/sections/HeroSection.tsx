@@ -11,6 +11,7 @@ import WheelGesturesPlugin from "embla-carousel-wheel-gestures";
 
 const heroCards: HeroCardProps[] = [
   {
+    id: 1,
     image: "/images/HeroCardImg1.webp",
     badge: {
       type: "original",
@@ -40,6 +41,7 @@ const heroCards: HeroCardProps[] = [
   },
 
   {
+    id: 2,
     image: "/images/HeroCardImg2.webp",
     badge: {
       type: "top-earner",
@@ -69,6 +71,7 @@ const heroCards: HeroCardProps[] = [
   },
 
   {
+    id: 3,
     image: "/images/HeroCardImg1.webp",
     badge: {
       type: "original",
@@ -76,6 +79,35 @@ const heroCards: HeroCardProps[] = [
       icon: "/images/icons/SizzleLogo.svg",
       iconWidth: 35,
       iconHeight: 10,
+    },
+    movieLogo: "/images/movie2-logo.png",
+
+    statType: "movie",
+
+    movieStats: {
+      quality: "4K",
+      duration: "6:03",
+      tag: "#Beauty",
+    },
+
+    category: "",
+    title: "ADELA\nMORALES",
+
+    description:
+      "Seems like you have found a LUCKY POST on your feed 💖😊 today is gonna be a good ...",
+    creator: "Adela Morales.",
+    creatorViews: "812 views",
+    time: "2d",
+  },
+  {
+    id: 4,
+    image: "/images/HeroCardImg2.webp",
+    badge: {
+      type: "top-earner",
+      text: "TOP EARNER",
+      icon: "/images/icons/trophy.svg",
+      iconWidth: 12,
+      iconHeight: 12,
     },
     movieLogo: "/images/movie-logo.png",
 
@@ -88,39 +120,11 @@ const heroCards: HeroCardProps[] = [
     },
 
     category: "",
-    title: "SAINT",
-
-    description:
-      "Seems like you have found a LUCKY POST on your feed 💖😊 today is gonna be a good ...",
-    creator: "Saint Lavigne",
-    creatorViews: "812 views",
-    time: "2d",
-  },
-  {
-    image: "/images/HeroCardImg2.webp",
-    badge: {
-      type: "top-earner",
-      text: "TOP EARNER",
-      icon: "/images/icons/trophy.svg",
-      iconWidth: 12,
-      iconHeight: 12,
-    },
-    movieLogo: undefined,
-
-    statType: "creator",
-
-    creatorStats: {
-      views: 480,
-      videos: 26,
-      likes: 780,
-    },
-
-    category: "CHUCKY",
-    title: "ADELA",
+    title: "SAINT\nLAVIGNE",
 
     description:
       "Life got so serious lately, I have almost forgot I used to paint 😅 may this post will be a ...",
-    creator: "Adela Morales",
+    creator: "Saint Lavigne.",
     creatorViews: "812 views",
     time: "2d",
   },
@@ -140,7 +144,7 @@ export default function HeroSection() {
       >
         <CarouselContent className="touch-pan-x">
           {heroCards.map((card) => (
-            <CarouselItem key={card.title} className="basis-auto shrink-0">
+            <CarouselItem key={card.id} className="basis-auto shrink-0">
               <HeroCard {...card} />
             </CarouselItem>
           ))}

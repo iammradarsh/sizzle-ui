@@ -3,6 +3,7 @@ import Image from "next/image";
 import HeroCardBadge from "./HeroCardBadge";
 
 export interface HeroCardProps {
+  id: number;
   image: string;
   badge?: {
     type: "original" | "top-earner" | "most-watched";
@@ -36,6 +37,7 @@ export interface HeroCardProps {
 }
 
 export default function HeroCard({
+  id,
   image,
   badge,
   movieLogo,
