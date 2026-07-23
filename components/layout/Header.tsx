@@ -199,7 +199,7 @@ export default function Header() {
             </Button>
 
             {/* Avatar */}
-            <Avatar className="h-[44px] w-[44px] rounded-[14px] border-[rgba(255, 255, 255, 0.2)]">
+            <Avatar className="h-[44px] w-[44px] rounded-[14px]">
               <AvatarImage src="/images/avatar.png" />
               <AvatarFallback>AD</AvatarFallback>
             </Avatar>
