@@ -5,7 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 export default function Header() {
   return (
-    <div className="relative h-[120px] fixed z-50">
+    <div className="relative h-[120px] z-50">
       {/* ===== YEH NAYA BLUR BLOCK ADD KAREIN ===== */}
       <div className="fixed top-0 left-0 right-0 z-40 grid h-30 pointer-events-none select-none">
         {/* Layer 1 - Light Blur */}
@@ -64,10 +64,11 @@ export default function Header() {
           }}
         />
         {/* Dark overlay */}
+
+        <div className="absolute top-0 left-0 z-0 w-full h-28 opacity-80 bg-gradient-to-t from-black/0 via-black/40 to-black/50" />
       </div>
 
       <header className="fixed top-0 z-50 w-full px-7.5 pt-7.5 pb-11.5">
-        <div className="absolute top-0 w-full h-28 opacity-80 bg-gradient-to-t from-black/0 via-black/40 to-black/50" />
         <div className="z-10 flex items-center justify-between">
           {/* Left */}
           <div className="flex items-center gap-3">
