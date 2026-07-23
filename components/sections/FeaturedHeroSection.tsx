@@ -48,7 +48,7 @@ export default function FeaturedHeroSection({ hero }: Props) {
   }, [emblaApi]);
 
   return (
-    <section className="relative mt-16 h-[760px] overflow-hidden ">
+    <section className="relative mt-16 h-[800px] overflow-hidden ">
       {/* Background */}
       <Image
         src={hero.background}
@@ -57,11 +57,11 @@ export default function FeaturedHeroSection({ hero }: Props) {
         unoptimized
         fill
         priority
-        className="object-cover"
+        className="object-cover opacity-25"
       />
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/45" />
+      <div className=" w-full h-48 left-0 top-0 absolute bg-gradient-to-b from-black to-black/0" />
+      <div className=" w-full h-48 left-0 bottom-0 absolute bg-gradient-to-t from-black to-black/0" />
 
       {/* Content */}
       <div className="relative flex h-full items-center justify-between pl-20">
@@ -73,7 +73,7 @@ export default function FeaturedHeroSection({ hero }: Props) {
         />
 
         {/* Right */}
-        <div className="w-[700px]">
+        <div className="w-[724px]">
           {/* Header */}
           <div className="px-8">
             <SectionHeader

@@ -10,15 +10,17 @@ export const certifiedReels: Reel[] = [
 
     creatorLogo: "/images/logos/mission-mars.svg",
 
-    avatar: "/images/avatars/4.png",
+    avatar: "/images/avatars/baddie.png",
 
-    title: "The Workout That Has Everyone Going Absolutely Crazy",
+    title: "I Tested Every Sleep Hack On The Internet For Two Weeks",
 
-    creator: "Ashley Yung",
+    creator: "Amara Diallo",
 
-    duration: "HD 4:28",
+    quality:"HD",
 
-    category: "#Fitness",
+    duration: "4:28",
+
+    category: "#Cooking",
 
     views: "812 views",
 
@@ -38,19 +40,19 @@ export const certifiedReels: Reel[] = [
 
     creatorLogo: "/images/logos/mamma-mia.svg",
 
-    avatar: "/images/avatars/4.png",
+    avatar: "/images/avatars/jonaorie.png",
 
-    title: "Getting Ready With Me For The Most Important Date Night",
+    title: "What Nobody Tells You About Blowing Up On Social Media",
 
-    creator: "Clemence Crave",
+    creator: "Kai Whitfield",
 
     duration: "4K 6:03",
 
-    category: "#Lifestyle",
+    category: "#Fitness",
 
-    views: "1.4K views",
+    views: "812 views",
 
-    time: "1d",
+    time: "2d",
 
     likes: 1268,
 
@@ -68,17 +70,17 @@ export const certifiedReels: Reel[] = [
 
     avatar: "/images/avatars/zara.png",
 
-    title: "Raw And Unfiltered What It Is Really Like Doing This For A Living",
+    title: "We Ate At The Most Reviewed Restaurant In The City",
 
-    creator: "Zara Okonkwo",
+    creator: "Stella Novak",
 
     duration: "HD 5:12",
 
-    category: "#Gaming",
+    category: "#Cooking",
 
-    views: "2.1K views",
+    views: "812 views",
 
-    time: "5h",
+    time: "2d",
 
     likes: 2018,
 
@@ -88,25 +90,31 @@ export const certifiedReels: Reel[] = [
   {
     id: 4,
 
-    mediaType: "image",
+   mediaType: "gallery",
 
-    images: ["/images/certified/4.png"],
+    images: [
+      "/images/certified/4.png",
+      "/images/certified/4.png",
+      "/images/certified/4.png",
+      "/images/certified/4.png",
+      "/images/certified/4.png",
+    ],
+
+    imageCount: 18,
 
     creatorLogo: "/images/logos/moana.svg",
 
-    avatar: "/images/avatars/leila.png",
+    avatar: "/images/avatars/yara.png",
 
-    title: "I Tried The Morning Routine Every Influencer Swears By",
+    title: "I Trained Like A Professional Athlete For One Month",
 
-    creator: "Leila Castillo",
-
-    duration: "HD 4:28",
+    creator: "Owen Blackwell ",
 
     category: "#Cooking",
 
-    views: "986 views",
+    views: "812 views",
 
-    time: "3d",
+    time: "2d",
 
     likes: 986,
 

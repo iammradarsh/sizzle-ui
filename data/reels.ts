@@ -15,6 +15,8 @@ export interface Reel {
 
   creator: string;
 
+  quality?: string;
+
   duration?: string;
 
   category: string;
@@ -56,7 +58,9 @@ export const reels: Reel[] = [
 
     creator: "Baddie Bianca",
 
-    duration: "HD 4:28",
+    quality: "HD",
+
+    duration: "4:28",
 
     category: "#Cooking",
 
@@ -72,7 +76,7 @@ export const reels: Reel[] = [
   {
     id: 2,
 
-    mediaType: "gallery",
+    mediaType: "video",
 
     images: [
       "/images/reels/2/1.png",
@@ -82,7 +86,10 @@ export const reels: Reel[] = [
       "/images/reels/2/5.png",
     ],
 
-    imageCount: 18,
+    
+quality: "4K",
+
+    duration: "6:03",
 
     creatorLogo: "/images/logos/megamind.svg",
 
@@ -110,9 +117,11 @@ export const reels: Reel[] = [
   {
     id: 3,
 
-    mediaType: "video",
+    mediaType: "gallery",
 
     images: ["/images/reels/reel3.png"],
+
+    imageCount: 18,
 
     creatorLogo: "/images/logos/megamind.svg",
 
@@ -122,7 +131,7 @@ export const reels: Reel[] = [
 
     creator: "Zara Okonkwo",
 
-    duration: "4K 6:03",
+    
 
     category: "#Fitness",
 
@@ -138,9 +147,11 @@ export const reels: Reel[] = [
   {
     id: 4,
 
-    mediaType: "video",
+    mediaType: "gallery",
 
     images: ["/images/reels/reel4.png"],
+
+    imageCount: 18,
 
     creatorLogo: "/images/logos/dexter.svg",
 
@@ -150,7 +161,7 @@ export const reels: Reel[] = [
 
     creator: "Yara Santos",
 
-    duration: "4K 6:03",
+   
 
     category: "#Lifestyle",
 
@@ -178,7 +189,9 @@ export const reels: Reel[] = [
 
     creator: "Yara Santos",
 
-    duration: "4K 6:03",
+    quality: "4K",
+
+    duration: "6:03",
 
     category: "#Fitness",
 

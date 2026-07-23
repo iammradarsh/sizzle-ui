@@ -9,6 +9,7 @@ interface Props {
   image: string;
   badge: string;
   badgeIcon: string;
+  badgeWidth: number;
   name: string;
   description: string;
 }
@@ -17,6 +18,7 @@ export default function TopCreatorCard({
   image,
   badge,
   badgeIcon,
+  badgeWidth,
   name,
   description,
 }: Props) {
@@ -69,7 +71,7 @@ export default function TopCreatorCard({
 
         {/* 3. Text and Badge Layer (On Top) */}
         <div className="absolute bottom-6 left-5 right-5 z-20">
-          <TopCreatorBadge icon={badgeIcon} label={badge} />
+          <TopCreatorBadge icon={badgeIcon} label={badge} width={badgeWidth} />
 
           <h3
             className="

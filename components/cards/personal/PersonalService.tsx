@@ -13,7 +13,9 @@ export default function PersonalService({
         {title}
       </span>
 
-      <span className="font-neue-regular text-[14px] text-white">{price}</span>
+      <span className="font-neue-regular font-normal text-[14px] text-white">
+        {price}
+      </span>
     </div>
   );
 }

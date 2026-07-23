@@ -94,7 +94,7 @@ export const reels: Reel[] = [
 
     mediaType: "image",
 
-    images: ["/images/reels/reel12.png"],
+    images: ["/images/reels/reel16.png"],
 
     creatorLogo: "/images/logos/Mission_to_Mars.svg",
 

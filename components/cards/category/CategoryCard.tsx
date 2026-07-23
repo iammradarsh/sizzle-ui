@@ -7,10 +7,10 @@ import SquircleAvatar from "@/components/common/SquircleAvatar";
 
 interface Props {
   title: string;
-  image: string;
+  images: string[];
 }
 
-export default function CategoryCard({ title, image }: Props) {
+export default function CategoryCard({ title, images }: Props) {
   return (
     <motion.div
       // whileHover={{
@@ -38,7 +38,7 @@ export default function CategoryCard({ title, image }: Props) {
 
       <div className="relative w-[100px] right-0 flex gap-2.5">
         <SquircleAvatar
-          src={image}
+          src={images[0]}
           alt={title ?? ""}
           avatarSize={60}
           borderSize={60}
@@ -46,7 +46,7 @@ export default function CategoryCard({ title, image }: Props) {
           borderWidth={0}
         />
         <SquircleAvatar
-          src={image}
+          src={images[1]}
           alt={title ?? ""}
           avatarSize={60}
           borderSize={60}

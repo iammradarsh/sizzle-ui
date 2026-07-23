@@ -31,7 +31,7 @@ export const spotlight: Spotlight[] = [
     frame: "/images/spotlight/frame-blue.svg",
 
     overlayGradient:
-      "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 94, 255, .90) 52%, #015EFE 100%)",
+      "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 94, 255, .90) 52%, rgba(1, 94, 254, 1) 100%)",
 
     badgeType: "fan-favorite",
 
@@ -52,7 +52,7 @@ export const spotlight: Spotlight[] = [
     frame: "/images/spotlight/frame-purple.svg",
 
     overlayGradient:
-      "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0) 20%, rgba(126,55,231,.9) 52%, #7E37E7 100%)",
+      "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0) 20%, rgba(80, 34, 116, 0.9) 52%, rgba(80, 34, 116, 1) 100%)",
 
     badgeType: "most-tipped",
 
@@ -73,7 +73,7 @@ export const spotlight: Spotlight[] = [
     frame: "/images/spotlight/frame-orange.svg",
 
     overlayGradient:
-      "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0) 20%, rgba(229,64,20,.9) 52%, #E54014 100%)",
+      "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0) 20%, rgba(120, 0, 22, 0.9) 52%, rgba(120, 0, 22, 1) 100%)",
     
     badgeType: "most-booked",
 
@@ -94,7 +94,7 @@ export const spotlight: Spotlight[] = [
     frame: "/images/spotlight/frame-green.svg",
 
     overlayGradient:
-      "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0) 20%, rgba(0,156,145,.9) 52%, #009C91 100%)",
+      "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 156, 145, 0.9) 52%, rgba(0, 156, 145, 1) 100%)",
     
     badgeType: "top-earner",
 

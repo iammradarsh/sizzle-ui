@@ -125,7 +125,8 @@ export default function ReviewCard({
               src={creatorAvatar}
               alt={name}
               avatarSize={28}
-              borderSize={32}
+              borderSize={28}
+              borderWidth={0}
               borderVariant="solid"
               cornerRadius={10 / 28} // 0.27
               cornerSmoothing={6}

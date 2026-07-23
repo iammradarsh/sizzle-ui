@@ -27,6 +27,8 @@ interface ReelCardProps {
 
   creator: string;
 
+  quality?: string;
+
   duration?: string;
 
   category: string;
@@ -57,6 +59,7 @@ export default function ReelCard({
   rank,
   avatar,
   creator,
+  quality,
   duration,
   category,
   views,
@@ -117,7 +120,7 @@ export default function ReelCard({
       // transition={{
       //   duration: 0.25,
       // }}
-      className="group w-[335] shrink-0"
+      className="group w-[335px] h-[578px] shrink-0"
     >
       <div
         className="
@@ -311,7 +314,10 @@ export default function ReelCard({
           >
             {/* Video Badge */}
             {mediaType === "video" && duration && (
-              <div className="flex h-6 w-15 items-center justify-center rounded-[6px] bg-black/40 backdrop-blur-md">
+              <div className="flex h-6 w-15 items-center justify-center gap-[3px] rounded-[6px] bg-black/40 backdrop-blur-md">
+                <span className="font-neue-semibold text-xs text-white">
+                  {quality}
+                </span>
                 <span className="font-neue-regular text-xs text-white">
                   {duration}
                 </span>
@@ -336,7 +342,10 @@ export default function ReelCard({
 
             {/* Image Badge (Optional) */}
             {mediaType === "image" && duration && (
-              <div className="flex h-6 w-15 items-center justify-center rounded-[6px] bg-black/40 backdrop-blur-md">
+              <div className="flex h-6 w-15 items-center justify-center gap-[3px] rounded-[6px] bg-black/40 backdrop-blur-md">
+                <span className="font-neue-semibold text-xs text-white">
+                  {quality}
+                </span>
                 <span className="font-neue-regular text-xs text-white">
                   {duration}
                 </span>

@@ -35,7 +35,7 @@ export default function PersonalStats({
           height={14}
         />
 
-        <span className="font-neue-semibold text-[14px] text-white">
+        <span className="font-neue-regular font-normal text-[14px] text-white">
           {responseTime}
         </span>
       </div>

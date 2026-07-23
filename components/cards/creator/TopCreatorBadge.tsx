@@ -6,13 +6,16 @@ interface Props {
   icon: string;
 
   label: string;
+
+  width: number;
 }
 
-export default function TopCreatorBadge({ icon, label }: Props) {
+export default function TopCreatorBadge({ icon, label, width }: Props) {
   return (
     <div
-      className="mb-2 border-[6px] border-transparent bg-black/50 backdrop-blur-[20px] rounded-sm w-fit h-[24px]"
+      className="mb-2 border-[6px] border-transparent bg-[rgba(0, 0, 0, 0.5)] backdrop-blur-[100px] rounded-sm h-[24px]"
       style={{
+        width: `${width}px`,
         borderImage: 'url("/images/badge-border.svg") 2',
         borderImageWidth: 0.4,
       }}
@@ -21,10 +24,10 @@ export default function TopCreatorBadge({ icon, label }: Props) {
         className="
           flex
           items-center
-          justify-start
+          justify-center
           gap-1
           h-full
-          px-1
+          
         "
       >
         <Image

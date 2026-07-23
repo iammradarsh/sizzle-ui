@@ -94,7 +94,7 @@ export const featuredHeroes: FeaturedHeroData[] = [
     id: 2,
 
     // Abhi same assets use kar rahe hain
-    background: "/images/featured/zuri-bg.png",
+    background: "/images/featured/background2.png",
 
     creatorLogo: "/images/logos/Der-Ex.svg",
 

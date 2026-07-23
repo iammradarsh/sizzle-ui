@@ -105,7 +105,7 @@ export default function BookingCard({
       absolute
       left-5
       right-5
-      bottom-[94px]
+      bottom-[70px]
     "
             >
               {/* Badge */}
@@ -147,12 +147,13 @@ export default function BookingCard({
               {/* Name */}
               <h3
                 className="
-        mt-4
+        mt-3.5
         whitespace-pre-line
         text-[48px]
         font-neue-black
         uppercase
-        leading-[0.9]
+        leading-[40px]
+        h-[74px]
         text-white
       "
               >
@@ -160,7 +161,7 @@ export default function BookingCard({
               </h3>
 
               {/* Stats */}
-              <div className="mt-4 flex items-center gap-4 text-white">
+              <div className="mt-3 flex items-center gap-4 text-white">
                 <div className="flex items-center gap-1">
                   <Image
                     src="/images/icons/thumb.svg"
@@ -191,14 +192,17 @@ export default function BookingCard({
             {/* Footer */}
             <div
               className="
+              flex
+              flex-col
+              justify-center
     absolute
     bottom-0
     left-0
     right-0
     z-20
-    h-[78px]
+    h-[58px]
     px-5
-    py-4
+    
   "
               style={{
                 background: footerColor,
@@ -230,7 +234,7 @@ export default function BookingCard({
               </div>
 
               {/* Bottom Row */}
-              <div className="mt-2 flex items-center gap-1">
+              <div className="flex items-center gap-1">
                 <Image
                   src="/images/icons/fire-white.svg"
                   alt=""
@@ -238,7 +242,7 @@ export default function BookingCard({
                   height={10}
                 />
 
-                <span className="font-neue-semibold font-normal text-[12px] text-white/85">
+                <span className="font-neue-regular font-normal text-[12px] text-white/85">
                   {bookedText}
                 </span>
               </div>

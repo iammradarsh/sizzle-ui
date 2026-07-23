@@ -9,6 +9,8 @@ export interface TopCreator {
 
   badgeIcon: string;
 
+  badgeWidth: number;
+
   name: string;
 
   description: string;
@@ -26,6 +28,8 @@ export const topCreators: TopCreator[] = [
 
     badgeIcon: "/images/icons/top-rated.svg",
 
+    badgeWidth: 86,
+
     name: "ASHLEY\nYUNG",
 
     description: "Ebony · Petite · Lifestyle",
@@ -41,6 +45,8 @@ export const topCreators: TopCreator[] = [
     badge: "FAN FAVORITE",
 
     badgeIcon: "/images/icons/favorite.svg",
+
+    badgeWidth: 99,
 
     name: "CLEMENCE CRAVE",
 
@@ -58,6 +64,8 @@ export const topCreators: TopCreator[] = [
 
     badgeIcon: "/images/icons/rising.svg",
 
+    badgeWidth: 91,
+
     name: "ASHLEY\nYUNG",
 
     description: "Blonde · Athletic · Fitness",
@@ -73,6 +81,8 @@ export const topCreators: TopCreator[] = [
     badge: "MOST TIPPED",
 
     badgeIcon: "/images/icons/dollar.svg",
+
+    badgeWidth: 96,
 
     name: "ASHLEY\nYUNG",
 

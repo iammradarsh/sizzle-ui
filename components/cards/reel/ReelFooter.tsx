@@ -37,9 +37,9 @@ export default function ReelFooter({
       )}
 
       <div>
-        <div className="flex flex-col gap-[4px]">
+        <div className="flex flex-col gap-[4px] pr-1">
           {/* Title */}
-          <h3 className="font-neue-regular text-[16px] leading-[20px] text-white">
+          <h3 className="max-w-[300px] font-neue-semibold font-normal text-[16px] leading-[20px] text-white">
             {title}
           </h3>
 
@@ -56,7 +56,7 @@ export default function ReelFooter({
               cornerSmoothing={8}
             />
 
-            <span className="font-neue-regular text-[14px] text-white">
+            <span className="font-neue-regular text-[14px] text-[#A3A3A3]">
               {creator}
             </span>
 

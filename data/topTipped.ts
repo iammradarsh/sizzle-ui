@@ -24,9 +24,80 @@ export const topTipped: TopTippedReel[] = [
 
     creator: "Priya Nalani",
 
-    duration: "HD 4:28",
+    quality: "HD",
 
-    category: "#Lifestyle",
+    duration: "4:28",
+
+    category: "#Cooking",
+
+    views: "812 views",
+
+    time: "2d",
+
+    likes: 758,
+
+    comments: 18,
+  },
+
+  
+
+  {
+    id: 2,
+
+    rank: 2,
+
+    mediaType: "image",
+
+    images: ["/images/reels/reel6.png"],
+
+    creatorLogo: "/images/logos/mamma-mia.svg",
+
+    avatar: "/images/avatars/deja.png",
+
+    title: "Rating Every Coffee Shop In The City As A Specialty Coffee Addict",
+
+    creator: "Finn Holloway",
+
+    category: "#Fitness",
+
+    quality: "4K",
+
+    duration: "6:03",
+
+    views: "812 views",
+
+    isPremium: true,
+
+
+    time: "2d",
+
+    likes: 758,
+
+    comments: 18,
+  },
+
+  {
+    id: 3,
+
+    rank: 3,
+
+    mediaType: "image",
+
+    images: ["/images/reels/reel7.png"],
+
+    creatorLogo: "/images/logos/machete.svg",
+
+    avatar: "/images/avatars/priya2.png",
+
+    title: "The Morning Routine Nobody Talks About But Everyone Should Try",
+
+    creator: "Deja Monroe",
+    
+    quality: "4K",
+
+    duration: "6:03",
+
+    category: "#Cooking",
 
     views: "812 views",
 
@@ -38,9 +109,40 @@ export const topTipped: TopTippedReel[] = [
   },
 
   {
-    id: 2,
+    id: 4,
 
-    rank: 2,
+    rank: 4,
+
+    mediaType: "video",
+
+    images: ["/images/reels/reel8.png"],
+
+   creatorLogo: "/images/logos/moana.svg",
+
+    avatar: "/images/avatars/luca.png",
+
+    title: "We Surprised Our Biggest Fan With Their Dream Day",
+
+    creator: "Luca Ferretti",
+
+    quality: "HD",
+
+    duration: "4:55",
+
+    category: "#Fitness",
+
+    views: "812 views",
+
+    time: "2d",
+
+    likes: 758,
+
+    comments: 18,
+  },
+  {
+    id: 5,
+
+    rank: 5,
 
     mediaType: "gallery",
 
@@ -62,7 +164,7 @@ export const topTipped: TopTippedReel[] = [
 
     creator: "Finn Holloway",
 
-    category: "#Food",
+    category: "#Fitness",
 
     views: "812 views",
 
@@ -71,99 +173,6 @@ export const topTipped: TopTippedReel[] = [
     badge: "New",
 
     locked: "/images/icons/lock.svg",
-
-    likes: 758,
-
-    comments: 18,
-  },
-
-  {
-    id: 3,
-
-    rank: 3,
-
-    mediaType: "image",
-
-    images: ["/images/reels/reel6.png"],
-
-    creatorLogo: "/images/logos/machete.svg",
-
-    avatar: "/images/avatars/priya2.png",
-
-    title: "The Morning Routine Nobody Talks About But Everyone Should Try",
-
-    creator: "Deja Monroe",
-
-    duration: "4K 6:03",
-
-    category: "#Fitness",
-
-    views: "812 views",
-
-    isPremium: true,
-
-
-    time: "2d",
-
-    likes: 758,
-
-    comments: 18,
-  },
-
-  {
-    id: 4,
-
-    rank: 4,
-
-    mediaType: "image",
-
-    images: ["/images/reels/reel7.png"],
-
-    creatorLogo: "/images/logos/moana.svg",
-
-    avatar: "/images/avatars/luca.png",
-
-    title: "We Surprised Our Biggest Fan With Their Dream Day",
-
-    creator: "Luca Ferretti",
-
-    duration: "HD 5:02",
-
-    category: "#Lifestyle",
-
-    views: "812 views",
-
-    time: "2d",
-
-    likes: 758,
-
-    comments: 18,
-  },
-
-  {
-    id: 5,
-
-    rank: 5,
-
-    mediaType: "image",
-
-    images: ["/images/reels/reel8.png"],
-
-    creatorLogo: "/images/logos/megamind.svg",
-
-    avatar: "/images/avatars/moana.png",
-
-    title: "Raw And Unfiltered: What It Is Really Like Doing This For A Living",
-
-    creator: "Yara Santos",
-
-    duration: "HD 4:55",
-
-    category: "#Fitness",
-
-    views: "812 views",
-
-    time: "2d",
 
     likes: 758,
 

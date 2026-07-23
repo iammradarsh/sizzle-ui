@@ -13,6 +13,8 @@ interface Props {
 
   badgeIcon: string;
 
+  badgeWidth: number;
+
   name: string;
 
   description: string;
@@ -24,6 +26,7 @@ export default function TopCreatorSlide({
   image,
   badge,
   badgeIcon,
+  badgeWidth,
   name,
   description,
 }: Props) {
@@ -52,6 +55,7 @@ export default function TopCreatorSlide({
           image={image}
           badge={badge}
           badgeIcon={badgeIcon}
+          badgeWidth={badgeWidth}
           name={name}
           description={description}
         />

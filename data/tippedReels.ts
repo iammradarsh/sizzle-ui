@@ -12,13 +12,13 @@ export const tippedReels: Reel[] = [
 
     avatar: "/images/avatars/priya.png",
 
-    title: "I Quit Social Media For 30 Days And It Changed Everything",
+    title: "I Tested Every Sleep Hack On The Internet For Two Weeks",
 
-    creator: "Priya Nalani",
+    creator: "Amara Diallo",
 
     duration: "HD 4:28",
 
-    category: "#Lifestyle",
+    category: "#Cooking",
 
     views: "812 views",
 
@@ -34,6 +34,93 @@ export const tippedReels: Reel[] = [
   {
     id: 2,
 
+    mediaType: "image",
+
+    images: ["/images/reels/reel13.png"],
+
+    creatorLogo: "/images/logos/mamma-mia.svg",
+
+    avatar: "/images/avatars/jonaorie.png",
+
+    title: "What Nobody Tells You About Blowing Up On Social Media",
+
+    creator: "Kai Whitfield",
+
+    duration: "4K 6:03",
+
+    category: "#Fitness",
+
+    views: "812 views",
+
+    isPremium: true,
+
+    time: "2d",
+
+    likes: 758,
+
+    comments: 18,
+  },
+
+  {
+    id: 3,
+
+    mediaType: "image",
+
+    images: ["/images/reels/reel14.png"],
+
+    creatorLogo: "/images/logos/machete.svg",
+
+
+    avatar: "/images/avatars/zara.png",
+
+    title: "We Ate At The Most Reviewed Restaurant In The City",
+
+    creator: "Stella Novak",
+
+    duration: "HD 5:02",
+
+    category: "#Cooking",
+
+    views: "812 views",
+
+    time: "2d",
+
+    likes: 758,
+
+    comments: 18,
+  },
+
+  {
+    id: 4,
+
+    mediaType: "gallery",
+
+    images: ["/images/reels/reel15.png"],
+
+    imageCount: 18,
+
+     creatorLogo: "/images/logos/moana.svg",
+
+    avatar: "/images/avatars/yara.png",
+
+    title: "I Trained Like A Professional Athlete For One Month",
+
+    creator: "Owen Blackwell",
+
+    category: "#Lifestyle",
+
+    views: "812 views",
+
+    time: "2d",
+
+    likes: 758,
+
+    comments: 18,
+  },
+
+  {
+    id: 5,
+
     mediaType: "gallery",
 
     images: [
@@ -46,7 +133,7 @@ export const tippedReels: Reel[] = [
 
     imageCount: 18,
 
-    creatorLogo: "/images/logos/mamma-mia.svg",
+    creatorLogo: "/images/logos/megamind.svg",
 
     avatar: "/images/avatars/finn.png",
 
@@ -69,91 +156,5 @@ export const tippedReels: Reel[] = [
     comments: 18,
 
     isPremium: false,
-  },
-
-  {
-    id: 3,
-
-    mediaType: "image",
-
-    images: ["/images/reels/reel13.png"],
-
-    creatorLogo: "/images/logos/machete.svg",
-
-    avatar: "/images/avatars/deja.png",
-
-    title: "The Morning Routine Nobody Talks About But Everyone Should Try",
-
-    creator: "Deja Monroe",
-
-    duration: "4K 6:03",
-
-    category: "#Fitness",
-
-    views: "812 views",
-
-    isPremium: true,
-
-    time: "2d",
-
-    likes: 758,
-
-    comments: 18,
-  },
-
-  {
-    id: 4,
-
-    mediaType: "image",
-
-    images: ["/images/reels/reel14.png"],
-
-    creatorLogo: "/images/logos/moana.svg",
-
-    avatar: "/images/avatars/moana.png",
-
-    title: "We Surprised Our Biggest Fan With Their Dream Day",
-
-    creator: "Luca Ferretti",
-
-    duration: "HD 5:02",
-
-    category: "#Lifestyle",
-
-    views: "812 views",
-
-    time: "2d",
-
-    likes: 758,
-
-    comments: 18,
-  },
-
-  {
-    id: 5,
-
-    mediaType: "image",
-
-    images: ["/images/reels/reel15.png"],
-
-    creatorLogo: "/images/logos/megamind.svg",
-
-    avatar: "/images/avatars/yara.png",
-
-    title: "Raw And Unfiltered: What It Is Really Like Doing This For A Living",
-
-    creator: "Yara Santos",
-
-    duration: "HD 4:55",
-
-    category: "#Fitness",
-
-    views: "812 views",
-
-    time: "2d",
-
-    likes: 758,
-
-    comments: 18,
   },
 ];

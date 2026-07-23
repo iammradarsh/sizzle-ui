@@ -39,7 +39,7 @@ export const exploreCreators: ExploreCreator[] = [
 
   {
     id: 2,
-    avatar: "/images/avatars/yara.png",
+    avatar: "/images/avatars/yara2.png",
     name: "Yara Santos",
     description: "Blue eyes and a personality that hits different",
     category: "#Music",
@@ -55,7 +55,7 @@ export const exploreCreators: ExploreCreator[] = [
 
   {
     id: 4,
-    avatar: "/images/avatars/zara.png",
+    avatar: "/images/avatars/zara2.png",
     name: "Zara Okonkwo",
     description: "Your favorite latina and you haven't even met me yet",
 

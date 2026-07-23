@@ -66,6 +66,7 @@ export default function TopCreatorsSection() {
                 image={creator.image}
                 badge={creator.badge}
                 badgeIcon={creator.badgeIcon}
+                badgeWidth={creator.badgeWidth}
                 name={creator.name}
                 description={creator.description}
                 isFirst={index === 0}

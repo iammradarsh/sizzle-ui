@@ -1,43 +1,69 @@
 export interface Category {
   id: number;
   title: string;
-  image: string;
+  images: string[];
 }
 
 export const categories: Category[] = [
   {
     id: 1,
     title: "#FOOD",
-    image: "/images/categories/food.png",
+    images: [
+      "/images/categories/food-1.png",
+      "/images/categories/food-2.png",
+    ],
   },
   {
     id: 2,
     title: "#COOKING",
-    image: "/images/categories/cooking.png",
+    images: [
+      "/images/categories/cooking-1.png",
+      "/images/categories/cooking-2.png",
+    ],
   },
   {
     id: 3,
     title: "#BEATS",
-    image: "/images/categories/beats.png",
+    images: [
+      "/images/categories/beats-1.png",
+      "/images/categories/beats-2.png",
+    ],
+    
   },
   {
     id: 4,
     title: "#GAMING",
-    image: "/images/categories/gaming.png",
+    images: [
+      "/images/categories/gaming-1.png",
+      "/images/categories/gaming-2.png",
+    ],
+    
   },
   {
     id: 5,
     title: "#LIFESTYLE",
-    image: "/images/categories/lifestyle.png",
+    images: [
+      "/images/categories/lifestyle-1.png",
+      "/images/categories/lifestyle-2.png",
+    ],
+    
   },
   {
     id: 6,
     title: "#BEAUTY",
-    image: "/images/categories/beauty.png",
+    images: [
+      "/images/categories/beauty-1.png",
+      "/images/categories/beauty-2.png",
+    ],
+    
   },
   {
     id: 7,
     title: "#BEATS",
-    image: "/images/categories/beats.png",
+    images: [
+      "/images/categories/beats-1.png",
+      "/images/categories/beats-2.png",
+    ],
+    
   },
 ];
