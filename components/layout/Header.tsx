@@ -5,7 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full  px-8 py-6 bg-gradient-to-b from-black/50 via-black/40 to-black/0 backdrop-blur-xs">
+    <header className="sticky top-0 z-50 w-full  px-7.5 py-7.5 bg-gradient-to-b from-black/50 via-black/40 to-black/0 backdrop-blur-xs">
       <div className="z-10 flex items-center justify-between">
         {/* Left */}
         <div className="flex items-center gap-3">
