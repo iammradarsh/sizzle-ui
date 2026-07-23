@@ -33,7 +33,7 @@ const heroCards: HeroCardProps[] = [
     title: "ADELA\nMORALES",
 
     description:
-      "Life got so serious lately, I have almost forgot I used to paint 😅",
+      "Seems like you have found a LUCKY POST on your feed 💖😊 today is gonna be a good ...",
     creator: "Adela Morales",
     creatorViews: "812 views",
     time: "2d",
@@ -61,7 +61,8 @@ const heroCards: HeroCardProps[] = [
     category: "",
     title: "SAINT\nLAVIGNE",
 
-    description: "Seems like you have found a LUCKY POST on your feed 💖",
+    description:
+      "Life got so serious lately, I have almost forgot I used to paint 😅 may this post will be a ...",
     creator: "Saint Lavigne",
     creatorViews: "812 views",
     time: "2d",
@@ -90,7 +91,7 @@ const heroCards: HeroCardProps[] = [
     title: "SAINT",
 
     description:
-      "Life got so serious lately, I have almost forgot I used to paint 😅",
+      "Seems like you have found a LUCKY POST on your feed 💖😊 today is gonna be a good ...",
     creator: "Saint Lavigne",
     creatorViews: "812 views",
     time: "2d",
@@ -117,7 +118,8 @@ const heroCards: HeroCardProps[] = [
     category: "CHUCKY",
     title: "ADELA",
 
-    description: "Seems like you have found a LUCKY POST on your feed 💖",
+    description:
+      "Life got so serious lately, I have almost forgot I used to paint 😅 may this post will be a ...",
     creator: "Adela Morales",
     creatorViews: "812 views",
     time: "2d",
