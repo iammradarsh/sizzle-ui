@@ -11,7 +11,7 @@ import WheelGesturesPlugin from "embla-carousel-wheel-gestures";
 
 const heroCards: HeroCardProps[] = [
   {
-    image: "/images/HeroCardImg1.png",
+    image: "/images/HeroCardImg1.webp",
     badge: {
       type: "original",
       text: "ORIGINAL",
@@ -40,7 +40,7 @@ const heroCards: HeroCardProps[] = [
   },
 
   {
-    image: "/images/HeroCardImg2.png",
+    image: "/images/HeroCardImg2.webp",
     badge: {
       type: "top-earner",
       text: "TOP EARNER",
@@ -68,7 +68,7 @@ const heroCards: HeroCardProps[] = [
   },
 
   {
-    image: "/images/HeroCardImg1.png",
+    image: "/images/HeroCardImg1.webp",
     badge: {
       type: "original",
       text: "ORIGINAL",
@@ -96,7 +96,7 @@ const heroCards: HeroCardProps[] = [
     time: "2d",
   },
   {
-    image: "/images/HeroCardImg2.png",
+    image: "/images/HeroCardImg2.webp",
     badge: {
       type: "top-earner",
       text: "TOP EARNER",

@@ -60,6 +60,8 @@ export default function HeroCard({
         <Image
           src={image}
           alt={title}
+          quality={100}
+          unoptimized
           fill
           priority
           sizes="(max-width: 768px) 90vw, 46vw"
@@ -72,6 +74,7 @@ export default function HeroCard({
           <Image
             src="/images/HeroCardFrame.png"
             alt="Frame"
+            quality={90}
             fill
             className="object-fill"
           />
