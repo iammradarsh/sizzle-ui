@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion } from "motion/react";
 import SquircleAvatar from "@/components/common/SquircleAvatar";
-import { ShowMore } from "@re-dev/react-truncate";
+import ExpandableText from "@/components/common/ExpandableText";
 
 interface Props {
   avatar: string;
@@ -34,6 +34,7 @@ export default function ReviewCard({
   creatorAvatar,
   tags,
 }: Props) {
+  const [expanded, setExpanded] = useState(false);
   return (
     <motion.div
       className="
@@ -50,18 +51,17 @@ export default function ReviewCard({
         flex-col
       "
     >
-      <div className="flex flex-col gap-4 h-full">
+      <div className="flex flex-col gap-5 h-full">
         {/* Header */}
         <div className="flex items-start justify-between">
           <div className="flex items-center gap-3.75">
-            <Image
+            <SquircleAvatar
               src={avatar}
-              alt={name}
-              quality={100}
-              unoptimized
-              width={50}
-              height={50}
-              className="rounded-xl"
+              alt={name ?? ""}
+              avatarSize={50}
+              borderSize={50}
+              borderVariant="solid"
+              borderWidth={0}
             />
 
             <div>
@@ -78,7 +78,7 @@ export default function ReviewCard({
           <span className="text-[14px] text-[#8A8A8A]">{time}</span>
         </div>
 
-        <div className="flex flex-col justify-between h-full">
+        <div className="flex flex-col h-full">
           {/* Rating */}
           <div
             className=" flex items-center gap-1"
@@ -102,25 +102,15 @@ export default function ReviewCard({
           </div>
 
           {/* Review */}
-          <ShowMore
+          <ExpandableText
+            text={review}
             lines={3}
-            more={
-              <button className="font-neue-semibold text-[#A3A3A3]">
-                ...Show more
-              </button>
-            }
-            less={
-              <button className="font-neue-semibold text-[#A3A3A3]">
-                ...Show less
-              </button>
-            }
-            className="text-sm font-neue-regular leading-5 text-white"
-          >
-            {review}
-          </ShowMore>
+            lineHeight={16}
+            className="text-sm font-neue-regular text-white mt-3"
+          />
 
           {/* Bottom */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 mt-[15px]">
             <SquircleAvatar
               src={creatorAvatar}
               alt={name}
