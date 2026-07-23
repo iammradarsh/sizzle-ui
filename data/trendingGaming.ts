@@ -16,7 +16,9 @@ export const reels: Reel[] = [
 
     creator: "Zoe Castillo",
 
-    duration: "HD 4:28",
+    quality:"HD",
+
+    duration: "4:28",
 
     category: "#Gaming",
 
@@ -45,6 +47,10 @@ export const reels: Reel[] = [
     title: "The Workout Nobody Is Talking About That Actually Works",
 
     creator: "Dante Mercer",
+
+    quality:"4K",
+
+    duration: "6:03",
 
     category: "#Gaming",
 
@@ -76,7 +82,9 @@ export const reels: Reel[] = [
 
     creator: "Isla Park",
 
-    duration: "4K 6:03",
+    quality:"4K",
+
+    duration: "6:03",
 
     category: "#Gaming",
 
@@ -104,7 +112,9 @@ export const reels: Reel[] = [
 
     creator: "Rhys Okafor",
 
-    duration: "4K 6:03",
+    quality:"4K",
+
+    duration: "6:03",
 
     category: "#Gaming",
 
@@ -132,7 +142,9 @@ export const reels: Reel[] = [
 
     creator: "Yara Santos",
 
-    duration: "4K 6:03",
+    quality:"4K",
+
+    duration: "6:03",
 
     category: "#Gaming",
 
@@ -159,7 +171,9 @@ export const reels: Reel[] = [
 
     creator: "Yara Santos",
 
-    duration: "4K 6:03",
+    quality:"4K",
+
+    duration: "6:03",
 
     category: "#Gaming",
 

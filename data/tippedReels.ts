@@ -16,7 +16,9 @@ export const tippedReels: Reel[] = [
 
     creator: "Amara Diallo",
 
-    duration: "HD 4:28",
+    quality:"HD",
+
+    duration: "4:28",
 
     category: "#Cooking",
 
@@ -46,7 +48,9 @@ export const tippedReels: Reel[] = [
 
     creator: "Kai Whitfield",
 
-    duration: "4K 6:03",
+    quality:"4K",
+
+    duration: "6:03",
 
     category: "#Fitness",
 
@@ -77,7 +81,9 @@ export const tippedReels: Reel[] = [
 
     creator: "Stella Novak",
 
-    duration: "HD 5:02",
+    quality:"HD",
+
+    duration: "5:02",
 
     category: "#Cooking",
 

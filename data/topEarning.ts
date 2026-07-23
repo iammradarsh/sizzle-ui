@@ -22,7 +22,9 @@ export const topEarning: TopEarningReel[] = [
 
     creator: "Nadia Brooks",
 
-    duration: "HD 4:28",
+    quality:"HD",
+
+    duration: "4:28",
 
     category: "#Cooking",
 
@@ -52,7 +54,9 @@ export const topEarning: TopEarningReel[] = [
 
     creator: "Tyler Voss",
 
-    duration: "4K 6:03",
+    quality:"4K",
+
+    duration: "6:03",
 
     category: "#Fitness",
 
@@ -82,7 +86,9 @@ export const topEarning: TopEarningReel[] = [
 
     creator: "Camille Deren",
 
-    duration: "HD 4:28",
+    quality:"HD",
+
+    duration: "4:28",
 
     category: "#Cooking",
 
@@ -116,7 +122,9 @@ export const topEarning: TopEarningReel[] = [
 
     creator: "Marcus Reid",
 
-    duration: "HD 4:28",
+    quality:"HD",
+
+    duration: "4:28",
 
     category: "#Cooking",
 

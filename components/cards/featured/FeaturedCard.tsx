@@ -15,7 +15,9 @@ interface FeaturedCardProps {
 
   creator: string;
 
-  duration: string;
+  quality?: string;
+
+  duration?: string;
 
   category: string;
 
@@ -30,6 +32,7 @@ export default function FeaturedCard({
   avatar,
   title,
   creator,
+  quality,
   duration,
   category,
   views,
@@ -68,8 +71,13 @@ export default function FeaturedCard({
 
         {/* Bottom Tags (Z-index added to sit cleanly on top of the blur) */}
         <div className="absolute bottom-4 left-4 flex gap-2 z-20">
-          <div className="rounded-sm bg-black/40 h-6 w-15.5 flex items-center justify-center text-xs text-white backdrop-blur-md">
-            {duration}
+          <div className="rounded-sm gap-[4px] bg-black/40 h-6 w-15.5 flex items-center justify-center text-xs text-white backdrop-blur-md">
+            <span className="font-neue-semibold text-xs text-white">
+              {quality}
+            </span>
+            <span className="font-neue-regular text-xs text-white">
+              {duration}
+            </span>
           </div>
 
           <div className="rounded-sm bg-black/40 h-6 w-15.5 flex items-center justify-center text-xs text-white backdrop-blur-md">

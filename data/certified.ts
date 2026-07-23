@@ -46,7 +46,9 @@ export const certifiedReels: Reel[] = [
 
     creator: "Kai Whitfield",
 
-    duration: "4K 6:03",
+    quality:"4K",
+
+    duration: "6:03",
 
     category: "#Fitness",
 
@@ -74,7 +76,9 @@ export const certifiedReels: Reel[] = [
 
     creator: "Stella Novak",
 
-    duration: "HD 5:12",
+    quality:"4K",
+
+    duration: "5:12",
 
     category: "#Cooking",
 
@@ -136,7 +140,9 @@ export const certifiedReels: Reel[] = [
 
     creator: "Yara Santos",
 
-    duration: "4K 8:02",
+    quality:"4K",
+
+    duration: "8:02",
 
     category: "#Travel",
 

@@ -16,7 +16,9 @@ export const lifestyleReels: Reel[] = [
 
     creator: "Marlowe Fox",
 
-    duration: "HD 4:28",
+    quality:"HD",
+
+    duration: "4:28",
 
     category: "#Cooking",
 
@@ -46,7 +48,9 @@ export const lifestyleReels: Reel[] = [
 
     creator: "Saint Lavigne",
 
-    duration: "4K 6:03",
+    quality:"4K",
+
+    duration: "6:03",
 
     category: "#Fitness",
 
@@ -78,7 +82,9 @@ export const lifestyleReels: Reel[] = [
 
     creator: "Ember Roux",
 
-    duration: "4K 2:15",
+    quality:"4K",
+
+    duration: "2:15",
 
     category: "#Fitness",
 
@@ -106,7 +112,9 @@ export const lifestyleReels: Reel[] = [
 
     creator: "Roman Sade",
 
-    duration: "4K 4:28",
+    quality:"4K",
+
+    duration: "4:28",
 
     category: "#Lifestyle",
 
@@ -134,7 +142,9 @@ export const lifestyleReels: Reel[] = [
 
     creator: "Yara Santos",
 
-    duration: "4K 6:03",
+    quality:"4K",
+
+    duration: "6:03",
 
     category: "#Fitness",
 

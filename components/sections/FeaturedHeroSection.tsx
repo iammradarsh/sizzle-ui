@@ -97,6 +97,7 @@ export default function FeaturedHeroSection({ hero }: Props) {
                   avatar={reel.avatar}
                   title={reel.title}
                   creator={reel.creator}
+                  quality={reel.quality}
                   duration={reel.duration ?? ""}
                   category={reel.category}
                   views={reel.views}
