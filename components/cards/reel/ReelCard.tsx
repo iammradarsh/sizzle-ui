@@ -173,6 +173,8 @@ export default function ReelCard({
               <Image
                 src="/images/certified/frame.png"
                 alt="Frame"
+                quality={100}
+                unoptimized
                 fill
                 priority
                 className="
@@ -208,6 +210,8 @@ export default function ReelCard({
             <Image
               src="/images/certified/certified-logo.png"
               alt="Certified"
+              quality={100}
+              unoptimized
               width={62}
               height={37}
               priority

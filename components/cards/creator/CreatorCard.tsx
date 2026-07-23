@@ -36,6 +36,8 @@ export default function CreatorCard(props: Props) {
           <Image
             src={props.image}
             alt={props.name}
+            quality={100}
+            unoptimized
             fill
             sizes="180px"
             className="object-cover"

@@ -57,6 +57,8 @@ export default function ReviewCard({
             <Image
               src={avatar}
               alt={name}
+              quality={100}
+              unoptimized
               width={50}
               height={50}
               className="rounded-xl"

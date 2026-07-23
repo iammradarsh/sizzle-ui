@@ -77,6 +77,8 @@ export default function SquircleAvatar({
         <Image
           src={src}
           alt={alt}
+          quality={100}
+          unoptimized
           width={avatarSize}
           height={avatarSize}
           className="h-full w-full object-cover"

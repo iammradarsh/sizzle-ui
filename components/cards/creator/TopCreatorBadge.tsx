@@ -27,7 +27,14 @@ export default function TopCreatorBadge({ icon, label }: Props) {
           px-1
         "
       >
-        <Image src={icon} alt={icon} width={12} height={12} />
+        <Image
+          src={icon}
+          alt={icon}
+          quality={100}
+          unoptimized
+          width={12}
+          height={12}
+        />
 
         <span
           className="

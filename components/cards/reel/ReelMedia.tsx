@@ -13,6 +13,8 @@ export default function ReelMedia({ images, currentImage, title }: Props) {
     <Image
       src={images[currentImage]}
       alt={title}
+      quality={100}
+      unoptimized
       fill
       sizes="320px"
       loading="lazy"

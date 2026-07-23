@@ -40,7 +40,14 @@ export default function FeaturedCard({
       {/* Card */}
       <div className="relative h-[380px] overflow-hidden rounded-[15px]">
         {/* Image */}
-        <Image src={image} alt={title} fill className="object-cover" />
+        <Image
+          src={image}
+          alt={title}
+          quality={100}
+          unoptimized
+          fill
+          className="object-cover"
+        />
 
         {/* 1. Progressive Backdrop Blur Layer (0 to 100 Blur Fade) */}
         <div

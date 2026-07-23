@@ -39,6 +39,8 @@ export default function TopCreatorCard({
         <Image
           src={image}
           alt={name}
+          quality={100}
+          unoptimized
           fill
           className="
             object-cover

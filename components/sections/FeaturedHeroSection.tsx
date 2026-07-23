@@ -53,6 +53,8 @@ export default function FeaturedHeroSection({ hero }: Props) {
       <Image
         src={hero.background}
         alt={hero.title}
+        quality={100}
+        unoptimized
         fill
         priority
         className="object-cover"

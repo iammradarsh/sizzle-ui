@@ -199,6 +199,8 @@ export default function CreatorHighlightCard({
             <Image
               src={image}
               alt=""
+              quality={100}
+              unoptimized
               fill
               className="
 object-cover

@@ -68,6 +68,8 @@ export default function SpotlightCard({
       <Image
         src={image}
         alt={name}
+        quality={100}
+        unoptimized
         fill
         className="object-cover transition-transform duration-500 "
       />

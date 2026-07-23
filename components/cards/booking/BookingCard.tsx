@@ -73,6 +73,8 @@ export default function BookingCard({
         <Image
           src={image}
           alt={name}
+          quality={100}
+          unoptimized
           fill
           className="
             object-cover

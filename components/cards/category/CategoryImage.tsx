@@ -14,6 +14,8 @@ export default function CategoryImage({ image, title }: Props) {
       <Image
         src={image}
         alt={title}
+        quality={100}
+        unoptimized
         fill
         sizes="60px"
         className="object-cover"
