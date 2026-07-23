@@ -71,7 +71,7 @@ export default function RootLayout({
         </svg>
         <Header />
 
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 mt-[-60px]">{children}</main>
 
         <BottomNavbar />
       </body>
