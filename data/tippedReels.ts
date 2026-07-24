@@ -56,8 +56,6 @@ export const tippedReels: Reel[] = [
 
     views: "812 views",
 
-    isPremium: true,
-
     time: "2d",
 
     likes: 758,
@@ -88,6 +86,8 @@ export const tippedReels: Reel[] = [
     category: "#Cooking",
 
     views: "812 views",
+
+    isPremium: true,
 
     time: "2d",
 
