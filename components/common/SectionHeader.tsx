@@ -127,7 +127,7 @@ export default function SectionHeader({
     ${
       canScrollPrev
         ? "bg-[#303032] hover:bg-[#3C3C3E]"
-        : "cursor-not-allowed bg-[#19191B] hover:bg-[#28282A]"
+        : "bg-[#19191B] hover:bg-[#28282A]"
     }
   `}
             >
@@ -149,7 +149,7 @@ export default function SectionHeader({
     ${
       canScrollNext
         ? "bg-[#303032] hover:bg-[#3C3C3E]"
-        : "cursor-not-allowed bg-[#19191B] hover:bg-[#28282A]"
+        : "bg-[#19191B] hover:bg-[#28282A]"
     }
   `}
             >
