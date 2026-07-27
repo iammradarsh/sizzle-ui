@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import SquircleAvatar from "@/components/common/SquircleAvatar";
 import SquircleAvatar2 from "@/components/common/SquircleAvatar2";
+import SquircleAvatar5 from "@/components/common/SquircleAvatar5";
 
 interface Props {
   avatar: string;
@@ -43,14 +44,7 @@ export default function CreatorListCard({
         ${highlight ? "bg-[#19191B]" : "hover:bg-[#19191B]"}
       `}
     >
-      <SquircleAvatar2
-        src={avatar}
-        alt={name ?? ""}
-        avatarSize={60}
-        borderSize={62}
-        borderVariant="solid"
-        borderWidth={1}
-      />
+      <SquircleAvatar5 src={avatar} alt={name ?? ""} />
 
       <div className="min-w-0">
         <h3 className="truncate text-md font-neue-semibold font-normal text-white">
