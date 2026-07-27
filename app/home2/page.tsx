@@ -1,4 +1,4 @@
-import BottomNavbar from "@/components/layout/BottomNavbar";
+import BottomNavbar2 from "@/components/layout/BottomNavbar2";
 import Header from "@/components/layout/Header";
 import BookingsSection from "@/components/sections/BookingsSection";
 import BuyerReviewsSection from "@/components/sections/BuyerReviewsSection";
@@ -48,7 +48,7 @@ export default function Home() {
       <LifestyleSection />
       <SpotlightSection />
       <CreatorHighlightsSection />
-      <BottomNavbar />
+      <BottomNavbar2 />
     </main>
   );
 }

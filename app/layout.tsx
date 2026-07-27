@@ -72,8 +72,6 @@ export default function RootLayout({
         <Header />
 
         <main className="flex-1 mt-[-60px]">{children}</main>
-
-        <BottomNavbar />
       </body>
     </html>
   );

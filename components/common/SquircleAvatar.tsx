@@ -11,7 +11,6 @@ interface SquircleAvatarProps {
   borderSize?: number;
 
   borderWidth?: number;
-  borderStyle?: "fill" | "outline";
 
   borderVariant?: "solid" | "gradient";
   borderColor?: string;
@@ -28,9 +27,7 @@ export default function SquircleAvatar({
   alt,
   avatarSize = 48,
   borderSize = 52,
-  borderWidth = 2,
-  borderStyle = "fill",
-
+  borderWidth = 1,
   borderVariant = "solid",
   borderColor = "#FFFFFF26",
   gradient = "linear-gradient(90deg, #D9107F 0%, #EE1E03 29.33%, #F61785 57.21%, #FC7C20 100%)",

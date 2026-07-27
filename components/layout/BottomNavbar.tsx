@@ -48,7 +48,15 @@ export default function BottomNavigation() {
 
   return (
     <motion.div className="fixed bottom-8 left-1/2 z-50 -translate-x-1/2">
-      <LiquidGlass width={580} height={90} cornerRadius={34}>
+      <LiquidGlass
+        className="
+    flex h-[90px] w-[580px] items-center justify-center rounded-[34px]
+    border border-white/10
+    bg-white/5
+    backdrop-blur-2xl
+    shadow-[0_8px_30px_rgba(0,0,0,0.35)]
+  "
+      >
         <div className="flex h-full items-center justify-center px-3">
           {navItems.map((item) => {
             const active = activeTab === item.label;

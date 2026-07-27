@@ -75,7 +75,7 @@ export default function SuggestedCreatorCard({
                 WebkitTextFillColor: "transparent",
               }}
             >
-              <span className="mb-0.5">New</span>
+              <span className="mb-[1px]">New</span>
             </span>
           )}
         </div>
