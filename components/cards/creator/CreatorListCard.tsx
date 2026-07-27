@@ -48,6 +48,8 @@ export default function CreatorListCard({
         avatarSize={60}
         borderSize={62}
         borderVariant="solid"
+        cornerRadius={18 / 60} // 0.27
+        cornerSmoothing={6}
         borderWidth={1}
       />
 
