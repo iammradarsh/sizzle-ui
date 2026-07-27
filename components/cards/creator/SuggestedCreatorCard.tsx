@@ -53,29 +53,20 @@ export default function SuggestedCreatorCard({
           </h3>
 
           {isNew && (
-            <span
-              className="
-        rounded-[4px]
-        border
-        border-[#F61785]
-        w-[34px]
-        h-[16px]
-        text-[12px]
-        leading-5
-        flex
-        items-center
-        justify-center
-        font-neue-regular
-      "
-              style={{
-                background:
-                  "linear-gradient(270deg, #D9107F 0%, #EE1E03 29.33%, #F61785 57.21%, #FC7C20 100%)",
-                backgroundClip: "text",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-              }}
-            >
-              <span className="mb-[1px]">New</span>
+            <span className="inline-flex rounded-[4px] bg-[linear-gradient(270deg,#D9107F_0%,#EE1E03_29.33%,#F61785_57.21%,#FC7C20_100%)] p-px">
+              <span className="flex h-[16px] w-[34px] items-center justify-center rounded-[3px] bg-black">
+                <span
+                  className="text-[12px] font-neue-regular mb-[2px]"
+                  style={{
+                    backgroundImage:
+                      "linear-gradient(270deg,#D9107F 0%,#EE1E03 29.33%,#F61785 57.21%,#FC7C20 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                  }}
+                >
+                  New
+                </span>
+              </span>
             </span>
           )}
         </div>
