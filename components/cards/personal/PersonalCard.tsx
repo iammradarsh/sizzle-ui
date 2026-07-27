@@ -50,10 +50,11 @@ export default function PersonalCard({
           src={image}
           alt={name}
           avatarSize={200}
-          borderSize={204}
+          borderSize={202}
           borderVariant="solid"
           cornerRadius={54 / 200} // 0.27
           cornerSmoothing={6}
+          borderWidth={1}
         />
       </motion.div>
 

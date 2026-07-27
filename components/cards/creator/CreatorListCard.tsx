@@ -22,9 +22,9 @@ export default function CreatorListCard({
 }: Props) {
   return (
     <motion.div
-      whileHover={{
-        width: "448px",
-      }}
+      // whileHover={{
+      //   width: "448px",
+      // }}
       transition={{
         duration: 0.25,
         ease: "easeInOut",
@@ -35,7 +35,7 @@ export default function CreatorListCard({
         gap-4
         rounded-[15px]
         h-[84px]
-        w-[446px]
+        w-[448px]
         px-4
         transition-colors
         duration-300

@@ -47,17 +47,7 @@ export default function BottomNavigation() {
   const [activeTab, setActiveTab] = useState("Home");
 
   return (
-    <motion.div
-      className="fixed bottom-8 left-1/2 z-50 -translate-x-1/2"
-      animate={{
-        y: [0, -3, 0],
-      }}
-      transition={{
-        duration: 4,
-        repeat: Infinity,
-        ease: "easeInOut",
-      }}
-    >
+    <motion.div className="fixed bottom-8 left-1/2 z-50 -translate-x-1/2">
       <LiquidGlass width={580} height={90} cornerRadius={34}>
         <div className="flex h-full items-center justify-center px-3">
           {navItems.map((item) => {
