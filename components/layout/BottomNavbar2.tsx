@@ -79,7 +79,7 @@ export default function BottomNavigation2() {
                   <div
                     className="
       absolute inset-0 rounded-[22px]
-      border border-white/10
+      
       bg-white/10
       backdrop-blur-xl
     "
