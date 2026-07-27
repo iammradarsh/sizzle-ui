@@ -43,7 +43,7 @@ export default function ReviewCard({
         shrink-0
         rounded-[15px]
         border
-        border-white/10
+        border-[rgba(255, 255, 255, 0.10)]
         bg-[#19191B]
         hover:bg-[#28282A]
         p-5
