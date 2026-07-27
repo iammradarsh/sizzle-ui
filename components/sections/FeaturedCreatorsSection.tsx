@@ -11,6 +11,7 @@ import { featuredCreators } from "@/data/featuredCreators";
 import { Button } from "../ui/button";
 import WheelGesturesPlugin from "embla-carousel-wheel-gestures";
 import SectionHeader from "../common/SectionHeader";
+import FeaturedCreatorCard from "../cards/creator/FeaturedCreatorCard";
 
 export default function FeaturedCreatorsSection() {
   const wheelGestures = WheelGesturesPlugin();
@@ -59,7 +60,7 @@ export default function FeaturedCreatorsSection() {
       <div ref={emblaRef} className="select-none">
         <div className="flex gap-8">
           {featuredCreators.map((creator) => (
-            <SuggestedCreatorCard
+            <FeaturedCreatorCard
               borderVariant="gradient"
               key={creator.id}
               {...creator}

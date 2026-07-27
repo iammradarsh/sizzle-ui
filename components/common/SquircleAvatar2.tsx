@@ -41,6 +41,9 @@ export default function SquircleAvatar2({
 
   const PATH =
     "M0.5 100.5C0.5 20.5 20.5 0.5 100.5 0.5C180.5 0.5 200.5 20.5 200.5 100.5C200.5 180.5 180.5 200.5 100.5 200.5C20.5 200.5 0.5 180.5 0.5 100.5Z";
+  const strokeInset = borderWidth / 2;
+
+  const strokeScale = (borderSize - borderWidth) / viewBox;
 
   return (
     <div
@@ -108,10 +111,10 @@ export default function SquircleAvatar2({
         {/* Border Stroke */}
         <path
           d={PATH}
-          transform={`scale(${outerScale})`}
+          transform={`translate(${strokeInset} ${strokeInset}) scale(${strokeScale})`}
           fill="none"
           stroke="rgba(255,255,255,.15)"
-          strokeWidth={1}
+          strokeWidth={2}
         />
       </svg>
     </div>

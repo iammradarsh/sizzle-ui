@@ -2,6 +2,7 @@
 
 import SquircleAvatar from "@/components/common/SquircleAvatar";
 import SquircleAvatar2 from "@/components/common/SquircleAvatar2";
+import SquircleAvatar4 from "@/components/common/SquircleAvatar4";
 import Image from "next/image";
 
 interface ReelFooterProps {
@@ -46,13 +47,7 @@ export default function ReelFooter({
 
           {/* Creator */}
           <div className="flex items-center gap-2">
-            <SquircleAvatar2
-              src={avatar}
-              alt={creator ?? ""}
-              avatarSize={14}
-              borderSize={16}
-              borderWidth={1}
-            />
+            <SquircleAvatar4 src={avatar} alt={creator ?? ""} />
 
             {/* <Image
               src={avatar}

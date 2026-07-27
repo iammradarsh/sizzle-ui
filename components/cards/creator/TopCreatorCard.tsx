@@ -46,9 +46,6 @@ export default function TopCreatorCard({
           fill
           className="
             object-cover
-            transition-transform
-            duration-500
-            group-hover:scale-102
           "
         />
 

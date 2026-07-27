@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import SquircleAvatar from "@/components/common/SquircleAvatar";
 import Image from "next/image";
 import SquircleAvatar2 from "@/components/common/SquircleAvatar2";
+import SquircleAvatar3 from "@/components/common/SquircleAvatar3";
 
 interface Props {
   image: string;
@@ -21,7 +22,7 @@ interface Props {
   isNew?: boolean;
 }
 
-export default function SuggestedCreatorCard({
+export default function FeaturedCreatorCard({
   image,
   name,
   description,
@@ -35,14 +36,7 @@ export default function SuggestedCreatorCard({
   return (
     <motion.div className="w-[190px] shrink-0 flex flex-col ">
       <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.35 }}>
-        <SquircleAvatar2
-          src={image}
-          alt={name}
-          avatarSize={200}
-          borderSize={202}
-          borderVariant={borderVariant}
-          borderWidth={0}
-        />
+        <SquircleAvatar3 src={image} alt={name} />
       </motion.div>
 
       <div className="card-detail flex flex-col">
