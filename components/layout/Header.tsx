@@ -83,7 +83,7 @@ export default function Header() {
               For You
             </Button>
 
-            <Button className="group flex items-center justify-center h-[44px] w-[120px] rounded-[14px] font-neue-semibold font-normal border-0 bg-[#19191B] text-[14px] text-zinc-300 hover:bg-[#252528] hover:text-white">
+            <Button className="group flex items-center justify-center h-[44px] w-[120px] rounded-[14px] font-neue-semibold font-normal border-0 bg-[#19191B] text-[14px] text-[#A3A3A3] hover:bg-[#252528] hover:text-white">
               <Image
                 src="/images/icons/following-grey.svg"
                 alt="Following"
@@ -101,7 +101,7 @@ export default function Header() {
               Following
             </Button>
 
-            <Button className="group flex items-center justify-center h-[44px] w-[147px] rounded-[14px] font-neue-semibold font-normal border-0 bg-[#19191B] text-[14px] text-zinc-300 hover:bg-[#252528] hover:text-white">
+            <Button className="group flex items-center justify-center h-[44px] w-[147px] rounded-[14px] font-neue-semibold font-normal border-0 bg-[#19191B] text-[14px] text-[#A3A3A3] hover:bg-[#252528] hover:text-white">
               <Image
                 src="/images/icons/crown-grey.svg"
                 alt="Memberships"
