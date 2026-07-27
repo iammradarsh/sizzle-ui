@@ -40,8 +40,8 @@ export default function SuggestedCreatorCard({
           avatarSize={200}
           borderSize={202}
           borderVariant={borderVariant}
-          cornerRadius={52 / 200} // 0.27
-          cornerSmoothing={100}
+          cornerRadius={58 / 200} // 0.27
+          cornerSmoothing={6}
           borderWidth={1}
         />
       </motion.div>
@@ -56,7 +56,7 @@ export default function SuggestedCreatorCard({
             <span className="inline-flex rounded-[4px] bg-[linear-gradient(270deg,#D9107F_0%,#EE1E03_29.33%,#F61785_57.21%,#FC7C20_100%)] p-px">
               <span className="flex h-[16px] w-[34px] items-center justify-center rounded-[3px] bg-black">
                 <span
-                  className="text-[12px] font-neue-regular mb-[2px]"
+                  className="text-[12px] font-neue-regular"
                   style={{
                     backgroundImage:
                       "linear-gradient(270deg,#D9107F 0%,#EE1E03 29.33%,#F61785 57.21%,#FC7C20 100%)",

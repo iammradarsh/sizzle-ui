@@ -52,7 +52,7 @@ export default function PersonalCard({
           avatarSize={200}
           borderSize={202}
           borderVariant="solid"
-          cornerRadius={54 / 200} // 0.27
+          cornerRadius={58 / 200} // 0.27
           cornerSmoothing={6}
           borderWidth={1}
         />
