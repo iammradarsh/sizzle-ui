@@ -61,7 +61,7 @@ export default function ReelFooter({
               alt={creator ?? ""}
               width={14}
               height={14}
-              className="w-[14px] h-[14px] rounded-[4px] object-cover ring-[1px] ring-white/20"
+              className="w-[14px] h-[14px] rounded-[4.5px] object-cover ring-[1px] ring-white/20"
             ></Image>
 
             <span className="font-neue-regular text-[14px] text-[#A3A3A3]">

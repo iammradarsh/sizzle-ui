@@ -51,7 +51,7 @@ export default function BottomNavigation2() {
     flex h-[90px] w-[580px] items-center justify-center rounded-[34px]
     border border-white/10
     bg-[#19191BBF]
-    backdrop-blur-md
+    backdrop-blur-sm
     shadow-[0_8px_30px_rgba(0,0,0,0.35)]
   "
       >
