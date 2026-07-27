@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 import SquircleAvatar from "@/components/common/SquircleAvatar";
+import SquircleAvatar2 from "@/components/common/SquircleAvatar2";
 
 interface Props {
   avatar: string;
@@ -42,14 +43,12 @@ export default function CreatorListCard({
         ${highlight ? "bg-[#19191B]" : "hover:bg-[#19191B]"}
       `}
     >
-      <SquircleAvatar
+      <SquircleAvatar2
         src={avatar}
         alt={name ?? ""}
         avatarSize={60}
         borderSize={62}
         borderVariant="solid"
-        cornerRadius={18 / 60} // 0.27
-        cornerSmoothing={6}
         borderWidth={1}
       />
 

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import SquircleAvatar from "@/components/common/SquircleAvatar";
 import Image from "next/image";
+import SquircleAvatar2 from "@/components/common/SquircleAvatar2";
 
 interface Props {
   image: string;
@@ -34,14 +35,12 @@ export default function SuggestedCreatorCard({
   return (
     <motion.div className="w-[190px] shrink-0 flex flex-col ">
       <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.35 }}>
-        <SquircleAvatar
+        <SquircleAvatar2
           src={image}
           alt={name}
           avatarSize={200}
           borderSize={202}
           borderVariant={borderVariant}
-          cornerRadius={58 / 200} // 0.27
-          cornerSmoothing={6}
           borderWidth={1}
         />
       </motion.div>

@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import SquircleAvatar from "@/components/common/SquircleAvatar";
 import ExpandableText from "@/components/common/ExpandableText";
+import SquircleAvatar2 from "@/components/common/SquircleAvatar2";
 
 interface Props {
   avatar: string;
@@ -55,7 +56,7 @@ export default function ReviewCard({
         {/* Header */}
         <div className="flex items-start justify-between">
           <div className="flex items-center gap-3.75">
-            <SquircleAvatar
+            <SquircleAvatar2
               src={avatar}
               alt={name ?? ""}
               avatarSize={50}
@@ -111,15 +112,13 @@ export default function ReviewCard({
 
           {/* Bottom */}
           <div className="flex items-center gap-3 mt-[15px]">
-            <SquircleAvatar
+            <SquircleAvatar2
               src={creatorAvatar}
               alt={name}
               avatarSize={28}
               borderSize={28}
               borderWidth={0}
               borderVariant="solid"
-              cornerRadius={10 / 28} // 0.27
-              cornerSmoothing={6}
             />
 
             <div className="flex flex-wrap gap-2">

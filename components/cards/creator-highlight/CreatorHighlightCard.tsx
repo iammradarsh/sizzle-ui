@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import { useState } from "react";
 import SquircleAvatar from "@/components/common/SquircleAvatar";
+import SquircleAvatar2 from "@/components/common/SquircleAvatar2";
 
 interface Props {
   avatar: string;
@@ -76,7 +77,7 @@ export default function CreatorHighlightCard({
       {/* Header */}
       <div className="flex items-start justify-between ">
         <div className="flex gap-3">
-          <SquircleAvatar
+          <SquircleAvatar2
             src={avatar}
             alt={name ?? ""}
             avatarSize={60}

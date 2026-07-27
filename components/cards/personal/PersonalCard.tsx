@@ -5,6 +5,7 @@ import SquircleAvatar from "@/components/common/SquircleAvatar";
 
 import PersonalStats from "./PersonalStats";
 import PersonalService from "./PersonalService";
+import SquircleAvatar2 from "@/components/common/SquircleAvatar2";
 
 interface PersonalCardProps {
   image: string;
@@ -46,15 +47,13 @@ export default function PersonalCard({
     >
       {/* Image */}
       <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.35 }}>
-        <SquircleAvatar
+        <SquircleAvatar2
           src={image}
           alt={name}
           avatarSize={200}
-          borderSize={202}
-          borderVariant="solid"
-          cornerRadius={58 / 200} // 0.27
-          cornerSmoothing={6}
+          borderSize={201}
           borderWidth={1}
+          borderVariant="solid"
         />
       </motion.div>
 
