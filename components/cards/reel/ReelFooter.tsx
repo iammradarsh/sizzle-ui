@@ -45,7 +45,7 @@ export default function ReelFooter({
 
           {/* Creator */}
           <div className="flex items-center gap-2">
-            <SquircleAvatar
+            {/* <SquircleAvatar
               src={avatar}
               alt={creator ?? ""}
               avatarSize={14}
@@ -54,7 +54,15 @@ export default function ReelFooter({
               borderWidth={1}
               cornerRadius={4 / 14}
               cornerSmoothing={8}
-            />
+            /> */}
+
+            <Image
+              src={avatar}
+              alt={creator ?? ""}
+              width={14}
+              height={14}
+              className="w-[14px] h-[14px] rounded-[4px] object-cover ring-[1px] ring-white/20"
+            ></Image>
 
             <span className="font-neue-regular text-[14px] text-[#A3A3A3]">
               {creator}

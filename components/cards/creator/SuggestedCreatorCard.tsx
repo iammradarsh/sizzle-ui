@@ -59,6 +59,7 @@ export default function SuggestedCreatorCard({
         border
         border-[#F61785]
         w-[34px]
+        h-[16px]
         text-[12px]
         leading-5
         flex
@@ -74,7 +75,7 @@ export default function SuggestedCreatorCard({
                 WebkitTextFillColor: "transparent",
               }}
             >
-              New
+              <span className="mb-0.5">New</span>
             </span>
           )}
         </div>

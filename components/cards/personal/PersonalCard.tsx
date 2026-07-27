@@ -55,6 +55,7 @@ export default function PersonalCard({
           cornerRadius={54 / 200} // 0.27
           cornerSmoothing={6}
           borderWidth={1}
+          borderStyle="outline"
         />
       </motion.div>
 
