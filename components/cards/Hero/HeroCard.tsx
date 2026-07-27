@@ -161,7 +161,9 @@ export default function HeroCard({
 
       {/* FOOTER */}
       <div className="w-full px-3">
-        <p className="line-clamp-1 text-[16px] text-white">{description}</p>
+        <p className="line-clamp-1 w-[620px] text-[16px] text-white">
+          {description}
+        </p>
 
         <div className="flex items-center gap-2 text-[14px] text-[#A3A3A3]">
           <span>{creator}</span>
